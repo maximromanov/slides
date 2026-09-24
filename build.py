@@ -71,7 +71,7 @@ def first_heading(body):
 def render_slide(layout, opts, body, deck):
     body, notes = split_notes(body)
     classes = [layout] + [c for c in (opts.get("class") or "").split() if c]
-    classes += [k for k, v in opts.items() if v is True and not k.startswith("w-")]
+    classes += [k for k, v in opts.items() if v is True and not k.startswith("w-") and k != "steps"]
     title = opts.get("title") or first_heading(body)
     inner = ""
     if layout == "title":
@@ -128,6 +128,11 @@ def render_slide(layout, opts, body, deck):
         inner = (f"<h1>{esc(head)}</h1>" if head else "") + f"<ol>{lis}</ol>"
     else:
         inner = md(body)
+    if opts.get("steps"):
+        # every top-level list item (and .punch line) becomes a step
+        inner = re.sub(r"<li(?![^>]*class=)", '<li class="step"', inner)
+        inner = re.sub(r'<li class="([^"]*)"', lambda m: f'<li class="{m.group(1)} step"' if "step" not in m.group(1) else m.group(0), inner)
+        inner = re.sub(r'<p class="([^"]*punch[^"]*)"', lambda m: f'<p class="{m.group(1)} step"', inner)
     notes_html = f'<aside class="notes">{md(notes)}</aside>' if notes else ""
     return f'<section class="slide {" ".join(classes)}" data-title="{esc(title)}">{inner}{notes_html}</section>'
 

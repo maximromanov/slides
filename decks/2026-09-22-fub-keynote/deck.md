@@ -106,7 +106,7 @@ logos:
 --- figure
 ![Chronological distribution of the volume of the OpenITI subcorpus](img/fig-2-31-chronological-volume.png)
 
---- text
+--- text steps
 # But a corpus is also a historical source
 
 <ul class="indent">
@@ -317,7 +317,7 @@ Case Study 2. Modeling Textual Typology
 
 <p class="bottom punch">What if we ask the written tradition itself?</p>
 
---- text
+--- text steps
 # The obvious casualty: the Mamluk centuries
 
 <div class="indent">
@@ -335,7 +335,7 @@ Case Study 2. Modeling Textual Typology
 --- figure
 ![Chronological distribution of the volume of the OpenITI subcorpus](img/fig-2-31-chronological-volume.png)
 
---- text
+--- text steps
 # Two lenses on change
 
 <div class="indent">
@@ -412,7 +412,7 @@ Case Study 2. Modeling Textual Typology
 <p class="indent tiny">3,000 stylometric samples (1,500 discrete; 1,500 overlapping)<br>12 distance metrics, 2 major clustering algorithms;<br>48 tf-idf keyword tests.</p>
 </div>
 
---- text
+--- text steps
 # The middle macroperiod (c. 1200–1540)
 
 <ul class="indent">
@@ -487,7 +487,7 @@ Case Study 2. Modeling Textual Typology
 ![Charts of annual production for India and Anatolia](img/chart-late.png)
 <div class="stat red" style="position:absolute;left:200px;bottom:90px;min-width:0;padding:14px 28px"><b style="font-size:36px">≈ 30% Anatolia</b></div>
 
---- text
+--- text steps
 # Two transitions: <strong>1200–1300</strong> and 1500–1600
 
 <ul class="indent">
@@ -527,7 +527,7 @@ Case Study 2. Modeling Textual Typology
 
 <p class="bottom punch">Different biases. Different assumptions. Similar macro-boundaries.</p>
 
---- text
+--- text steps
 # Three long cultural regimes (macroperiods)
 
 <ol class="indent">
@@ -541,7 +541,7 @@ Case Study 2. Modeling Textual Typology
 --- figure frame
 ![Table 3.34: books by region in the early, middle, and late macroperiods](img/table-3-34-regions.png)
 
---- text
+--- text steps
 # Periods are also places
 
 <ul class="indent">
@@ -553,7 +553,7 @@ Case Study 2. Modeling Textual Typology
 
 <p class="bottom tiny" style="text-align:right">(* to be redone on the EIS1600 data: 600,000 bios &gt; c. 130,000 individuals)</p>
 
---- text
+--- text steps
 # What changes if we accept this model?
 
 <ul class="indent">

@@ -16,6 +16,18 @@ decks/<date>-<name>/img/      its images
 docs/                         the published site: docs/<deck>/index.html, docs/index.html (deck list)
 ```
 
+## Starting a new deck
+
+```
+python3 new.py 2026-11-14-mesa "Title of the talk"     # scaffold decks/2026-11-14-mesa/deck.md + img/
+python3 build.py                                        # render into docs/
+python3 -m http.server -d docs 8000                     # preview at http://localhost:8000/2026-11-14-mesa/
+```
+
+Write the slides in `deck.md`, drop images into `img/`, rebuild, preview, commit `decks/` and
+`docs/` together, push. The deck appears in the list at the root and can be linked from the website's
+Talks page.
+
 ## Writing a deck
 
 `deck.md` starts with YAML front matter (`title`, `subtitle`, `event`, `author`, `affiliation`,
@@ -34,6 +46,14 @@ of that line names the layout and options:
 ```
 
 Any option that is just a word becomes a class on the slide (`no-strip` removes the left strip).
+`steps` on a `text` slide makes every top-level list item (and a `.punch` line) appear one per
+keypress; for finer control give any element the class `step` (`{.step}` on a Markdown line, or
+`class="step"` in HTML). Steps already shown dim slightly as the next one appears.
+
+Motion: slides slide in from the right (from the left when going back); stat tiles, chain boxes,
+period pills, and agenda rows build in with a short stagger; the red rule under a heading grows in;
+a punch line fades in. Clicking any figure opens it full-screen (Esc or click to close). Everything
+respects the system's reduced-motion setting, and nothing animates in the overview or in print.
 Inside a slide, Markdown and HTML both work. Helper classes: `.small .tiny .big .muted .accent
 .indent .kicker .punch .bottom`, `.callout` (`.red`), `.stats` with `.stat` (`.red .paper .gold`),
 `.pills` with `.pill` (`.on`, `.timeline`), `.chain` with `.box` (`.hi`), `.twocol`, `.ar` for Arabic.
