@@ -127,6 +127,16 @@
       }
     });
   }
+  function setScale(v) {
+    v = Math.max(70, Math.min(140, v)); typeState.scale = v;
+    var el = document.querySelector('#tp-scale'); if (el) { el.value = v; }
+    applyType(typeState); try { localStorage.setItem(TYPE_KEY, JSON.stringify(typeState)); } catch (e) {}
+    var o = document.querySelector('#o-scale'); if (o) o.textContent = v + '%';
+    var out = document.querySelector('#tp-out'); if (out) out.value = describe();
+    clearTimeout(setScale.t); setScale.t = setTimeout(fitText, 120);
+    var tag = document.querySelector('.scale-tag'); if (!tag) { tag = document.createElement('div'); tag.className = 'scale-tag'; document.body.appendChild(tag); }
+    tag.textContent = 'Text ' + v + '%'; tag.classList.add('on'); clearTimeout(setScale.h); setScale.h = setTimeout(function () { tag.classList.remove('on'); }, 900);
+  }
   function syncNotes() { if (notesWin && !notesWin.closed && notesWin.__render) notesWin.__render(idx); }
 
   document.addEventListener('keydown', function (e) {
@@ -140,6 +150,9 @@
       case 'o': case 'O': case 'Escape': if (e.key === 'Escape' && help.classList.contains('on')) { help.classList.remove('on'); break; } toggleOverview(e.key === 'Escape' ? false : undefined); break;
       case 's': case 'S': openNotes(); break;
       case 't': case 'T': panel.classList.toggle('on'); break;
+      case '+': case '=': setScale((typeState.scale || 100) + 4); break;
+      case '-': case '_': setScale((typeState.scale || 100) - 4); break;
+      case '0': setScale(100); break;
       case '?': case 'h': case 'H': help.classList.toggle('on'); break;
     }
   });
@@ -173,12 +186,13 @@
     ['Inter (sans)', '"Inter", system-ui, sans-serif'], ['Source Sans 3 (sans)', '"Source Sans 3", system-ui, sans-serif'], ['IBM Plex Sans (sans)', '"IBM Plex Sans", system-ui, sans-serif'], ['Helvetica Neue (system sans)', '"Helvetica Neue", Helvetica, Arial, sans-serif'], ['Avenir (Mac sans)', 'Avenir, "Avenir Next", system-ui, sans-serif']
   ];
   var TYPE_KEY = 'deck-type';
-  var typeDefaults = { text: 0, head: 0, wText: 400, wHead: 600, ls: 0 };
+  var typeDefaults = { text: 0, head: 0, wText: 400, wHead: 600, ls: 0, scale: 100 };
   function loadType() { try { return Object.assign({}, typeDefaults, JSON.parse(localStorage.getItem(TYPE_KEY) || '{}')); } catch (e) { return Object.assign({}, typeDefaults); } }
   function applyType(t) {
     var r = document.documentElement.style;
     r.setProperty('--f-text', FACES[t.text][1]); r.setProperty('--f-head', FACES[t.head][1]);
     r.setProperty('--w-text', t.wText); r.setProperty('--w-head', t.wHead); r.setProperty('--ls-text', t.ls / 1000);
+    r.setProperty('--type-scale', (t.scale || 100) / 100);
   }
   var typeState = loadType(); applyType(typeState);
   var panel = document.createElement('div'); panel.className = 'typepanel';
@@ -187,17 +201,18 @@
     '<label>Body face <select id="tp-text">' + opts(typeState.text) + '</select><span></span></label>' +
     '<label>Body weight <input type="range" id="tp-wtext" min="300" max="900" step="10" value="' + typeState.wText + '"><output id="o-wtext">' + typeState.wText + '</output></label>' +
     '<label>Spacing <input type="range" id="tp-ls" min="-20" max="40" step="1" value="' + typeState.ls + '"><output id="o-ls">' + typeState.ls + '</output></label>' +
+    '<label>Size <input type="range" id="tp-scale" min="70" max="140" step="2" value="' + (typeState.scale || 100) + '"><output id="o-scale">' + (typeState.scale || 100) + '%</output></label>' +
     '<label>Heading face <select id="tp-head">' + opts(typeState.head) + '</select><span></span></label>' +
     '<label>Heading weight <input type="range" id="tp-whead" min="300" max="900" step="10" value="' + typeState.wHead + '"><output id="o-whead">' + typeState.wHead + '</output></label>' +
     '<div class="row"><button id="tp-reset">Reset</button><button id="tp-copy">Copy settings</button><button id="tp-close">Close</button></div>' +
     '<p class="hint">Weights are continuous for the variable faces (Literata, Source Serif 4, Merriweather, Newsreader, Lora, Alegreya, Source Sans 3); others snap to their available weights. Settings persist in this browser for all decks. Send the copied line to have them baked in.</p>' +
     '<textarea id="tp-out" readonly></textarea>';
   document.body.appendChild(panel);
-  function describe() { return 'body: ' + FACES[typeState.text][0] + ' ' + typeState.wText + ', spacing ' + typeState.ls + ' · heading: ' + FACES[typeState.head][0] + ' ' + typeState.wHead; }
+  function describe() { return 'body: ' + FACES[typeState.text][0] + ' ' + typeState.wText + ', spacing ' + typeState.ls + ' · heading: ' + FACES[typeState.head][0] + ' ' + typeState.wHead + ' · size ' + typeState.scale + '%'; }
   function typeChanged() {
     typeState.text = +panel.querySelector('#tp-text').value; typeState.head = +panel.querySelector('#tp-head').value;
-    typeState.wText = +panel.querySelector('#tp-wtext').value; typeState.wHead = +panel.querySelector('#tp-whead').value; typeState.ls = +panel.querySelector('#tp-ls').value;
-    panel.querySelector('#o-wtext').textContent = typeState.wText; panel.querySelector('#o-whead').textContent = typeState.wHead; panel.querySelector('#o-ls').textContent = typeState.ls;
+    typeState.wText = +panel.querySelector('#tp-wtext').value; typeState.wHead = +panel.querySelector('#tp-whead').value; typeState.ls = +panel.querySelector('#tp-ls').value; typeState.scale = +panel.querySelector('#tp-scale').value;
+    panel.querySelector('#o-wtext').textContent = typeState.wText; panel.querySelector('#o-whead').textContent = typeState.wHead; panel.querySelector('#o-ls').textContent = typeState.ls; panel.querySelector('#o-scale').textContent = typeState.scale + '%';
     applyType(typeState); try { localStorage.setItem(TYPE_KEY, JSON.stringify(typeState)); } catch (e) {}
     panel.querySelector('#tp-out').value = describe();
     clearTimeout(typeChanged.t); typeChanged.t = setTimeout(fitText, 150);
@@ -207,7 +222,7 @@
   panel.querySelector('#tp-out').value = describe();
   panel.querySelector('#tp-reset').addEventListener('click', function () {
     typeState = Object.assign({}, typeDefaults); try { localStorage.removeItem(TYPE_KEY); } catch (e) {}
-    panel.querySelector('#tp-text').value = 0; panel.querySelector('#tp-head').value = 0; panel.querySelector('#tp-wtext').value = 400; panel.querySelector('#tp-whead').value = 600; panel.querySelector('#tp-ls').value = 0; typeChanged();
+    panel.querySelector('#tp-text').value = 0; panel.querySelector('#tp-head').value = 0; panel.querySelector('#tp-wtext').value = 400; panel.querySelector('#tp-whead').value = 600; panel.querySelector('#tp-ls').value = 0; panel.querySelector('#tp-scale').value = 100; typeChanged();
   });
   panel.querySelector('#tp-copy').addEventListener('click', function () { var o = panel.querySelector('#tp-out'); o.select(); try { navigator.clipboard.writeText(o.value); } catch (e) { document.execCommand('copy'); } });
   panel.querySelector('#tp-close').addEventListener('click', function () { panel.classList.remove('on'); });
@@ -237,7 +252,8 @@
   function fitText() {
     slides.forEach(function (s) {
       if (!/\b(text|split|agenda|quote)\b/.test(s.className) || s.classList.contains('nofit')) return;
-      var min = 22, max = parseFloat(s.getAttribute('data-fit-max')) || 56, lo = min, hi = max, best = min;
+      var k = (typeState && typeState.scale ? typeState.scale : 100) / 100;
+      var min = 22 * k, max = (parseFloat(s.getAttribute('data-fit-max')) || 56) * k, lo = min, hi = max, best = min;
       s.classList.add('measuring');
       for (var i = 0; i < 9; i++) {
         var mid = (lo + hi) / 2;

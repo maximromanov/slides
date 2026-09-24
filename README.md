@@ -86,7 +86,8 @@ Inside a slide, Markdown and HTML both work. Helper classes: `.small .tiny .big 
 `.pills` with `.pill` (`.on`, `.timeline`), `.chain` with `.box` (`.hi`), `.twocol`, `.ar` for Arabic.
 A block that starts with a line `Notes:` is the speaker notes for that slide.
 
-Keys in the browser: arrows or space to move, `F` fullscreen, `O` overview, `S` speaker notes in a
+Keys in the browser: arrows or space to move, `F` fullscreen, `O` overview, `+`/`−`/`0` for larger,
+smaller, and default text (kept per browser, and also in the `T` panel), `S` speaker notes in a
 second window, `?` help. The notes window shows the current and the next slide, the notes, and a
 clock (`R` resets it); its arrow keys drive the presentation, so it can sit on the laptop screen
 while the deck is on the projector. It works when the deck is opened from disk as well. `#12` in the address opens slide 12.
