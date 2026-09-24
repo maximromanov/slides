@@ -198,12 +198,17 @@ body.deck { -webkit-font-smoothing: antialiased; }
 .help table { border-collapse: collapse; } .help td { padding: 4px 14px 4px 0; } .help kbd { font-family: var(--f-mono); background: #333; padding: 1px 7px; border-radius: 3px; }
 
 /* overview */
-body.overview .viewport { overflow: auto; place-items: start; padding: 40px; }
-body.overview .stage { transform: none !important; width: auto; height: auto; background: none; box-shadow: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; overflow: visible; }
+body.overview .viewport { overflow: auto; place-items: start; padding: 40px; display: block; }
+body.overview .stage { transform: none !important; width: auto; height: auto; background: none; box-shadow: none; display: grid; grid-template-columns: repeat(4, 384px); gap: 24px; overflow: visible; }
 body.overview .stage::before { display: none; }
-body.overview .slide { display: block !important; position: relative; width: 384px; height: 216px; padding: 0; overflow: hidden; cursor: pointer; outline: 2px solid transparent; }
+body.overview .slide { display: block !important; position: relative; width: 384px; height: 216px; padding: 0; overflow: hidden; cursor: pointer; outline: 2px solid transparent; background: var(--paper); }
 body.overview .slide.current { outline-color: var(--red); }
-body.overview .slide > .scaled { width: 1920px; height: 1080px; transform: scale(.2); transform-origin: top left; }
+body.overview .slide::before, body.overview .slide::after { transform: scale(.2); transform-origin: top left; }
+body.overview .slide > .scaled { width: 1920px; height: 1080px; transform: scale(.2); transform-origin: top left; padding: 96px 120px 96px 200px; position: relative; }
+body.overview .slide.section > .scaled, body.overview .slide.quote > .scaled { display: grid; place-items: center; }
+body.overview .slide.section { background: var(--ink); } body.overview .slide.section.light { background: var(--paper); }
+body.overview .slide.figure > .scaled { display: flex; flex-direction: column; }
+body.overview .slide.title > .scaled, body.overview .slide.full > .scaled { padding: 0; }
 
 /* ---------- print: one slide per page, 16:9 ---------- */
 @media print {

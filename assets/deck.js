@@ -37,13 +37,13 @@
     var next = on === undefined ? !body.classList.contains('overview') : on;
     body.classList.toggle('overview', next);
     slides.forEach(function (s) {
-      if (next && !s.querySelector(':scope > .scaled')) {
+      var w = s.querySelector(':scope > .scaled');
+      if (next && !w) {
         var wrap = document.createElement('div'); wrap.className = 'scaled';
         while (s.firstChild) wrap.appendChild(s.firstChild);
         s.appendChild(wrap);
-      } else if (!next) {
-        var w = s.querySelector(':scope > .scaled');
-        if (w) { while (w.firstChild) s.appendChild(w.firstChild); s.removeChild(w); }
+      } else if (!next && w) {
+        while (w.firstChild) s.appendChild(w.firstChild); s.removeChild(w);
       }
     });
     fit();
