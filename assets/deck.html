@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="author" content="{{author}}">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../assets/img/rm-mark-500.png" type="image/png">
+<link rel="stylesheet" href="../assets/deck.css">
+</head>
+<body class="deck" data-deck="{{deck}}">
+<div class="viewport">
+  <div class="stage">
+{{slides}}
+  </div>
+</div>
+<div class="progress"></div>
+<div class="counter">1 / {{count}}</div>
+<div class="help">
+  <div class="box">
+    <h2>Keys</h2>
+    <table>
+      <tr><td><kbd>→</kbd> <kbd>space</kbd> <kbd>PgDn</kbd></td><td>next slide</td></tr>
+      <tr><td><kbd>←</kbd> <kbd>PgUp</kbd></td><td>previous slide</td></tr>
+      <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td>first / last</td></tr>
+      <tr><td><kbd>F</kbd></td><td>fullscreen</td></tr>
+      <tr><td><kbd>O</kbd></td><td>overview of all slides</td></tr>
+      <tr><td><kbd>S</kbd></td><td>speaker notes in a second window</td></tr>
+      <tr><td><kbd>?</kbd></td><td>this help</td></tr>
+    </table>
+    <p style="margin:14px 0 0;color:#999">Print (⌘P) gives one slide per page. Add <kbd>#12</kbd> to the address to open a slide.</p>
+  </div>
+</div>
+<script src="../assets/deck.js"></script>
+</body>
+</html>

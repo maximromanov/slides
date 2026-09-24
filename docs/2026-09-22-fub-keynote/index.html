@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Scholarly Communications…</title>
+<meta name="description" content="Keynote by Maxim Romanov at the workshop Beyond the Book (Freie Universität Berlin, 22 September 2026): digital humanities for Arabic and Islamic studies, the OpenITI corpus, and a computational periodization of the Arabic written tradition.">
+<meta name="author" content="Maxim Romanov">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../assets/img/rm-mark-500.png" type="image/png">
+<link rel="stylesheet" href="../assets/deck.css">
+</head>
+<body class="deck" data-deck="Digital Scholarly Communications…">
+<div class="viewport">
+  <div class="stage">
+<section class="slide full contain dark paper" data-title=""><img class="contain" src="img/beyond-the-book-poster.png" alt="Poster of the workshop Beyond the Book, Freie Universität Berlin, 21–22 September 2026"></section>
+<section class="slide title" data-title="Digital Scholarly Communications…"><div class="block"><p class="kicker">Beyond the Book · Freie Universität Berlin · 21–22 September 2026</p><h1>Digital Scholarly Communications…</h1><p class="sub">Keynote at <em>Beyond the Book: Digital Research, Presentation, and Sustainability</em></p><p class="who">Maxim Romanov</p><p class="meta">September 22, 2026 · The Evolution of Islamic Societies (c. 600–1600 CE), Universität Hamburg</p></div><div class="logos"><img src="img/logo-dfg.png" alt=""><img src="img/logo-uhh.png" alt=""><img src="img/logo-eis1600.png" alt=""></div></section>
+<section class="slide full contain paper" data-title=""><img class="contain" src="img/brill-page.png" alt="Cover of Digital Humanities for Arabic and Islamic Studies beside the publisher’s page"></section>
+<section class="slide text" data-title="What’s in the book?"><h1>What’s in the book?</h1>
+<p><strong>Three Chapters</strong></p>
+<ol>
+<li>A Pitch for the DH</li>
+<li>Digital Avatars and Metaobjects</li>
+<li>Computational Inquiries</li>
+</ol>
+<p class="callout" style="margin-top:40px">In short, this book asks: <em>What does it mean for our field when the entire library becomes a vademecum—something that, quite literally, “goes with me” everywhere? What new possibilities and responsibilities does this transformation bring?</em></p></section>
+<section class="slide full" data-title=""><img class="bg" src="img/michigan-campus.jpg" alt="The Diag at the University of Michigan in winter"><p><img src="img/michigan-logo.png" alt="University of Michigan" style="position:absolute;left:40px;top:30px;width:780px;height:auto"></p></section>
+<section class="slide full" data-title=""><img class="bg" src="img/sherman-jackson.jpg" alt="Prof. Sherman Jackson"><div class="overlay tr"><em>al-Jāmiʿ al-Kabīr? Shamela?<br>C’mon, man, that is cheating!</em><span class="by">— Prof. Sherman Jackson</span></div></section>
+<section class="slide text" data-title="Tracing Concepts over time with The Secret Weapon"><h1>Tracing Concepts over time with <em>The Secret Weapon</em></h1>
+<div class="twocol">
+<div>
+<h3>Senior Scholar</h3>
+<p>Decades of notes. Thousands of hours in the stacks. This kind of work was the prerogative of senior scholars.</p>
+</div>
+<div>
+<h3>Graduate Student</h3>
+<p>One searchable library. Hundreds of classical Arabic texts. A senior scholar visibly unsettled. A tool never acknowledged.</p>
+</div>
+</div>
+
+<p class="bottom small" style="text-align:center;font-style:italic">“Why would he? These weren’t ‘real’ books. Only books needed to be cited.”</p></section>
+<section class="slide text" data-title="Not the first revolution, not the last…"><h1>Not the first revolution, not the last…</h1>
+<div class="chain">
+<div class="box"><span class="name">Oral/Aural</span></div>
+<div class="box"><span class="name">Written</span></div>
+<div class="box"><span class="name">Print</span></div>
+<div class="box hi"><span class="name">Digital</span></div>
+</div>
+
+<p class="muted" style="font-style:italic;margin-top:40px">Unlike classicists — who have been digitizing Greek and Latin texts since the 1980s — scholars of Arabic and Islamic studies had almost nothing to do with the appearance of our digital corpus.</p>
+
+<blockquote>“A scan through recent academic publications can easily leave the impression that our digital corpus does not exist at all, or if it does, it is of relatively little consequence.” — Travis Zadeh, 2016</blockquote></section>
+<section class="slide figure" data-title="Mountain of information"><h1>Mountain of information</h1><figure class="fig"><div class="imgs"><img src="img/fig-1-1-index-islamicus.png" alt="Cumulative number of publications about the Islamic world, 1920 to 2020"></div></figure></section>
+<section class="slide figure" data-title="Scholarship doubled between 2000 and 2020!"><h1>Scholarship <span class="accent">doubled</span> between 2000 and 2020!</h1><figure class="fig"><div class="imgs"><img src="img/fig-1-1-index-islamicus.png" alt="Cumulative number of publications about the Islamic world, 1920 to 2020"></div></figure></section>
+<section class="slide text" data-title="The Library That Arrived Unexpected"><h1>The Library That Arrived Unexpected</h1>
+<div class="stats">
+<div class="stat"><b>8,600+</b><span>classical Arabic texts</span></div>
+<div class="stat"><b>1 billion+</b><span>words in the corpus</span></div>
+<div class="stat"><b>1,300+</b><span>years of written Arabic</span></div>
+</div>
+
+<p style="text-align:center;font-style:italic;color:var(--muted);margin-top:50px">A treasure without a map. A library without a methodology.<br>A field that found itself unprepared.</p>
+
+<p class="bottom punch">What do we do when the entire library becomes a <span style="font-style:normal">vademecum</span>?!</p></section>
+<section class="slide text" data-title="OpenITI, v. 2023.1.8 — “clean”"><h1>OpenITI, v. 2023.1.8 — “clean”</h1>
+<div class="indent">
+<p>Our final subcorpus, based on version 2023.1.8, consisting solely of “clean” unique texts written up to 1400/1980:</p>
+<ul class="plain">
+<li>– 2,783 unique authors (156 fewer than in the set above, or 94.69%)</li>
+<li>– 7,058 unique texts (−407 fewer, or 94.55%)</li>
+<li>– 927.37 million tokens before cleaning</li>
+<li>– 868.81 million tokens after removal of most paraeditorial material and remaining “unclean” (93.68% of the uncleaned set)</li>
+</ul>
+</div></section>
+<section class="slide figure" data-title=""><figure class="fig"><div class="imgs"><img src="img/fig-2-31-chronological-volume.png" alt="Chronological distribution of the volume of the OpenITI subcorpus"></div></figure></section>
+<section class="slide text" data-title="But a corpus is also a historical source"><h1>But a corpus is also a historical source</h1>
+<ul class="indent">
+<li>Survival bias — what reached us</li>
+<li>Editorial / digitization bias — what modern scholars chose to publish</li>
+<li>Uneven genre and chronological coverage</li>
+</ul>
+
+<p class="bottom punch">Source criticism begins with the instrument.</p></section>
+<section class="slide figure" data-title=""><figure class="fig"><div class="imgs"><img src="img/fig-1-10-density-libraries.png" alt="Density plots of books by century in three libraries and the Hadiyyat al-ʿārifīn"></div></figure></section>
+<section class="slide figure" data-title=""><figure class="fig"><div class="imgs"><img src="img/openiti-mirrors-libraries.png" alt="Share of series total by century: Hadiyyat al-ʿārifīn, major libraries, and OpenITI unique texts"></div></figure></section>
+<section class="slide text" data-title="The Proposition: Four Domains"><h1>The Proposition: <em>Four Domains</em></h1>
+<div class="chain">
+<div class="box"><span class="num">I</span><span class="name">Digital Avatars</span><span class="desc">Machine-readable editions of manuscripts and printed books</span></div>
+<div class="box"><span class="num">II</span><span class="name">Metaobjects</span><span class="desc">Corpora, databases, and linked open data at scale</span></div>
+<div class="box"><span class="num">III</span><span class="name">Computational Methods</span><span class="desc">Statistics, stylometry, and NLP adapted for Arabic</span></div>
+<div class="box hi"><span class="num">IV</span><span class="name">Networks</span><span class="desc">Knowledge networks: text, person, place, and time connected</span></div>
+</div>
+
+<p class="small" style="text-align:center;font-style:italic;margin-top:30px">Each domain depends entirely on the success of the preceding ones — no shortcuts.</p></section>
+<section class="slide text" data-title="Digital Pragmatism: born from necessity, not ideology"><h1>Digital Pragmatism: <em>born from necessity, not ideology</em></h1>
+<p class="big" style="text-align:center;margin:40px 0 50px">It is truly sustainable only if you can do it <span class="accent" style="font-style:italic">alone</span>.</p>
+
+<ul class="plain small" style="max-width:1300px;margin:0 auto">
+<li>— Bare minimum technologies: limit without compromising necessary complexity</li>
+<li>— Learn them deeply: no dependency on external technical support</li>
+<li>— Automate repetition: your time is better spent elsewhere</li>
+</ul>
+
+<p class="bottom" style="text-align:center;color:var(--muted)">“Simple, but not simpler.”<br>“Laziness is the engine of the progress.”</p></section>
+<section class="slide text" data-title="Digital Pragmatism: born from necessity, not ideology"><h1>Digital Pragmatism: <em>born from necessity, not ideology</em></h1>
+<p class="big" style="text-align:center;margin:40px 0 50px">It is truly sustainable only if you can do it <span class="accent" style="font-style:italic">alone</span>.</p>
+
+<ul class="plain small" style="max-width:1300px;margin:0 auto">
+<li>— Bare minimum technologies: limit without compromising necessary complexity</li>
+<li>— Learn them deeply: no dependency on external technical support</li>
+<li>— Automate repetition: your time is better spent elsewhere</li>
+</ul>
+
+<p class="bottom" style="text-align:center;color:var(--muted)">“Simple, but not simpler.”<br>“Laziness is the engine of the progress.”</p>
+
+<div class="stat paper" style="position:absolute;right:120px;top:250px;min-width:0;padding:16px 28px;border-color:var(--red-soft);box-shadow:0 8px 24px rgba(0,0,0,.14)"><b style="font-size:44px;color:var(--red)">+ LLMs</b></div></section>
+<section class="slide split" data-title="The irony of new media"><h1>The irony of new media</h1><div class="cols w-40-60"><div class="col"><p><img alt="Socrates seated before a scroll, the Acropolis behind him" src="img/plato-phaedrus.jpg" /></p></div><div class="col"><div class="callout" style="margin-top:0">
+<div class="head">The classical critique of books</div>
+<p style="font-style:italic;margin:0 0 .3em">“If anyone asks them anything, they remain most solemnly silent.”</p>
+<span class="by">— Plato, Phaedrus 275d</span>
+<p class="small" style="margin:.6em 0 0">Writing was once suspect; today written texts are our scholarly gold standard.</p>
+</div>
+
+<div class="callout red">
+<div class="head">The modern parallel</div>
+<p style="margin:0 0 .3em"><strong>Now, knowledge from LLMs is suspect…</strong></p>
+<p class="accent" style="margin:0 0 .3em"><strong>…yet LLMs bring dialogue back to reading.</strong></p>
+<p class="small" style="margin:.4em 0 0">The ultimate irony: technology restores the interactive conversation Plato feared was lost.</p>
+</div></div></div><aside class="notes"><p>There is a certain historical irony here. In the Phaedrus, writing itself appears as an inferior technology of knowledge because a written text cannot answer back. More than two millennia later, we have made written scholarship the gold standard of academic knowledge. And now we are instinctively suspicious of another new medium. What interests me pedagogically about LLMs is that they unexpectedly restore one feature Socrates thought writing had lost: dialogue.</p></aside></section>
+<section class="slide full contain paper" data-title=""><img class="contain" src="img/arabic-quotes.png" alt="Two Arabic quotations: “So, imagine yourself in …” from al-Ḥāriṯ al-Muḥāsibī’s Kitāb al-tawahhum, and “I am taking y’all to …” from ʿAbd al-Ḥamīd Kišk’s al-Ḫuṭab al-minbariyyat"></section>
+<section class="slide agenda" data-title=""><ol><li class=""><span class="n">١</span><span>Case Study 1: Tracing Term Usage</span></li><li class=""><span class="n">٢</span><span>Case Study 2. Modeling Textual Typology</span></li><li class=""><span class="n">٣</span><span>Case Study 3. Charting Linguistic Evolution</span></li></ol></section>
+<section class="slide agenda" data-title=""><ol><li class="on"><span class="n">١</span><span>Case Study 1: Tracing Term Usage</span></li><li class=""><span class="n">٢</span><span>Case Study 2. Modeling Textual Typology</span></li><li class=""><span class="n">٣</span><span>Case Study 3. Charting Linguistic Evolution</span></li></ol></section>
+<section class="slide figure" data-title=""><figure class="fig"><div class="imgs"><img src="img/google-ngram-viewer.png" alt="Google Books Ngram Viewer: telegraph, telephone, television"></div></figure></section>
+<section class="slide text" data-title="Case Study 1: Tracing Term Usage"><h1>Case Study 1: Tracing Term Usage</h1>
+<div class="indent small" style="max-width:1400px">
+<p><strong>2.1 &nbsp; <em>From “The Devil’s Delusions” to Ḥadīṯ Studies</em></strong><br>
+Now that we have a general sense of how the OpenITI NgramReader works, let’s consider a more complex inquiry, this time into terminology central to the study of Ḥadīṯ. In the early 2000s, I made my first attempt at writing a PhD thesis at the Institute of Oriental Manuscripts of the Russian Academy of Sciences in my hometown of St. Petersburg. My dissertation focused on a close reading of “The Devil’s Delusions” (<em>Talbīs Iblīs</em>) by Ibn al-Jawzī (d. 597/1201), the renowned historian, traditionist, and—perhaps most importantly—Ḥanbalī preacher (<em>wāʿiẓ</em>) of Baġdād.</p>
+<p><strong>2.2 &nbsp; <em>Proposition 1: The Chronology of Transmission Terms</em></strong><br>
+<strong>2.3 &nbsp; <em>Proposition 2: The Decline of</em> Isnāds</strong><br>
+<strong>2.4 &nbsp; <em>Proposition 3: The Canonization of</em> Ḥadīṯ <em>Collections</em></strong></p>
+</div></section>
+<section class="slide figure" data-title=""><figure class="fig"><div class="imgs"><img src="img/fig-13-ngram-transmission.png" alt="NgramReader: relative frequencies of three transmission terms over time"></div><figcaption>ADHFAIS Appendix 1: NgramReader, 2025 (OpenITI, release 2023.1.7). Relative frequencies of anbaʾa-nā, aḫbara-nā, and ḥaddaṯa-nā, with LOESS smoothing.</figcaption></figure></section>
+<section class="slide figure" data-title=""><figure class="fig"><div class="imgs"><img src="img/fig-14-transmission-terms.png" alt="Transmission terms in the first four centuries of Islam"></div></figure></section>
+<section class="slide figure" data-title=""><figure class="fig"><div class="imgs"><img src="img/fig-15-transmission-aggregated.png" alt="All transmission terms aggregated"></div></figure></section>
+<section class="slide figure" data-title=""><figure class="fig"><div class="imgs"><img src="img/fig-17-full-vs-abbreviated.png" alt="Full transmission terms compared with their abbreviations"></div></figure></section>
+<section class="slide figure" data-title=""><figure class="fig"><div class="imgs"><img src="img/fig-18-kutub-sitta.png" alt="Mentions of al-kutub al-sittat over time"></div></figure></section>
+<section class="slide figure" data-title=""><figure class="fig"><div class="imgs"><img src="img/fig-19-authors-by-region.png" alt="Authors mentioning al-kutub al-sittat by century and region"></div></figure></section>
+<section class="slide agenda" data-title=""><ol><li class=""><span class="n">١</span><span>Case Study 1: Tracing Term Usage</span></li><li class="on"><span class="n">٢</span><span>Case Study 2. Modeling Textual Typology</span></li><li class=""><span class="n">٣</span><span>Case Study 3. Charting Linguistic Evolution</span></li></ol></section>
+<section class="slide text" data-title="Case Study 2. Modeling Textual Typology"><h1>Case Study 2. Modeling Textual Typology</h1>
+<ol class="small" style="max-width:1450px">
+<li><code>[B]</code> Biographical type (<em>tarājim</em>): mostly collections of biographies</li>
+<li><code>[E]</code> Exegetical type: interpretations of the Qurʾān (<em>tafsīr</em>)</li>
+<li><code>[G]</code> Graeco-Arabic (“Greek-esque”) type (<em>yūnāniyyāt</em>): translations from Greek and works on the development of Greek philosophy in Arabic (<em>falsafat</em>, predominantly Aristotelian)</li>
+<li><code>[H]</code> Historical type (<em>tawārīḫ</em>): mainly chronicles</li>
+<li><code>[F]</code> Legal type (<em>fiqh</em>): a broad variety of legal texts</li>
+<li><code>[L]</code> Linguistic type: a broad variety of grammatical, rhetorical, and lexicographical texts (<em>balāġat</em>, <em>naḥw</em>, <em>maʿājim luġawiyyat</em>)</li>
+<li><code>[M]</code> Medical type (<em>ṭibb</em>): mainly texts on Galenic medicine</li>
+<li><code>[P]</code> Poetic type (<em>šiʿr</em>): mainly collections of poetry (<em>dīwān</em>s)</li>
+<li><code>[K]</code> “Scholastic-theological” type: works of <em>kalām</em></li>
+<li><code>[Ḥ]</code> Tradition-based type: collections of <em>ḥadīṯ</em></li>
+</ol></section>
+<section class="slide figure frame" data-title=""><figure class="fig framed"><div class="imgs"><img src="img/table-9-altafsir.png" alt="Table 9: classification of 81 texts from altafsir.com"></div></figure></section>
+<section class="slide figure" data-title="Rolling Typological Assessment"><h1>Rolling Typological Assessment</h1><figure class="fig"><div class="imgs"><img src="img/fig-26-rolling-assessment.png" alt="Rolling typological assessment of Talbīs Iblīs"></div></figure></section>
+<section class="slide figure" data-title="Majmūʿāt Case"><h1>Majmūʿāt Case</h1><figure class="fig"><div class="imgs"><img src="img/fig-27-majmua.png" alt="Rolling assessment of an artificial majmūʿat"></div></figure></section>
+<section class="slide agenda" data-title=""><ol><li class=""><span class="n">١</span><span>Case Study 1: Tracing Term Usage</span></li><li class=""><span class="n">٢</span><span>Case Study 2. Modeling Textual Typology</span></li><li class="on"><span class="n">٣</span><span>Case Study 3. Charting Linguistic Evolution</span></li></ol></section>
+<section class="slide text" data-title="Case Study 3. Charting Linguistic Evolution"><h1>Case Study 3. Charting Linguistic Evolution</h1>
+<ul class="small" style="max-width:1400px">
+<li>The <strong>pre-classical period</strong> lasts from the appearance of Islam until the end of the Umayyad period (c. 1–132/622–750).</li>
+<li>The <strong>classical period</strong> corresponds roughly to the ʿAbbāsid period (132–656/750–1258).</li>
+<li>The <strong>postclassical period</strong> encompasses the reign of the Mamlūks (648–923/1250–1517) and most of that of the Ottomans.</li>
+<li>The <strong>modern period</strong> (from Napoleon’s invasion of Egypt in 1213/1798), extending to the present day.</li>
+</ul></section>
+<section class="slide split" data-title="Case Study 3. Charting Linguistic Evolution"><h1>Case Study 3. Charting Linguistic Evolution</h1><div class="cols w-60-40"><div class="col"><ul class="plain" style="color:var(--muted)">
+<li>Preclassical &nbsp; c. 622–750</li>
+<li>Classical &nbsp; 750–1258</li>
+<li>Postclassical &nbsp; 1258–1798</li>
+<li>Modern &nbsp; 1798–</li>
+</ul>
+
+<div class="pills">
+<div class="pill"><b>Preclassical</b>600–750</div>
+<div class="pill"><b>Classical</b>750–1258</div>
+<div class="pill"><b>Postclassical</b>1258–1798</div>
+<div class="pill"><b>Modern</b>1798–</div>
+</div>
+
+<p class="punch" style="text-align:center;margin-top:40px">Where do these lines come from?</p></div><div class="col"><div class="callout" style="margin-top:60px">
+<p class="small" style="margin:0 0 .6em"><em>Geschichte der arabischen Litteratur</em>, 5 vols. (1896–1943)</p>
+<p class="small" style="margin:0 0 .6em"><em>Cambridge History of Arabic Literature</em>, 6 vols. (1983–2006)</p>
+<p class="small" style="margin:0"><em>Encyclopedia of Arabic Language and Linguistics</em> (Brill)</p>
+</div></div></div></section>
+<section class="slide text" data-title="A model the field built impressionistically"><h1>A model the field built impressionistically</h1>
+<div class="indent">
+<p>Periodization is unavoidable:<br>
+<span class="indent" style="display:block;font-style:italic;color:var(--muted)">It organizes research, explanation, teaching.<br>It is a major historian’s tool.</span></p>
+<p>But the architecture of the standard scheme was never systematically derived from the written tradition as a whole.</p>
+</div>
+
+<p class="bottom punch">What if we ask the written tradition itself?</p></section>
+<section class="slide text" data-title="The obvious casualty: the Mamluk centuries"><h1>The obvious casualty: the Mamluk centuries</h1>
+<div class="indent">
+<p><strong>c. 1250–1517</strong>: one of the busiest periods of Arabic textual production</p>
+<p>Yet usually absorbed into a vast “postclassical” period, often called the “<em>Period of Decadence</em>”</p>
+<p>The category hides distinctiveness instead of explaining it</p>
+</div>
+
+<p class="bottom punch">Does the corpus itself see a coherent middle period?</p></section>
+<section class="slide section light" data-title="First witness: Corpus"><div class="inner"><p class="kicker">Two witnesses</p>
+<h1>First witness: Corpus</h1></div></section>
+<section class="slide figure" data-title=""><figure class="fig"><div class="imgs"><img src="img/fig-2-31-chronological-volume.png" alt="Chronological distribution of the volume of the OpenITI subcorpus"></div></figure></section>
+<section class="slide text" data-title="Two lenses on change"><h1>Two lenses on change</h1>
+<div class="indent">
+<p><strong>Keywords</strong> (TF–IDF): <em class="muted">what texts are about</em><br>
+<strong>Style</strong> (MFV): <em class="muted">how texts are written</em></p>
+<ul>
+<li><strong>Hundreds of parameter combinations</strong></li>
+<li><strong>3,000 random samples (MFV)</strong></li>
+<li><strong>72,000 dendrograms » 48 consensus trees</strong></li>
+</ul>
+<p>Do not trust a tree. Ask what survives across trees.</p>
+</div>
+
+<div class="pills" style="position:absolute;right:120px;bottom:90px;width:560px">
+<div class="pill"><b>Content</b><em>keywords / TF–IDF</em></div>
+<div class="pill on"><b>Style</b><em>most frequent vocabulary</em></div>
+</div></section>
+<section class="slide split vcenter" data-title="Style"><h1>Style</h1><div class="cols w-35-65"><div class="col"><p class="big muted" style="font-style:italic">stylometry</p>
+<ul class="small" style="font-style:italic">
+<li>distributions of frequencies of most frequent words (function words) are unique to individual:</li>
+</ul>
+<ul class="small" style="font-style:italic;list-style:disc">
+<li><strong class="accent">authors</strong></li>
+<li>periods</li>
+</ul></div><div class="col center"><p><img alt="Unrooted dendrogram of authors’ writings clustered by stylometric distance" src="img/dendrogram-authors.png" /></p></div></div></section>
+<section class="slide split vcenter" data-title="Style"><h1>Style</h1><div class="cols w-35-65"><div class="col"><p class="big muted" style="font-style:italic">stylometry</p>
+<ul class="small" style="font-style:italic">
+<li>distributions of frequencies of most frequent words (function words) are unique to individual:</li>
+</ul>
+<ul class="small" style="font-style:italic;list-style:disc">
+<li>authors</li>
+<li><strong class="accent">periods</strong></li>
+</ul>
+<p class="small" style="margin-top:40px"><strong>Jurjī Zaydān’s writings</strong><br>(1) 1891–1902 · (2) 1903–1905 · (3) 1906–1914</p></div><div class="col center"><p><img alt="Dendrogram of Jurjī Zaydān’s writings in three periods" src="img/dendrogram-zaydan.png" /></p></div></div></section>
+<section class="slide figure" data-title=""><figure class="fig"><div class="imgs"><img src="img/dendrogram-single.png" alt="A single dendrogram of corpus samples by 50-year interval"></div><figcaption>A single dendrogram of 50-lunar-year samples of the corpus, colored by macroperiod. Hijrī dates!</figcaption></figure></section>
+<section class="slide figure" data-title=""><figure class="fig two"><div class="imgs"><img src="img/dendrograms-72000-a.png" alt="Grids of small dendrograms"><img src="img/dendrograms-72000-b.png" alt="Grids of small dendrograms"></div><figcaption>72,000 dendrograms: hundreds of parameter combinations over 3,000 random samples.</figcaption></figure></section>
+<section class="slide figure" data-title=""><figure class="fig two"><div class="imgs"><img src="img/stripes-a.png" alt="Summary stripe diagrams, stylometric tests"><img src="img/stripes-b.png" alt="Summary stripe diagrams, keyword tests"></div><figcaption>Summary stripe diagrams: what survives across the trees.</figcaption></figure></section>
+<section class="slide text" data-title="Major periods"><h1>Major periods</h1>
+<ul class="indent">
+<li>The early macroperiod (622–1200)</li>
+<li>The middle macroperiod (1200–1540)</li>
+<li>The late macroperiod (1540–1980)</li>
+</ul>
+
+<div class="indent small" style="margin-top:50px">
+<p><strong>Results of majority of 72,000 dendrograms:</strong></p>
+<p class="indent tiny">3,000 stylometric samples (1,500 discrete; 1,500 overlapping)<br>12 distance metrics, 2 major clustering algorithms;<br>48 tf-idf keyword tests.</p>
+</div></section>
+<section class="slide text" data-title="The middle macroperiod (c. 1200–1540)"><h1>The middle macroperiod (c. 1200–1540)</h1>
+<ul class="indent">
+<li><em>Thematic profiles</em> isolate it as a distinct period</li>
+<li><em>Stylometric profiles</em> often attach it to the early macroperiod</li>
+<li>The language evolves slower than the written tradition: new distinct themes, but older language</li>
+</ul>
+
+<p class="bottom punch">Two clocks: themes shift faster than language.</p></section>
+<section class="slide text" data-title="A different macrohistory of the written tradition"><h1>A different macrohistory of the written tradition</h1>
+<ul class="plain indent">
+<li>Early: c. 622–1200</li>
+<li>Middle: c. 1200–1540</li>
+<li>Late: c. 1540–1980</li>
+<li>Boundaries are transition zones, not event dates</li>
+</ul>
+
+<div class="pills timeline" style="max-width:1300px;margin:60px auto 0">
+<div class="pill"><b>Early</b>c. 622–1200</div>
+<div class="pill on"><b>Middle</b>c. 1200–1540</div>
+<div class="pill"><b>Late</b>c. 1540–1980</div>
+</div></section>
+<section class="slide section light" data-title="Second witness: Bio-Bibliographical Collection"><div class="inner"><p class="kicker">Two witnesses</p>
+<h1>Second witness: Bio-Bibliographical Collection</h1></div></section>
+<section class="slide text" data-title="Second witness: 8,800 authors"><h1>Second witness: 8,800 authors</h1>
+<div class="indent">
+<p>Ismāʿīl Bāšā al-Baġdādī (d. 1338/1919)</p>
+<p class="indent"><em>Hadiyyat al-ʿārifīn</em><br><em>c. 8,800 authors; 40,000+ titles</em><br>A bio-bibliographical model of the tradition</p>
+<p><strong>Independent of the corpus experiments</strong></p>
+</div>
+
+<div class="stats" style="position:absolute;right:120px;bottom:90px;width:620px">
+<div class="stat red"><b>8,800</b><span>authors</span></div>
+<div class="stat paper"><b>40,000+</b><span>titles</span></div>
+</div></section>
+<section class="slide figure" data-title="c. 600–1200: an Iraqi-Iranian world"><h1>c. 600–1200: an Iraqi-Iranian world</h1>
+<div class="stat red" style="position:absolute;right:120px;bottom:90px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 80% Iraq + Iran</b></div><figure class="fig"><div class="imgs"><img src="img/map-early.png" alt="Map of the Islamic world with the flows of scholars in the early macroperiod, centred on Iraq and Iran"></div></figure></section>
+<section class="slide figure" data-title="c. 600–1200: an Iraqi-Iranian world"><h1>c. 600–1200: an Iraqi-Iranian world</h1>
+<div class="stat red" style="position:absolute;right:120px;bottom:90px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 80% Iraq + Iran</b></div><figure class="fig"><div class="imgs"><img src="img/chart-early.png" alt="Charts of annual production for Iraq and the Iranian provinces"></div><figcaption>Annual production by region in the early macroperiod: Iraq (al-ʿIrāq) and the Iranian provinces.</figcaption></figure></section>
+<section class="slide figure" data-title="c. 1200–1540: a Syrian-Egyptian world"><h1>c. 1200–1540: a Syrian-Egyptian world</h1>
+<div class="stat red" style="position:absolute;right:120px;bottom:90px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 55% Egypt + Syria</b></div><figure class="fig"><div class="imgs"><img src="img/map-middle.png" alt="Map of the Islamic world with the flows of scholars in the middle macroperiod, centred on Egypt and Syria"></div></figure></section>
+<section class="slide figure" data-title="c. 1200–1540: a Syrian-Egyptian world"><h1>c. 1200–1540: a Syrian-Egyptian world</h1>
+<div class="stat red" style="position:absolute;right:120px;bottom:90px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 55% Egypt + Syria</b></div><figure class="fig"><div class="imgs"><img src="img/chart-middle.png" alt="Charts of annual production for Syria and Egypt"></div><figcaption>Annual production by region in the middle macroperiod: Syria (al-Šām) and Egypt (Miṣr).</figcaption></figure></section>
+<section class="slide figure" data-title="After c. 1540–1900: a new polycentric geography"><h1>After c. 1540–1900: a new polycentric geography</h1>
+<div class="stat red" style="position:absolute;left:200px;bottom:90px;min-width:0;padding:14px 28px"><b style="font-size:36px">≈ 30% Anatolia</b></div><figure class="fig"><div class="imgs"><img src="img/map-late.png" alt="Map of the Islamic world with the flows of scholars in the late macroperiod, with Anatolia and India prominent"></div></figure></section>
+<section class="slide figure" data-title="After c. 1540–1900: a new polycentric geography"><h1>After c. 1540–1900: a new polycentric geography</h1>
+<div class="stat red" style="position:absolute;left:200px;bottom:90px;min-width:0;padding:14px 28px"><b style="font-size:36px">≈ 30% Anatolia</b></div><figure class="fig"><div class="imgs"><img src="img/chart-late.png" alt="Charts of annual production for India and Anatolia"></div><figcaption>Annual production by region in the late macroperiod: India (Hind) and Anatolia (al-Rūm).</figcaption></figure></section>
+<section class="slide text" data-title="Two transitions: 1200–1300 and 1500–1600"><h1>Two transitions: <strong>1200–1300</strong> and 1500–1600</h1>
+<ul class="indent">
+<li>Westward movement from Iraq and Iran begins before the Mongol conquest</li>
+<li>Andalusi scholars move east as Christian expansion advances in Iberia</li>
+</ul>
+
+<div class="callout red bottom" style="left:200px;right:200px"><strong>Baghdad’s fall occurs inside an already-moving geography</strong></div></section>
+<section class="slide figure" data-title="Patterns: Great Cities of Islam"><h1>Patterns: Great Cities of Islam</h1><figure class="fig"><div class="imgs"><img src="img/baghdad-biographies.png" alt="Number of biographies per 20 years for Baghdad, natives and visitors, with the Mongol sack of 656/1258 marked"></div></figure></section>
+<section class="slide figure" data-title="Two transitions: 1200–1300 and 1500–1600"><h1>Two transitions: <strong>1200–1300</strong> and 1500–1600</h1><figure class="fig"><div class="imgs"><img src="img/map-transition-1.png" alt="Map of the first major transition, with movements from Iraq and Iran westward and from al-Andalus eastward"></div></figure></section>
+<section class="slide text" data-title="Two transitions: 1200–1300 and 1500–1600"><h1>Two transitions: 1200–1300 and <strong>1500–1600</strong></h1>
+<ul class="indent">
+<li>The rise of the Ottoman Empire marks the emergence of a Turco-Arabic world under Ottoman control</li>
+<li>and the parallel development of an Indo-Iranian sphere.</li>
+</ul></section>
+<section class="slide figure" data-title="Two transitions: 1200–1300 and 1500–1600"><h1>Two transitions: 1200–1300 and <strong>1500–1600</strong></h1><figure class="fig"><div class="imgs"><img src="img/map-transition-2.png" alt="Map of the second major transition, with flows toward Anatolia and India"></div></figure></section>
+<section class="slide text" data-title="Two independent witnesses"><h1>Two independent witnesses</h1>
+<div class="indent">
+<p><strong>CORPUS of TEXTS</strong><br><span class="muted">lexical/thematic and stylometric change</span></p>
+<p style="margin-top:40px"><strong>REGISTER of AUTHORS</strong><br><span class="muted">cultural geography over time</span></p>
+</div>
+
+<p class="bottom punch">Different biases. Different assumptions. Similar macro-boundaries.</p></section>
+<section class="slide text" data-title="Three long cultural regimes (macroperiods)"><h1>Three long cultural regimes (macroperiods)</h1>
+<ol class="indent">
+<li>The early Iraqi-Iranian &nbsp;·&nbsp; <em>c. 622–1200</em></li>
+<li>The middle Syrian-Egyptian &nbsp;·&nbsp; <em>c. 1200–1540</em></li>
+<li>The late Turco-Indian &nbsp;·&nbsp; <em>c. 1540–1980</em></li>
+</ol>
+
+<p class="indent small" style="font-style:italic;margin-top:50px">(with discernable sub-periods inside each)</p></section>
+<section class="slide figure frame" data-title=""><figure class="fig framed"><div class="imgs"><img src="img/table-3-34-regions.png" alt="Table 3.34: books by region in the early, middle, and late macroperiods"></div></figure></section>
+<section class="slide text" data-title="Periods are also places"><h1>Periods are also places</h1>
+<ul class="indent">
+<li><strong>Traditional periodization</strong> assumes universality</li>
+<li><strong>Computational periodization</strong> demonstrates that <em>language and textual production are aligned in time with changing cultural geography</em> *</li>
+</ul>
+
+<p class="punch" style="text-align:center;margin-top:50px">Each period gets not just a name, but also a map.</p>
+
+<p class="bottom tiny" style="text-align:right">(* to be redone on the EIS1600 data: 600,000 bios &gt; c. 130,000 individuals)</p></section>
+<section class="slide text" data-title="What changes if we accept this model?"><h1>What changes if we accept this model?</h1>
+<ul class="indent">
+<li>The Mamluk centuries become a coherent middle period, <em>not the beginning of decline</em></li>
+<li><strong>1258</strong> is recontextualized as an event within a longer transition (1200–1300)</li>
+<li><strong>c. 1540</strong> emerges as a major structural break (essentially, the end of the Mamluk period)</li>
+<li>Chronology &amp; geography become part of the same explanation</li>
+</ul></section>
+<section class="slide full contain paper" data-title=""><img class="contain" src="img/brill-page-2.png" alt="Cover of Digital Humanities for Arabic and Islamic Studies beside the publisher’s page"></section>
+<section class="slide text" data-title="Afterword: farḍ al-kifāyaŧ"><h1>Afterword: <em>farḍ al-kifāyaŧ</em></h1>
+<p class="indent small" style="max-width:1400px">A communal duty in Islamic law: if enough members of a community fulfill it, the rest are absolved. If all neglect it, the entire community is accountable.</p>
+
+<div class="indent" style="margin-top:50px;font-style:italic;color:var(--muted)">
+<p>No one else will digitize our texts.</p>
+<p>No one will create our corpora.</p>
+<p>No one will develop methods for our research questions.</p>
+<p class="accent" style="font-weight:600">This is our responsibility, and ours alone.</p>
+</div></section>
+<section class="slide split no-strip" data-title=""><div class="cols w-35-65"><div class="col"><p><img alt="Cover of Digital Humanities for Arabic and Islamic Studies" src="img/book-cover.png" /></p></div><div class="col"><p class="kicker">In short, this book asks:</p>
+<p class="big" style="font-style:italic">«What does it mean for our field when the entire library becomes a <span style="font-style:normal">vademecum</span> — something that, quite literally, “goes with me” everywhere?»</p>
+
+<div class="twocol small" style="grid-template-columns:1fr 1fr 1fr;gap:30px;margin-top:30px">
+<div><h3 style="font-size:28px;font-style:normal;border-top:2px solid var(--red);padding-top:10px">Chapter 1</h3><p>Why we should even bother—a question that remains at the heart of every discussion about the digital.</p></div>
+<div><h3 style="font-size:28px;font-style:normal;border-top:2px solid var(--red);padding-top:10px">Chapter 2</h3><p>How we might go about harnessing the new digital opportunities within the field.</p></div>
+<div><h3 style="font-size:28px;font-style:normal;border-top:2px solid var(--red);padding-top:10px">Chapter 3</h3><p>What we can expect to accomplish:<br>1) trace term usage<br>2) model textual typology<br>3) chart linguistic evolution</p></div>
+</div>
+
+<p class="small" style="margin-top:30px">Altogether, the book proposes a vision of digital humanities relevant to the field of <strong>Arabic and Islamic studies</strong>. It argues that this venture is not about cheating, but about keeping up with the rest of the world and ensuring that the future of the field remains in our own hands.</p></div></div></section>
+  </div>
+</div>
+<div class="progress"></div>
+<div class="counter">1 / 73</div>
+<div class="help">
+  <div class="box">
+    <h2>Keys</h2>
+    <table>
+      <tr><td><kbd>→</kbd> <kbd>space</kbd> <kbd>PgDn</kbd></td><td>next slide</td></tr>
+      <tr><td><kbd>←</kbd> <kbd>PgUp</kbd></td><td>previous slide</td></tr>
+      <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td>first / last</td></tr>
+      <tr><td><kbd>F</kbd></td><td>fullscreen</td></tr>
+      <tr><td><kbd>O</kbd></td><td>overview of all slides</td></tr>
+      <tr><td><kbd>S</kbd></td><td>speaker notes in a second window</td></tr>
+      <tr><td><kbd>?</kbd></td><td>this help</td></tr>
+    </table>
+    <p style="margin:14px 0 0;color:#999">Print (⌘P) gives one slide per page. Add <kbd>#12</kbd> to the address to open a slide.</p>
+  </div>
+</div>
+<script src="../assets/deck.js"></script>
+</body>
+</html>
