@@ -22,25 +22,21 @@ logos:
 --- figure
 
 ![](img/5c83fa97b0.jpg)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 5 -->
 --- figure
 
 ![](img/c29d36c8ee.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 6 -->
 --- figure
 # Mountain of research
 ![](img/192c1259ed.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 7 -->
 --- figure
 # Mountain of research
 ![](img/5004ae6b22.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 8 -->
 --- text
@@ -66,7 +62,6 @@ logos:
 --- figure
 # Mountain of primary sources as well…
 ![](img/2cab2ad42c.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 11 -->
 --- section light
@@ -76,7 +71,6 @@ logos:
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/ed67394fe7.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 13 -->
 --- figure
@@ -87,13 +81,11 @@ logos:
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/2b47d663fb.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 15 -->
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/3b54c948ef.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 16 -->
 --- figure
@@ -107,37 +99,31 @@ logos:
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/b88de1b805.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 18 -->
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/0889323b45.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 19 -->
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/8e1b5456c3.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 20 -->
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/2d6a4f5ab1.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 21 -->
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/9a8958ddc3.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 22 -->
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/7cff777006.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 23 -->
 --- section light
@@ -148,31 +134,26 @@ logos:
 --- figure
 
 ![](img/14f8d26424.jpg)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 25 -->
 --- figure
 
 ![](img/7bd3e857be.jpg)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 26 -->
 --- figure
 
 ![](img/c6e3e823f4.jpg)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 27 -->
 --- figure
 
 ![](img/8b115578ce.jpg)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 28 -->
 --- figure
 
 ![](img/9a2a322aad.jpg)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 29 -->
 --- split w-40-60 vcenter
@@ -195,31 +176,26 @@ logos:
 --- figure
 
 ![](img/704cef3955.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 32 -->
 --- figure
 
 ![](img/4b626d0e66.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 33 -->
 --- figure
 
 ![](img/0070ebc2e7.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 34 -->
 --- figure
 
 ![](img/b65526c86d.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 35 -->
 --- figure
 
 ![](img/c2d6e4f22d.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 36 -->
 --- section light
@@ -235,73 +211,61 @@ logos:
 --- figure
 
 ![](img/1725c8e3b7.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 39 -->
 --- figure
 
 ![](img/ffee7d1889.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 40 -->
 --- figure
 
 ![](img/b88fe51b01.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 41 -->
 --- figure
 
 ![](img/51707c58b9.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 42 -->
 --- figure
 
 ![](img/f17efa7b8d.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 43 -->
 --- figure
 
 ![](img/959d69d0b7.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 44 -->
 --- figure
 
 ![](img/2e9ac435d7.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 45 -->
 --- figure
 
 ![](img/215169430f.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 46 -->
 --- figure
 
 ![](img/7da06e5fc0.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 47 -->
 --- figure
 
 ![](img/b33ea677c1.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 48 -->
 --- figure
 
 ![](img/6a9e49aef1.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 49 -->
 --- figure
 
 ![](img/f6f8c5e321.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 50 -->
 --- section light
@@ -396,7 +360,6 @@ logos:
 --- figure
 # Example of Pattern Tracing
 ![](img/1ee14aba0c.jpg)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 59 -->
 --- text
@@ -444,7 +407,6 @@ logos:
 --- figure
 
 ![](img/17f0f017b9.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 64 -->
 --- figure
@@ -554,7 +516,6 @@ For our needs the accuracy is kind of irrelevant because we want to separate the
 --- figure
 # Annotated Text
 ![](img/b85a4bcabf.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 Notes:
 Onomastic Information
@@ -607,7 +568,6 @@ Toponyms: identification is based on gazetteer, will come back to that gazetteer
 --- figure
 # Biographical Data: Same-Person Annotation Tool
 ![](img/a087ca64af.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 74 -->
 --- text
@@ -756,28 +716,24 @@ Places are grouped into provinces by color
 # Geographical Data: Modeling Regions - Voronoi Magnets
 ![](img/a463f8f2eb.png)
 <p class="caption" style="position:absolute;right:24px;top:6px;font-size:18px">Data: Prosopografía de los ulemas de al-Andalus. Disponible en [https://www.eea.csic/pua/](https://www.eea.csic/pua/)</p>
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 83 -->
 --- figure
 # Geographical Data: Modeling Regions - Voronoi Magnets
 ![](img/8bf88073f8.png)
 <p class="caption" style="position:absolute;right:24px;top:6px;font-size:18px">Data: Prosopografía de los ulemas de al-Andalus. Disponible en [https://www.eea.csic/pua/](https://www.eea.csic/pua/)</p>
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 84 -->
 --- figure
 # Geographical Data: Modeling Regions - Voronoi Magnets (380AH)
 ![](img/f8220e7d38.png)
 <p class="caption" style="position:absolute;right:24px;top:6px;font-size:18px">Data: Prosopografía de los ulemas de al-Andalus. Disponible en [https://www.eea.csic/pua/](https://www.eea.csic/pua/)</p>
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 85 -->
 --- figure
 # Geographical Data: Modeling Regions - Voronoi Magnets (570 AH)
 ![](img/f4f07c1603.png)
 <p class="caption" style="position:absolute;right:24px;top:6px;font-size:18px">Data: Prosopografía de los ulemas de al-Andalus. Disponible en [https://www.eea.csic/pua/](https://www.eea.csic/pua/)</p>
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 86 -->
 --- text
@@ -808,13 +764,11 @@ Places are grouped into provinces by color
 --- figure
 # Patterns: Regional Representations / Floruits (?)
 ![](img/02e9e113d1.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 91 -->
 --- figure
 # Patterns: Regional Representations / Floruits (?)
 ![](img/ed6e018602.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 92 -->
 --- section light
@@ -825,61 +779,51 @@ Places are grouped into provinces by color
 --- figure
 # Patterns: Overall Transregional Mobility
 ![](img/e0d792a11b.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 94 -->
 --- figure
 # Patterns: Connections
 ![](img/5682e1624e.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 95 -->
 --- figure
 # Patterns: Connections
 ![](img/5b8ee1bd02.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 96 -->
 --- figure
 # Patterns: Connections
 ![](img/3941693bb3.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 97 -->
 --- figure
 # Patterns: Connections
 ![](img/6af4d1cf97.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 98 -->
 --- figure
 # Patterns: Connections
 ![](img/ebad4acbd1.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 99 -->
 --- figure
 # Patterns: Connections
 ![](img/4dffae50f5.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 100 -->
 --- figure
 # Patterns: Connections
 ![](img/af71b03b4c.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 101 -->
 --- figure
 # Patterns: Connections in the 6th century AH
 ![](img/9c8ec3d9a1.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 102 -->
 --- figure
 # Patterns: Connections in the 6th century AH
 ![](img/9c8ec3d9a1.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 103 -->
 --- section light
@@ -890,58 +834,49 @@ Places are grouped into provinces by color
 --- figure
 # Patterns: Regions
 ![](img/733a073e81.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 105 -->
 --- figure
 # Patterns: Regions
 ![](img/a7e1ebb0fa.png)
 ![](img/993e7db1cb.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 106 -->
 --- figure
 # Patterns: Regions
 ![](img/7a1c0fd988.png)
 ![](img/971cace51f.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 107 -->
 --- figure
 # Patterns: Regions
 ![](img/f17e979a54.png)
 ![](img/ee9e221e23.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 108 -->
 --- figure
 # Patterns: Connections (700–1200 CE)
 ![](img/735517e666.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 109 -->
 --- figure
 # Patterns: Connections
 ![](img/57c0bcf572.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 110 -->
 --- figure
 # Patterns: Connections
 ![](img/653a9c78ae.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 111 -->
 --- figure
 # Patterns: Connections
 ![](img/5c042383b3.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 112 -->
 --- figure
 # Patterns: Connections (1700–1900)
 ![](img/5b5b913a46.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 113 -->
 --- section light
@@ -952,66 +887,56 @@ Places are grouped into provinces by color
 --- figure
 # Patterns: Great Cities of Islam - Early
 ![](img/a3a819edad.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 115 -->
 --- figure
 # Patterns: Great Cities of Islam - Early
 ![](img/de8aba0827.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 116 -->
 --- figure
 # Patterns: Great Cities of Islam - Early
 ![](img/3ade5cb0c5.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 117 -->
 --- figure
 # Patterns: Great Cities of Islam - Early
 ![](img/ad111b4708.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 118 -->
 --- figure
 # Patterns: Great Cities of Islam - Middle
 ![](img/e53c0d5939.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 
 <!-- 119 -->
 --- figure
 # Patterns: Great Cities of Islam - Middle
 ![](img/fac0a9cd2c.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 
 <!-- 120 -->
 --- figure
 # Patterns: Great Cities of Islam - Middle
 ![](img/37b3875ab9.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 
 <!-- 121 -->
 --- figure
 # Patterns: Great Cities of Islam - Middle
 ![](img/20b6cd2268.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 
 <!-- 122 -->
 --- figure
 # Patterns: Great Cities of Islam - Late
 ![](img/393ac8c546.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 
 <!-- 123 -->
 --- figure
 # Patterns: Great Cities of Islam - Late
 ![](img/94f7fb7346.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 <p class="caption" style="font-size:20px">[Miṣr / “Egypt” — also a reference to al-Qāhiraŧ / Cairo]</p>
 
@@ -1019,7 +944,6 @@ Places are grouped into provinces by color
 --- figure
 # Patterns: Great Cities of Islam - Late
 ![](img/53ea3a7527.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 
 <!-- 125 -->
@@ -1031,79 +955,66 @@ Places are grouped into provinces by color
 --- figure
 # Patterns:
 ![](img/93a463b9a0.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 127 -->
 --- figure
 # Patterns:
 ![](img/45e620bb84.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 128 -->
 --- figure
 # Patterns:
 ![](img/ca43abf5f9.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 129 -->
 --- figure
 # Patterns:
 ![](img/4c34ff0e52.jpg)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 130 -->
 --- figure
 # Patterns:
 ![](img/ffad23c942.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 131 -->
 --- figure
 # Patterns:
 ![](img/323e1590ca.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 132 -->
 --- figure
 # Patterns:
 ![](img/1f29880acd.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 133 -->
 --- figure
 # Patterns:
 ![](img/033046d035.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 134 -->
 --- figure
 # Patterns:
 ![](img/6ea9169e30.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 135 -->
 --- figure
 # Patterns:
 ![](img/332aaa20b2.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 136 -->
 --- figure
 # Patterns: Islamic Sciences
 ![](img/aeddd8298f.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 137 -->
 --- figure
 # Patterns: Geography of Legal Schools
 ![](img/18559d9170.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 138 -->
 --- figure
 # Patterns: Life Spans of Biographees
 ![](img/4e8dafff3a.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 139 -->
 --- split w-60-40 vcenter

@@ -113,7 +113,7 @@ def classify(s):
         ims = '\n'.join(f'![]({copy_img(i["image"])})' for i in sorted(imgs, key=lambda i: (i['y'], i['x'])))
         extras = ''
         for sh in body:
-            txt = ' '.join(md_inline(p['t']) for p in sh['text'])
+            txt = ' '.join(md_inline(p['t']) for p in sh['text'] if p['t'].strip() not in ('‹#›', '<#>'))
             if not txt.strip(): continue
             if sh['y'] <= 3: extras += f'\n<p class="caption" style="position:absolute;right:24px;top:6px;font-size:18px">{txt}</p>'
             elif sh['x'] >= 60 and sh['y'] < 40: extras += f'\n<div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">{txt}</b></div>'

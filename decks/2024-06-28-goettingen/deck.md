@@ -30,7 +30,6 @@ logos:
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/ed67394fe7.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 6 -->
 --- figure
@@ -41,7 +40,6 @@ logos:
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/2b47d663fb.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 8 -->
 --- text
@@ -59,7 +57,6 @@ logos:
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/3b54c948ef.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 10 -->
 --- figure
@@ -73,37 +70,31 @@ logos:
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/b88de1b805.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 12 -->
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/0889323b45.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 13 -->
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/8e1b5456c3.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 14 -->
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/2d6a4f5ab1.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 15 -->
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/9a8958ddc3.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 16 -->
 --- figure
 # OpenITI as a proxy to AWT
 ![](img/7cff777006.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 17 -->
 --- figure
@@ -329,7 +320,6 @@ logos:
 --- figure
 # Biographical Collections: a typical biography
 ![](img/8c4fef8fe4.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 55 -->
 --- text
@@ -428,37 +418,31 @@ logos:
 --- figure
 # Patterns: Overall Graph
 ![](img/d2c048cdb7.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 65 -->
 --- figure
 # Patterns: Geography of the Islamic World - Geographical Texts
 ![](img/fb167b6c89.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 66 -->
 --- figure
 # Patterns: Geography of the Islamic World - Biographical Texts
 ![](img/a9b569fdd4.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 67 -->
 --- figure
 # Patterns: Regional Representations / Floruits (?)
 ![](img/54b23093a0.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 68 -->
 --- figure
 # Patterns: Regional Representations / Floruits (?)
 ![](img/02e9e113d1.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 69 -->
 --- figure
 # Patterns: Regional Representations / Floruits (?)
 ![](img/ed6e018602.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 70 -->
 --- section light
@@ -469,114 +453,96 @@ logos:
 --- figure
 # Patterns: Connections
 ![](img/5682e1624e.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 72 -->
 --- figure
 # Patterns: Connections
 ![](img/5b8ee1bd02.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 73 -->
 --- figure
 # Patterns: Connections
 ![](img/3941693bb3.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 74 -->
 --- figure
 # Patterns: Connections
 ![](img/6af4d1cf97.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 75 -->
 --- figure
 # Patterns: Connections
 ![](img/ebad4acbd1.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 76 -->
 --- figure
 # Patterns: Connections
 ![](img/4dffae50f5.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 77 -->
 --- figure
 # Patterns: Connections
 ![](img/af71b03b4c.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 78 -->
 --- figure
 # Patterns: Connections in the 6th century AH
 ![](img/9c8ec3d9a1.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 79 -->
 --- figure
 # Patterns: Connections in the 6th century AH
 ![](img/9c8ec3d9a1.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 80 -->
 --- figure
 # Patterns: Great Cities of Islam - Early
 ![](img/a3a819edad.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 81 -->
 --- figure
 # Patterns: Great Cities of Islam - Early
 ![](img/de8aba0827.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 82 -->
 --- figure
 # Patterns: Great Cities of Islam - Early
 ![](img/3ade5cb0c5.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 83 -->
 --- figure
 # Patterns: Great Cities of Islam - Middle
 ![](img/e53c0d5939.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 
 <!-- 84 -->
 --- figure
 # Patterns: Great Cities of Islam - Middle
 ![](img/fac0a9cd2c.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 
 <!-- 85 -->
 --- figure
 # Patterns: Great Cities of Islam - Middle
 ![](img/37b3875ab9.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 
 <!-- 86 -->
 --- figure
 # Patterns: Great Cities of Islam - Middle
 ![](img/20b6cd2268.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 
 <!-- 87 -->
 --- figure
 # Patterns: Great Cities of Islam - Late
 ![](img/393ac8c546.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 
 <!-- 88 -->
 --- figure
 # Patterns: Great Cities of Islam - Late
 ![](img/94f7fb7346.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 <p class="caption" style="font-size:20px">[Miṣr / “Egypt” — also a reference to al-Qāhiraŧ / Cairo]</p>
 
@@ -584,7 +550,6 @@ logos:
 --- figure
 # Patterns: Great Cities of Islam - Late
 ![](img/53ea3a7527.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 <div class="stat red" style="position:absolute;right:24px;top:70px;min-width:0;padding:10px 20px"><b style="font-size:30px">Mongols sack Baghdad in 656/1258</b></div>
 
 <!-- 90 -->
@@ -596,25 +561,21 @@ logos:
 --- figure
 # Patterns:
 ![](img/93a463b9a0.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 92 -->
 --- figure
 # Patterns:
 ![](img/45e620bb84.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 93 -->
 --- figure
 # Patterns: Islamic Sciences
 ![](img/aeddd8298f.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 94 -->
 --- figure
 # Patterns: Geography of Legal Schools
 ![](img/18559d9170.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 95 -->
 --- section light
@@ -720,7 +681,6 @@ logos:
 --- figure
 # Example of Pattern Tracing
 ![](img/1ee14aba0c.jpg)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 106 -->
 --- text
@@ -872,7 +832,6 @@ For our needs the accuracy is kind of irrelevant because we want to separate the
 --- figure
 # Annotated Text
 ![](img/b85a4bcabf.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 Notes:
 Onomastic Information
@@ -910,7 +869,6 @@ Toponyms: identification is based on gazetteer, will come back to that gazetteer
 --- figure
 
 ![](img/53d0a3b529.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 Notes:
 Extracted toponyms
@@ -938,7 +896,6 @@ Training_Data/gold_standard_topo/0571IbnCasakir.TarikhDimashq.JK000916-ara1.8755
 --- figure
 # Biographical Data: Same-Person Annotation Tool
 ![](img/a087ca64af.png)
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 121 -->
 --- text
@@ -1087,28 +1044,24 @@ Places are grouped into provinces by color
 # Geographical Data: Modeling Regions - Voronoi Magnets
 ![](img/a463f8f2eb.png)
 <p class="caption" style="position:absolute;right:24px;top:6px;font-size:18px">Data: Prosopografía de los ulemas de al-Andalus. Disponible en [https://www.eea.csic/pua/](https://www.eea.csic/pua/)</p>
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 130 -->
 --- figure
 # Geographical Data: Modeling Regions - Voronoi Magnets
 ![](img/8bf88073f8.png)
 <p class="caption" style="position:absolute;right:24px;top:6px;font-size:18px">Data: Prosopografía de los ulemas de al-Andalus. Disponible en [https://www.eea.csic/pua/](https://www.eea.csic/pua/)</p>
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 131 -->
 --- figure
 # Geographical Data: Modeling Regions - Voronoi Magnets (380AH)
 ![](img/f8220e7d38.png)
 <p class="caption" style="position:absolute;right:24px;top:6px;font-size:18px">Data: Prosopografía de los ulemas de al-Andalus. Disponible en [https://www.eea.csic/pua/](https://www.eea.csic/pua/)</p>
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 132 -->
 --- figure
 # Geographical Data: Modeling Regions - Voronoi Magnets (570 AH)
 ![](img/f4f07c1603.png)
 <p class="caption" style="position:absolute;right:24px;top:6px;font-size:18px">Data: Prosopografía de los ulemas de al-Andalus. Disponible en [https://www.eea.csic/pua/](https://www.eea.csic/pua/)</p>
-<p class="caption" style="font-size:20px">‹#›</p>
 
 <!-- 133 -->
 --- text
