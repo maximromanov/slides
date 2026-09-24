@@ -37,6 +37,7 @@ logos:
 
 --- full
 ![Prof. Sherman Jackson](img/sherman-jackson.jpg)
+<img src="img/michigan-seal.png" alt="Seal of the University of Michigan" style="position:absolute;left:-227px;top:29%;width:454px;height:454px">
 <div class="overlay tr"><em>al-Jāmiʿ al-Kabīr? Shamela?<br>C’mon, man, that is cheating!</em><span class="by">— Prof. Sherman Jackson</span></div>
 
 --- text
