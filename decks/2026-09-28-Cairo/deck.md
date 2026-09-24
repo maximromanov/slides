@@ -16,9 +16,22 @@ logos:
 <!-- K2 -->
 --- title
 
+<!-- N0 -->
+--- text
+# How do we know what a word means?
+
+<div class="ayn-bare"><span lang="ar" dir="rtl">عين</span><span lang="ar" dir="rtl">عين</span><span lang="ar" dir="rtl">عين</span><span lang="ar" dir="rtl">عين</span></div>
+
+<div class="small" style="margin-top:.4em">
+<p class="step">Not from the word itself: the written form is the same.</p>
+<p class="step">Not from a dictionary: it lists all four and chooses none.</p>
+</div>
+
+<p class="bottom punch step">Four words. One written form.</p>
+
 <!-- N1 -->
 --- text
-# One written form, four readings: <span class="ar" style="font-size:1.25em">عين</span>
+# We know it from what surrounds it
 
 <div class="ayn">
 <div class="row"><div class="ar-x" lang="ar" dir="rtl">ما لا <b>عين</b> رأت ولا أذن سمعت</div><div class="rd"><b>ʿayn</b> · eye</div><div class="tr">“What no eye has seen and no ear has heard.”<span class="src">Ṣaḥīḥ al-Buḫārī, no. 3244</span></div></div>
@@ -28,17 +41,6 @@ logos:
 </div>
 
 <p class="bottom punch">Three senses of one noun, and a verb whose <em>šaddaŧ</em> vanishes in unvowelled writing: only the surrounding text resolves them.</p>
-
-<!-- N2 -->
---- text steps
-# How do we know what a word means?
-
-<p class="big" style="margin-top:.6em"><span class="ar" style="font-size:1.4em">عين</span> &nbsp;— an eye? a spring? a spy? “he assigned”?</p>
-
-- Not from the word itself: the written form is the same.
-- Not from a dictionary: it lists all four and chooses none.
-
-<p class="bottom punch">We know it from what surrounds it.</p>
 
 <!-- N3 -->
 --- text

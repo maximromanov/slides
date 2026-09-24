@@ -119,6 +119,8 @@ body.deck { -webkit-font-smoothing: antialiased; }
 .ayn .rd { font-size: .95em; }
 .ayn .rd b { color: var(--red); }
 .ayn .tr { font-size: .78em; line-height: 1.35; color: var(--ink); }
+.ayn-bare { display: flex; justify-content: space-around; align-items: center; margin: .6em 0 .4em; }
+.ayn-bare span { font-family: var(--f-ar); font-size: 4.2em; line-height: 1.2; color: var(--ink); }
 .ayn .src { display: block; font-family: var(--f-ui); font-size: .8em; color: var(--muted); margin-top: .2em; }
 
 /* ---------- layouts ---------- */
