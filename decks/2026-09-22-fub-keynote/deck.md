@@ -29,7 +29,7 @@ logos:
 2. Digital Avatars and Metaobjects
 3. Computational Inquiries
 
-<p class="callout" style="margin-top:40px">In short, this book asks: <em>What does it mean for our field when the entire library becomes a vademecum—something that, quite literally, “goes with me” everywhere? What new possibilities and responsibilities does this transformation bring?</em></p>
+<p class="callout" style="margin-top:1em">In short, this book asks: <em>What does it mean for our field when the entire library becomes a vademecum—something that, quite literally, “goes with me” everywhere? What new possibilities and responsibilities does this transformation bring?</em></p>
 
 --- full
 ![The Diag at the University of Michigan in winter](img/michigan-campus.jpg)
@@ -65,7 +65,7 @@ logos:
 <div class="box hi"><span class="name">Digital</span></div>
 </div>
 
-<p class="muted" style="font-style:italic;margin-top:40px">Unlike classicists — who have been digitizing Greek and Latin texts since the 1980s — scholars of Arabic and Islamic studies had almost nothing to do with the appearance of our digital corpus.</p>
+<p class="muted" style="font-style:italic;margin-top:1em">Unlike classicists — who have been digitizing Greek and Latin texts since the 1980s — scholars of Arabic and Islamic studies had almost nothing to do with the appearance of our digital corpus.</p>
 
 <blockquote>“A scan through recent academic publications can easily leave the impression that our digital corpus does not exist at all, or if it does, it is of relatively little consequence.” — Travis Zadeh, 2016</blockquote>
 
@@ -86,7 +86,7 @@ logos:
 <div class="stat"><b>1,300+</b><span>years of written Arabic</span></div>
 </div>
 
-<p style="text-align:center;font-style:italic;color:var(--muted);margin-top:50px">A treasure without a map. A library without a methodology.<br>A field that found itself unprepared.</p>
+<p style="text-align:center;font-style:italic;color:var(--muted);margin-top:1.2em">A treasure without a map. A library without a methodology.<br>A field that found itself unprepared.</p>
 
 <p class="bottom punch">What do we do when the entire library becomes a <span style="font-style:normal">vademecum</span>?!</p>
 
@@ -133,14 +133,14 @@ logos:
 <div class="box hi"><span class="num">IV</span><span class="name">Networks</span><span class="desc">Knowledge networks: text, person, place, and time connected</span></div>
 </div>
 
-<p class="small" style="text-align:center;font-style:italic;margin-top:30px">Each domain depends entirely on the success of the preceding ones — no shortcuts.</p>
+<p class="small" style="text-align:center;font-style:italic;margin-top:.75em">Each domain depends entirely on the success of the preceding ones — no shortcuts.</p>
 
 --- text
 # Digital Pragmatism: <em>born from necessity, not ideology</em>
 
-<p class="big" style="text-align:center;margin:40px 0 50px">It is truly sustainable only if you can do it <span class="accent" style="font-style:italic">alone</span>.</p>
+<p class="big" style="text-align:center;margin:1em 0 1.2em">It is truly sustainable only if you can do it <span class="accent" style="font-style:italic">alone</span>.</p>
 
-<ul class="plain small" style="max-width:1300px;margin:0 auto">
+<ul class="plain small" style="max-width:32em;margin:0 auto">
 <li>— Bare minimum technologies: limit without compromising necessary complexity</li>
 <li>— Learn them deeply: no dependency on external technical support</li>
 <li>— Automate repetition: your time is better spent elsewhere</li>
@@ -151,9 +151,9 @@ logos:
 --- text
 # Digital Pragmatism: <em>born from necessity, not ideology</em>
 
-<p class="big" style="text-align:center;margin:40px 0 50px">It is truly sustainable only if you can do it <span class="accent" style="font-style:italic">alone</span>.</p>
+<p class="big" style="text-align:center;margin:1em 0 1.2em">It is truly sustainable only if you can do it <span class="accent" style="font-style:italic">alone</span>.</p>
 
-<ul class="plain small" style="max-width:1300px;margin:0 auto">
+<ul class="plain small" style="max-width:32em;margin:0 auto">
 <li>— Bare minimum technologies: limit without compromising necessary complexity</li>
 <li>— Learn them deeply: no dependency on external technical support</li>
 <li>— Automate repetition: your time is better spent elsewhere</li>
@@ -161,7 +161,7 @@ logos:
 
 <p class="bottom" style="text-align:center;color:var(--muted)">“Simple, but not simpler.”<br>“Laziness is the engine of the progress.”</p>
 
-<div class="stat paper" style="position:absolute;right:120px;top:250px;min-width:0;padding:16px 28px;border-color:var(--red-soft);box-shadow:0 8px 24px rgba(0,0,0,.14)"><b style="font-size:44px;color:var(--red)">+ LLMs</b></div>
+<div class="stat paper" style="position:absolute;right:6%;top:23%;min-width:0;padding:.4em .7em;border-color:var(--red-soft);box-shadow:0 8px 24px rgba(0,0,0,.14)"><b style="font-size:1.10em;color:var(--red)">+ LLMs</b></div>
 
 --- split w-40-60
 # The irony of new media
@@ -206,7 +206,7 @@ Case Study 3. Charting Linguistic Evolution
 --- text
 # Case Study 1: Tracing Term Usage
 
-<div class="indent small" style="max-width:1400px">
+<div class="indent small" style="max-width:36em">
 <p><strong>2.1 &nbsp; <em>From “The Devil’s Delusions” to Ḥadīṯ Studies</em></strong><br>
 Now that we have a general sense of how the OpenITI NgramReader works, let’s consider a more complex inquiry, this time into terminology central to the study of Ḥadīṯ. In the early 2000s, I made my first attempt at writing a PhD thesis at the Institute of Oriental Manuscripts of the Russian Academy of Sciences in my hometown of St. Petersburg. My dissertation focused on a close reading of “The Devil’s Delusions” (<em>Talbīs Iblīs</em>) by Ibn al-Jawzī (d. 597/1201), the renowned historian, traditionist, and—perhaps most importantly—Ḥanbalī preacher (<em>wāʿiẓ</em>) of Baġdād.</p>
 <p><strong>2.2 &nbsp; <em>Proposition 1: The Chronology of Transmission Terms</em></strong><br>
@@ -240,7 +240,7 @@ Case Study 3. Charting Linguistic Evolution
 --- text
 # Case Study 2. Modeling Textual Typology
 
-<ol class="small" style="max-width:1450px">
+<ol class="small" style="max-width:37em">
 <li><code>[B]</code> Biographical type (<em>tarājim</em>): mostly collections of biographies</li>
 <li><code>[E]</code> Exegetical type: interpretations of the Qurʾān (<em>tafsīr</em>)</li>
 <li><code>[G]</code> Graeco-Arabic (“Greek-esque”) type (<em>yūnāniyyāt</em>): translations from Greek and works on the development of Greek philosophy in Arabic (<em>falsafat</em>, predominantly Aristotelian)</li>
@@ -272,7 +272,7 @@ Case Study 2. Modeling Textual Typology
 --- text
 # Case Study 3. Charting Linguistic Evolution
 
-<ul class="small" style="max-width:1400px">
+<ul class="small" style="max-width:36em">
 <li>The <strong>pre-classical period</strong> lasts from the appearance of Islam until the end of the Umayyad period (c. 1–132/622–750).</li>
 <li>The <strong>classical period</strong> corresponds roughly to the ʿAbbāsid period (132–656/750–1258).</li>
 <li>The <strong>postclassical period</strong> encompasses the reign of the Mamlūks (648–923/1250–1517) and most of that of the Ottomans.</li>
@@ -296,11 +296,11 @@ Case Study 2. Modeling Textual Typology
 <div class="pill"><b>Modern</b>1798–</div>
 </div>
 
-<p class="punch" style="text-align:center;margin-top:40px">Where do these lines come from?</p>
+<p class="punch" style="text-align:center;margin-top:1em">Where do these lines come from?</p>
 
 |||
 
-<div class="callout" style="margin-top:60px">
+<div class="callout" style="margin-top:1.5em">
 <p class="small" style="margin:0 0 .6em"><em>Geschichte der arabischen Litteratur</em>, 5 vols. (1896–1943)</p>
 <p class="small" style="margin:0 0 .6em"><em>Cambridge History of Arabic Literature</em>, 6 vols. (1983–2006)</p>
 <p class="small" style="margin:0"><em>Encyclopedia of Arabic Language and Linguistics</em> (Brill)</p>
@@ -349,7 +349,7 @@ Case Study 2. Modeling Textual Typology
 <p>Do not trust a tree. Ask what survives across trees.</p>
 </div>
 
-<div class="pills" style="position:absolute;right:120px;bottom:90px;width:560px">
+<div class="pills bottom" style="width:14em;margin-left:auto">
 <div class="pill"><b>Content</b><em>keywords / TF–IDF</em></div>
 <div class="pill on"><b>Style</b><em>most frequent vocabulary</em></div>
 </div>
@@ -381,7 +381,7 @@ Case Study 2. Modeling Textual Typology
 <li>authors</li>
 <li><strong class="accent">periods</strong></li>
 </ul>
-<p class="small" style="margin-top:40px"><strong>Jurjī Zaydān’s writings</strong><br>(1) 1891–1902 · (2) 1903–1905 · (3) 1906–1914</p>
+<p class="small" style="margin-top:1em"><strong>Jurjī Zaydān’s writings</strong><br>(1) 1891–1902 · (2) 1903–1905 · (3) 1906–1914</p>
 
 |||
 
@@ -407,7 +407,7 @@ Case Study 2. Modeling Textual Typology
 <li>The late macroperiod (1540–1980)</li>
 </ul>
 
-<div class="indent small" style="margin-top:50px">
+<div class="indent small" style="margin-top:1.2em">
 <p><strong>Results of majority of 72,000 dendrograms:</strong></p>
 <p class="indent tiny">3,000 stylometric samples (1,500 discrete; 1,500 overlapping)<br>12 distance metrics, 2 major clustering algorithms;<br>48 tf-idf keyword tests.</p>
 </div>
@@ -433,7 +433,7 @@ Case Study 2. Modeling Textual Typology
 <li>Boundaries are transition zones, not event dates</li>
 </ul>
 
-<div class="pills timeline" style="max-width:1300px;margin:60px auto 0">
+<div class="pills timeline" style="max-width:32em;margin:1.5em auto 0">
 <div class="pill"><b>Early</b>c. 622–1200</div>
 <div class="pill on"><b>Middle</b>c. 1200–1540</div>
 <div class="pill"><b>Late</b>c. 1540–1980</div>
@@ -452,7 +452,7 @@ Case Study 2. Modeling Textual Typology
 <p><strong>Independent of the corpus experiments</strong></p>
 </div>
 
-<div class="stats" style="position:absolute;right:120px;bottom:90px;width:620px">
+<div class="stats bottom" style="width:15em;margin-left:auto">
 <div class="stat red"><b>8,800</b><span>authors</span></div>
 <div class="stat paper"><b>40,000+</b><span>titles</span></div>
 </div>
@@ -460,32 +460,32 @@ Case Study 2. Modeling Textual Typology
 --- figure
 # c. 600–1200: an Iraqi-Iranian world
 ![Map of the Islamic world with the flows of scholars in the early macroperiod, centred on Iraq and Iran](img/map-early.png)
-<div class="stat red" style="position:absolute;right:120px;bottom:90px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 80% Iraq + Iran</b></div>
+<div class="stat red" style="position:absolute;right:24px;bottom:18px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 80% Iraq + Iran</b></div>
 
 --- figure caption="Annual production by region in the early macroperiod: Iraq (al-ʿIrāq) and the Iranian provinces."
 # c. 600–1200: an Iraqi-Iranian world
 ![Charts of annual production for Iraq and the Iranian provinces](img/chart-early.png)
-<div class="stat red" style="position:absolute;right:120px;bottom:90px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 80% Iraq + Iran</b></div>
+<div class="stat red" style="position:absolute;right:24px;bottom:18px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 80% Iraq + Iran</b></div>
 
 --- figure
 # c. 1200–1540: a Syrian-Egyptian world
 ![Map of the Islamic world with the flows of scholars in the middle macroperiod, centred on Egypt and Syria](img/map-middle.png)
-<div class="stat red" style="position:absolute;right:120px;bottom:90px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 55% Egypt + Syria</b></div>
+<div class="stat red" style="position:absolute;right:24px;bottom:18px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 55% Egypt + Syria</b></div>
 
 --- figure caption="Annual production by region in the middle macroperiod: Syria (al-Šām) and Egypt (Miṣr)."
 # c. 1200–1540: a Syrian-Egyptian world
 ![Charts of annual production for Syria and Egypt](img/chart-middle.png)
-<div class="stat red" style="position:absolute;right:120px;bottom:90px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 55% Egypt + Syria</b></div>
+<div class="stat red" style="position:absolute;right:24px;bottom:18px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 55% Egypt + Syria</b></div>
 
 --- figure
 # After c. 1540–1900: a new polycentric geography
 ![Map of the Islamic world with the flows of scholars in the late macroperiod, with Anatolia and India prominent](img/map-late.png)
-<div class="stat red" style="position:absolute;left:200px;bottom:90px;min-width:0;padding:14px 28px"><b style="font-size:36px">≈ 30% Anatolia</b></div>
+<div class="stat red" style="position:absolute;left:80px;bottom:18px;min-width:0;padding:14px 28px"><b style="font-size:36px">≈ 30% Anatolia</b></div>
 
 --- figure caption="Annual production by region in the late macroperiod: India (Hind) and Anatolia (al-Rūm)."
 # After c. 1540–1900: a new polycentric geography
 ![Charts of annual production for India and Anatolia](img/chart-late.png)
-<div class="stat red" style="position:absolute;left:200px;bottom:90px;min-width:0;padding:14px 28px"><b style="font-size:36px">≈ 30% Anatolia</b></div>
+<div class="stat red" style="position:absolute;left:80px;bottom:18px;min-width:0;padding:14px 28px"><b style="font-size:36px">≈ 30% Anatolia</b></div>
 
 --- text steps
 # Two transitions: <strong>1200–1300</strong> and 1500–1600
@@ -495,7 +495,7 @@ Case Study 2. Modeling Textual Typology
 <li>Andalusi scholars move east as Christian expansion advances in Iberia</li>
 </ul>
 
-<div class="callout red bottom" style="left:200px;right:200px"><strong>Baghdad’s fall occurs inside an already-moving geography</strong></div>
+<div class="callout red bottom"><strong>Baghdad’s fall occurs inside an already-moving geography</strong></div>
 
 --- figure
 # Patterns: Great Cities of Islam
@@ -522,7 +522,7 @@ Case Study 2. Modeling Textual Typology
 
 <div class="indent">
 <p><strong>CORPUS of TEXTS</strong><br><span class="muted">lexical/thematic and stylometric change</span></p>
-<p style="margin-top:40px"><strong>REGISTER of AUTHORS</strong><br><span class="muted">cultural geography over time</span></p>
+<p style="margin-top:1em"><strong>REGISTER of AUTHORS</strong><br><span class="muted">cultural geography over time</span></p>
 </div>
 
 <p class="bottom punch">Different biases. Different assumptions. Similar macro-boundaries.</p>
@@ -536,7 +536,7 @@ Case Study 2. Modeling Textual Typology
 <li>The late Turco-Indian &nbsp;·&nbsp; <em>c. 1540–1980</em></li>
 </ol>
 
-<p class="indent small" style="font-style:italic;margin-top:50px">(with discernable sub-periods inside each)</p>
+<p class="indent small" style="font-style:italic;margin-top:1.2em">(with discernable sub-periods inside each)</p>
 
 --- figure frame
 ![Table 3.34: books by region in the early, middle, and late macroperiods](img/table-3-34-regions.png)
@@ -549,7 +549,7 @@ Case Study 2. Modeling Textual Typology
 <li><strong>Computational periodization</strong> demonstrates that <em>language and textual production are aligned in time with changing cultural geography</em> *</li>
 </ul>
 
-<p class="punch" style="text-align:center;margin-top:50px">Each period gets not just a name, but also a map.</p>
+<p class="punch" style="text-align:center;margin-top:1.2em">Each period gets not just a name, but also a map.</p>
 
 <p class="bottom tiny" style="text-align:right">(* to be redone on the EIS1600 data: 600,000 bios &gt; c. 130,000 individuals)</p>
 
@@ -569,9 +569,9 @@ Case Study 2. Modeling Textual Typology
 --- text
 # Afterword: <em>farḍ al-kifāyaŧ</em>
 
-<p class="indent small" style="max-width:1400px">A communal duty in Islamic law: if enough members of a community fulfill it, the rest are absolved. If all neglect it, the entire community is accountable.</p>
+<p class="indent small" style="max-width:36em">A communal duty in Islamic law: if enough members of a community fulfill it, the rest are absolved. If all neglect it, the entire community is accountable.</p>
 
-<div class="indent" style="margin-top:50px;font-style:italic;color:var(--muted)">
+<div class="indent" style="margin-top:1.2em;font-style:italic;color:var(--muted)">
 <p>No one else will digitize our texts.</p>
 <p>No one will create our corpora.</p>
 <p>No one will develop methods for our research questions.</p>
@@ -586,10 +586,10 @@ Case Study 2. Modeling Textual Typology
 <p class="kicker">In short, this book asks:</p>
 <p class="big" style="font-style:italic">«What does it mean for our field when the entire library becomes a <span style="font-style:normal">vademecum</span> — something that, quite literally, “goes with me” everywhere?»</p>
 
-<div class="twocol small" style="grid-template-columns:1fr 1fr 1fr;gap:30px;margin-top:30px">
-<div><h3 style="font-size:28px;font-style:normal;border-top:2px solid var(--red);padding-top:10px">Chapter 1</h3><p>Why we should even bother—a question that remains at the heart of every discussion about the digital.</p></div>
-<div><h3 style="font-size:28px;font-style:normal;border-top:2px solid var(--red);padding-top:10px">Chapter 2</h3><p>How we might go about harnessing the new digital opportunities within the field.</p></div>
-<div><h3 style="font-size:28px;font-style:normal;border-top:2px solid var(--red);padding-top:10px">Chapter 3</h3><p>What we can expect to accomplish:<br>1) trace term usage<br>2) model textual typology<br>3) chart linguistic evolution</p></div>
+<div class="twocol small" style="grid-template-columns:1fr 1fr 1fr;gap:.75em;margin-top:.75em">
+<div><h3 style="font-size:0.70em;font-style:normal;border-top:2px solid var(--red);padding-top:.35em">Chapter 1</h3><p>Why we should even bother—a question that remains at the heart of every discussion about the digital.</p></div>
+<div><h3 style="font-size:0.70em;font-style:normal;border-top:2px solid var(--red);padding-top:.35em">Chapter 2</h3><p>How we might go about harnessing the new digital opportunities within the field.</p></div>
+<div><h3 style="font-size:0.70em;font-style:normal;border-top:2px solid var(--red);padding-top:.35em">Chapter 3</h3><p>What we can expect to accomplish:<br>1) trace term usage<br>2) model textual typology<br>3) chart linguistic evolution</p></div>
 </div>
 
-<p class="small" style="margin-top:30px">Altogether, the book proposes a vision of digital humanities relevant to the field of <strong>Arabic and Islamic studies</strong>. It argues that this venture is not about cheating, but about keeping up with the rest of the world and ensuring that the future of the field remains in our own hands.</p>
+<p class="small" style="margin-top:.75em">Altogether, the book proposes a vision of digital humanities relevant to the field of <strong>Arabic and Islamic studies</strong>. It argues that this venture is not about cheating, but about keeping up with the rest of the world and ensuring that the future of the field remains in our own hands.</p>

@@ -169,5 +169,43 @@
   window.addEventListener('resize', fit);
   window.addEventListener('hashchange', fromHash);
   if (location.search.indexOf('preview') >= 0) document.body.classList.add('preview');
-  fit(); fromHash();
+  // Auto-fit: grow or shrink the base font size of text slides so the content fills the stage.
+  function overflows(s) {
+    var r = s.getBoundingClientRect(), k = r.height / H;
+    var cs = getComputedStyle(s);
+    var bottom = r.bottom - parseFloat(cs.paddingBottom) * k, right = r.right - parseFloat(cs.paddingRight) * k;
+    var bad = false;
+    function walk(el) {
+      if (bad || el.tagName === 'ASIDE') return;
+      var st = getComputedStyle(el);
+      if (st.position === 'absolute' || st.position === 'fixed') return;
+      var b = el.getBoundingClientRect();
+      if (b.height > 0 && (b.bottom > bottom + 1 || b.right > right + 1)) { bad = true; return; }
+      for (var i = 0; i < el.children.length; i++) walk(el.children[i]);
+    }
+    for (var i = 0; i < s.children.length; i++) walk(s.children[i]);
+    return bad;
+  }
+  function fitText() {
+    slides.forEach(function (s) {
+      if (!/\b(text|split|agenda|quote)\b/.test(s.className) || s.classList.contains('nofit')) return;
+      var min = 22, max = parseFloat(s.getAttribute('data-fit-max')) || 56, lo = min, hi = max, best = min;
+      s.classList.add('measuring');
+      for (var i = 0; i < 9; i++) {
+        var mid = (lo + hi) / 2;
+        s.style.fontSize = mid + 'px';
+        if (!overflows(s)) { best = mid; lo = mid; } else { hi = mid; }
+      }
+      s.style.fontSize = best.toFixed(2) + 'px';
+      s.classList.remove('measuring');
+    });
+  }
+  if (location.search.indexOf('preview') >= 0) document.body.classList.add('preview');
+  // Auto-fit: grow or shrink the base font size of text slides so the content fills the stage.
+  if (location.search.indexOf('preview') >= 0) document.body.classList.add('preview');
+  fit();
+  fromHash();
+  function refit() { fitText(); show(idx, false); }
+  if (document.readyState === 'complete') refit(); else window.addEventListener('load', refit);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(refit);
 })();

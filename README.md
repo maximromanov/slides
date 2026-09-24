@@ -50,6 +50,12 @@ Any option that is just a word becomes a class on the slide (`no-strip` removes 
 keypress; for finer control give any element the class `step` (`{.step}` on a Markdown line, or
 `class="step"` in HTML). Steps already shown dim slightly as the next one appears.
 
+Auto-fit: on `text`, `split`, `agenda`, and `quote` slides the base type size is chosen at load time
+so that the content fills the stage: it grows to at most 1.4× the default on sparse slides and shrinks
+on dense ones, never overflowing. Everything on a slide scales together (headings, lists, boxes,
+callouts), so write sizes in `em`, not `px`. `max=48` on a slide caps its size; `nofit` switches the
+fitting off for that slide. Figure and full-bleed slides are not fitted.
+
 Motion: slides slide in from the right (from the left when going back); stat tiles, chain boxes,
 period pills, and agenda rows build in with a short stagger; the red rule under a heading grows in;
 a punch line fades in. Clicking any figure opens it full-screen (Esc or click to close). Everything
