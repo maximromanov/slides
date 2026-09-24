@@ -20,14 +20,14 @@ logos:
 --- text
 # How do we know what a word means?
 
-<div class="ayn-bare"><span lang="ar" dir="rtl">عين</span><span lang="ar" dir="rtl">عين</span><span lang="ar" dir="rtl">عين</span><span lang="ar" dir="rtl">عين</span></div>
+<div class="ayn-bare"><span lang="ar" dir="rtl">عين</span></div>
 
 <div class="small" style="margin-top:.4em">
 <p class="step">Not from the word itself: the written form is the same.</p>
 <p class="step">Not from a dictionary: it lists all four and chooses none.</p>
 </div>
 
-<p class="bottom punch step">Four words. One written form.</p>
+<p class="bottom punch step">One written form. Four words.</p>
 
 <!-- N1 -->
 --- text
