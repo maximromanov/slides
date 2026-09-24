@@ -194,6 +194,8 @@ def main():
             if re.search(r"^draft:\s*true", head, flags=re.M):
                 print(f"{d.name}: draft, skipped"); shutil.rmtree(OUT / d.name, ignore_errors=True); continue
             fm, n = build_deck(d)
+            if fm.get("unlisted"):
+                print(f"{d.name}: {n} slides (unlisted)"); continue
             entries.append((d.name, fm, n))
             print(f"{d.name}: {n} slides")
     build_index(entries)

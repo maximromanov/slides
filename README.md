@@ -47,7 +47,8 @@ the contact sheets and fix by hand what the heuristics got wrong; the `<!-- n --
 the original slide numbers.
 
 A deck with `draft: true` in its front matter is skipped by the build and does not appear in the
-list; remove the line to publish it.
+list; `unlisted: true` builds it at its address without listing it, for work in progress. Remove the
+line to publish.
 
 ## Writing a deck
 
