@@ -43,6 +43,11 @@ Keys in the browser: arrows or space to move, `F` fullscreen, `O` overview, `S` 
 second window (synchronised with the main one), `?` help. `#12` in the address opens slide 12.
 Print (⌘P) gives one slide per page at 16:9, which is how a PDF is made.
 
+## Design
+
+Slides have a plain white ground (figures and screenshots usually come with white backgrounds, so
+they sit flush), with the website's red, gold, and navy as accents and the same fonts.
+
 ## Images
 
 Put images in the deck's `img/` folder at up to 1920 px wide; photographs as JPEG, charts and
