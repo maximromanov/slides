@@ -40,12 +40,13 @@
     slides.forEach(function (s, i) {
       var on = i === n;
       s.classList.toggle('current', on); s.classList.toggle('back', on && back);
-      if (on) resetSteps(s, back); else resetSteps(s, false);
+      if (on) resetSteps(s, back || document.body.classList.contains('preview')); else resetSteps(s, false);
     });
     if (progress) progress.style.width = ((n + 1) / slides.length * 100) + '%';
     if (counter) counter.textContent = (n + 1) + ' / ' + slides.length;
     if (push !== false) history.replaceState(null, '', '#' + (n + 1));
     if (channel) channel.postMessage({ idx: n });
+    syncNotes();
     document.title = (slides[n].getAttribute('data-title') || document.body.getAttribute('data-deck') || 'Slides') + ' · ' + (n + 1);
   }
 
@@ -72,37 +73,61 @@
     if (next) { var cur = slides[idx]; if (cur && cur.scrollIntoView) cur.scrollIntoView({ block: 'center' }); }
   }
 
+  var notesWin = null;
   function openNotes() {
-    var win = window.open('', 'deck-notes', 'width=900,height=700');
+    if (notesWin && !notesWin.closed) { notesWin.focus(); return; }
+    var win = window.open('', 'deck-notes', 'width=1100,height=760');
     if (!win) return;
+    notesWin = win;
     var doc = win.document;
+    var base = location.href.split('#')[0];
     doc.open();
     doc.write('<!doctype html><html><head><meta charset="utf-8"><title>Speaker notes</title><style>' +
-      'body{margin:0;font-family:Georgia,serif;background:#1c1917;color:#eee;display:grid;grid-template-rows:auto 1fr auto;height:100vh}' +
-      'header{padding:14px 20px;font:14px/1.4 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#aaa;border-bottom:1px solid #333;display:flex;justify-content:space-between}' +
-      'main{padding:24px 28px;overflow:auto;font-size:22px;line-height:1.5}main p{margin:0 0 .8em}' +
-      '.next{padding:14px 20px;border-top:1px solid #333;color:#bbb;font-size:16px}.next b{color:#eee}' +
-      '.empty{color:#666;font-style:italic}</style></head><body><header><span id="pos"></span><span id="clock"></span></header><main id="notes"></main><div class="next" id="next"></div></body></html>');
+      'body{margin:0;font-family:Georgia,serif;background:#1c1917;color:#eee;display:grid;grid-template-rows:auto auto 1fr;height:100vh;overflow:hidden}' +
+      'header{padding:12px 20px;font:13px/1.4 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#aaa;border-bottom:1px solid #333;display:flex;justify-content:space-between;align-items:center}' +
+      'header b{color:#eee;font-weight:600}#clock{font-size:20px;color:#eee}' +
+      '.previews{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:16px 20px;border-bottom:1px solid #333}' +
+      '.pv{position:relative;background:#fff;aspect-ratio:16/9;overflow:hidden;border-radius:3px}.pv iframe{width:1920px;height:1080px;border:0;transform-origin:top left;pointer-events:none;position:absolute;left:0;top:0}' +
+      '.pv .tag{position:absolute;left:8px;top:6px;font:11px ui-monospace,Menlo,monospace;letter-spacing:.12em;color:#fff;background:rgba(0,0,0,.55);padding:2px 7px;border-radius:2px;z-index:2}' +
+      'main{padding:22px 28px;overflow:auto;font-size:24px;line-height:1.5}main p{margin:0 0 .8em}.empty{color:#666;font-style:italic}' +
+      'footer{padding:8px 20px;font:12px ui-monospace,Menlo,monospace;color:#777;border-top:1px solid #333}' +
+      '</style></head><body><header><span id="pos"></span><span id="clock">0:00</span></header>' +
+      '<div class="previews"><div class="pv"><span class="tag">CURRENT</span><iframe id="cur"></iframe></div><div class="pv"><span class="tag">NEXT</span><iframe id="nxt"></iframe></div></div>' +
+      '<main id="notes"></main><footer>Arrow keys here move the presentation. R resets the clock.</footer></body></html>');
     doc.close();
     var start = Date.now();
-    function render(n) {
-      var s = slides[n]; if (!s) return;
-      var notes = s.querySelector('aside.notes');
-      doc.getElementById('pos').textContent = 'SLIDE ' + (n + 1) + ' / ' + slides.length + ' · ' + (s.getAttribute('data-title') || '');
-      doc.getElementById('notes').innerHTML = notes ? notes.innerHTML : '<p class="empty">No notes for this slide.</p>';
-      var nx = slides[n + 1];
-      doc.getElementById('next').innerHTML = nx ? 'Next: <b>' + (nx.getAttribute('data-title') || ('slide ' + (n + 2))) + '</b>' : 'Last slide.';
+    function fitPreviews() {
+      var pv = doc.querySelector('.pv'); if (!pv) return;
+      var k = pv.clientWidth / 1920;
+      Array.prototype.forEach.call(doc.querySelectorAll('.pv iframe'), function (f) { f.style.transform = 'scale(' + k + ')'; });
     }
+    function render(n) {
+      var s = slides[n]; if (!s || win.closed) return;
+      var notes = s.querySelector('aside.notes');
+      var nx = slides[n + 1];
+      doc.getElementById('pos').innerHTML = 'SLIDE <b>' + (n + 1) + '</b> / ' + slides.length + ' &nbsp;·&nbsp; ' + (s.getAttribute('data-title') || '') + (nx ? ' &nbsp;&nbsp;<span style="color:#666">next: ' + (nx.getAttribute('data-title') || 'slide ' + (n + 2)) + '</span>' : '');
+      doc.getElementById('notes').innerHTML = notes ? notes.innerHTML : '<p class="empty">No notes for this slide.</p>';
+      var cur = doc.getElementById('cur'), nxt = doc.getElementById('nxt');
+      var want = base + '?preview#' + (n + 1); if (cur.getAttribute('src') !== want) cur.setAttribute('src', want);
+      var wantN = base + '?preview#' + (n + 2); if (nx) { nxt.style.visibility = ''; if (nxt.getAttribute('src') !== wantN) nxt.setAttribute('src', wantN); } else { nxt.style.visibility = 'hidden'; }
+      fitPreviews();
+    }
+    win.__render = render;
     render(idx);
-    setInterval(function () {
+    win.addEventListener('resize', fitPreviews);
+    win.setInterval(function () {
       var t = Math.floor((Date.now() - start) / 1000);
       doc.getElementById('clock').textContent = Math.floor(t / 60) + ':' + ('0' + (t % 60)).slice(-2);
     }, 1000);
-    if (channel) {
-      var rx = new BroadcastChannel('deck-' + location.pathname);
-      rx.onmessage = function (e) { if (e.data && typeof e.data.idx === 'number') render(e.data.idx); };
-    }
+    doc.addEventListener('keydown', function (e) {
+      switch (e.key) {
+        case 'ArrowRight': case 'ArrowDown': case ' ': case 'PageDown': next(); e.preventDefault(); break;
+        case 'ArrowLeft': case 'ArrowUp': case 'PageUp': prev(); e.preventDefault(); break;
+        case 'r': case 'R': start = Date.now(); break;
+      }
+    });
   }
+  function syncNotes() { if (notesWin && !notesWin.closed && notesWin.__render) notesWin.__render(idx); }
 
   document.addEventListener('keydown', function (e) {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
@@ -143,5 +168,6 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && lightbox.classList.contains('on')) { lightbox.classList.remove('on'); e.stopImmediatePropagation(); } }, true);
   window.addEventListener('resize', fit);
   window.addEventListener('hashchange', fromHash);
+  if (location.search.indexOf('preview') >= 0) document.body.classList.add('preview');
   fit(); fromHash();
 })();
