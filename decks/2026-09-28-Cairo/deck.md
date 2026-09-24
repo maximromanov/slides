@@ -29,6 +29,30 @@ logos:
 
 <p class="bottom punch">Three senses of one noun, and a verb whose <em>šaddaŧ</em> vanishes in unvowelled writing: only the surrounding text resolves them.</p>
 
+<!-- N2 -->
+--- text steps
+# How do we know what a word means?
+
+<p class="big" style="margin-top:.6em"><span class="ar" style="font-size:1.4em">عين</span> &nbsp;— an eye? a spring? a spy? “he assigned”?</p>
+
+- Not from the word itself: the written form is the same.
+- Not from a dictionary: it lists all four and chooses none.
+
+<p class="bottom punch">We know it from what surrounds it.</p>
+
+<!-- N3 -->
+--- text
+# The same answer at every scale
+
+<div class="chain">
+<div class="box"><span class="num">١</span><span class="name">A word</span><span class="desc">is read from the words around it</span></div>
+<div class="box"><span class="num">٢</span><span class="name">A term</span><span class="desc">is understood from the corpus across time: when it appears, who uses it</span></div>
+<div class="box"><span class="num">٣</span><span class="name">A book</span><span class="desc">is known by the other books: what it reuses, what type of text it is</span></div>
+<div class="box hi"><span class="num">٤</span><span class="name">A tradition</span><span class="desc">is periodized by how its language and its topics change</span></div>
+</div>
+
+<p class="bottom punch">No manuscript can be read alone. Every text needs all the others.</p>
+
 <!-- K3 -->
 --- full contain
 ![Cover of Digital Humanities for Arabic and Islamic Studies beside the publisher’s page](img/brill-page.png)
@@ -45,58 +69,11 @@ logos:
 
 <p class="callout" style="margin-top:1em">In short, this book asks: <em>What does it mean for our field when the entire library becomes a vademecum—something that, quite literally, “goes with me” everywhere? What new possibilities and responsibilities does this transformation bring?</em></p>
 
-<!-- K5 -->
---- full
-![The Diag at the University of Michigan in winter](img/michigan-campus.jpg)
-<img src="img/michigan-logo.png" alt="University of Michigan" style="position:absolute;left:40px;top:30px;width:780px;height:auto">
-
-<!-- K6 -->
---- full
-![Prof. Sherman Jackson](img/sherman-jackson.jpg)
-<img src="img/michigan-seal.png" alt="Seal of the University of Michigan" style="position:absolute;left:-227px;top:29%;width:454px;height:454px">
-<div class="overlay tr"><em>al-Jāmiʿ al-Kabīr? Shamela?<br>C’mon, man, that is cheating!</em><span class="by">— Prof. Sherman Jackson</span></div>
-
-<!-- K7 -->
---- text
-# Tracing Concepts over time with <em>The Secret Weapon</em>
-
-<div class="twocol">
-<div>
-<h3>Senior Scholar</h3>
-<p>Decades of notes. Thousands of hours in the stacks. This kind of work was the prerogative of senior scholars.</p>
-</div>
-<div>
-<h3>Graduate Student</h3>
-<p>One searchable library. Hundreds of classical Arabic texts. A senior scholar visibly unsettled. A tool never acknowledged.</p>
-</div>
-</div>
-
-<p class="bottom small" style="text-align:center;font-style:italic">“Why would he? These weren’t ‘real’ books. Only books needed to be cited.”</p>
-
-<!-- K8 -->
---- text
-# Not the first revolution, not the last…
-
-<div class="chain">
-<div class="box"><span class="name">Oral/Aural</span></div>
-<div class="box"><span class="name">Written</span></div>
-<div class="box"><span class="name">Print</span></div>
-<div class="box hi"><span class="name">Digital</span></div>
-</div>
-
-<p class="muted" style="font-style:italic;margin-top:1em">Unlike classicists — who have been digitizing Greek and Latin texts since the 1980s — scholars of Arabic and Islamic studies had almost nothing to do with the appearance of our digital corpus.</p>
-
-<blockquote>“A scan through recent academic publications can easily leave the impression that our digital corpus does not exist at all, or if it does, it is of relatively little consequence.” — Travis Zadeh, 2016</blockquote>
-
-<!-- K9 -->
---- figure
-# Mountain of information
-![Cumulative number of publications about the Islamic world, 1920 to 2020](img/fig-1-1-index-islamicus.png)
-
-<!-- K10 -->
---- figure
-# Scholarship <span class="accent">doubled</span> between 2000 and 2020!
-![Cumulative number of publications about the Islamic world, 1920 to 2020](img/fig-1-1-index-islamicus.png)
+<!-- S1 -->
+--- section
+<p class="kicker">The instrument</p>
+# A corpus in time
+<p>OpenITI: the Arabic written tradition as a chronological distribution</p>
 
 <!-- K11 -->
 --- text
@@ -150,89 +127,11 @@ logos:
 --- figure
 ![Share of series total by century: Hadiyyat al-ʿārifīn, major libraries, and OpenITI unique texts](img/openiti-mirrors-libraries.png)
 
-<!-- K17 -->
---- text
-# The Proposition: <em>Four Domains</em>
-
-<div class="chain">
-<div class="box"><span class="num">I</span><span class="name">Digital Avatars</span><span class="desc">Machine-readable editions of manuscripts and printed books</span></div>
-<div class="box"><span class="num">II</span><span class="name">Metaobjects</span><span class="desc">Corpora, databases, and linked open data at scale</span></div>
-<div class="box"><span class="num">III</span><span class="name">Computational Methods</span><span class="desc">Statistics, stylometry, and NLP adapted for Arabic</span></div>
-<div class="box hi"><span class="num">IV</span><span class="name">Networks</span><span class="desc">Knowledge networks: text, person, place, and time connected</span></div>
-</div>
-
-<p class="small" style="text-align:center;font-style:italic;margin-top:.75em">Each domain depends entirely on the success of the preceding ones — no shortcuts.</p>
-
-<!-- K18 -->
---- text
-# Digital Pragmatism: <em>born from necessity, not ideology</em>
-
-<p class="big" style="text-align:center;margin:1em 0 1.2em">It is truly sustainable only if you can do it <span class="accent" style="font-style:italic">alone</span>.</p>
-
-<ul class="plain small" style="max-width:32em;margin:0 auto">
-<li>— Bare minimum technologies: limit without compromising necessary complexity</li>
-<li>— Learn them deeply: no dependency on external technical support</li>
-<li>— Automate repetition: your time is better spent elsewhere</li>
-</ul>
-
-<p class="bottom" style="text-align:center;color:var(--muted)">“Simple, but not simpler.”<br>“Laziness is the engine of the progress.”</p>
-
-<!-- K19 -->
---- text
-# Digital Pragmatism: <em>born from necessity, not ideology</em>
-
-<p class="big" style="text-align:center;margin:1em 0 1.2em">It is truly sustainable only if you can do it <span class="accent" style="font-style:italic">alone</span>.</p>
-
-<ul class="plain small" style="max-width:32em;margin:0 auto">
-<li>— Bare minimum technologies: limit without compromising necessary complexity</li>
-<li>— Learn them deeply: no dependency on external technical support</li>
-<li>— Automate repetition: your time is better spent elsewhere</li>
-</ul>
-
-<p class="bottom" style="text-align:center;color:var(--muted)">“Simple, but not simpler.”<br>“Laziness is the engine of the progress.”</p>
-
-<div class="stat paper" style="position:absolute;right:6%;top:23%;min-width:0;padding:.4em .7em;border-color:var(--red-soft);box-shadow:0 8px 24px rgba(0,0,0,.14)"><b style="font-size:1.10em;color:var(--red)">+ LLMs</b></div>
-
-<!-- K20 -->
---- split w-40-60
-# The irony of new media
-
-![Socrates seated before a scroll, the Acropolis behind him](img/plato-phaedrus.jpg)
-
-|||
-
-<div class="callout" style="margin-top:0">
-<div class="head">The classical critique of books</div>
-<p style="font-style:italic;margin:0 0 .3em">“If anyone asks them anything, they remain most solemnly silent.”</p>
-<span class="by">— Plato, Phaedrus 275d</span>
-<p class="small" style="margin:.6em 0 0">Writing was once suspect; today written texts are our scholarly gold standard.</p>
-</div>
-
-<div class="callout red">
-<div class="head">The modern parallel</div>
-<p style="margin:0 0 .3em"><strong>Now, knowledge from LLMs is suspect…</strong></p>
-<p class="accent" style="margin:0 0 .3em"><strong>…yet LLMs bring dialogue back to reading.</strong></p>
-<p class="small" style="margin:.4em 0 0">The ultimate irony: technology restores the interactive conversation Plato feared was lost.</p>
-</div>
-
-Notes:
-There is a certain historical irony here. In the Phaedrus, writing itself appears as an inferior technology of knowledge because a written text cannot answer back. More than two millennia later, we have made written scholarship the gold standard of academic knowledge. And now we are instinctively suspicious of another new medium. What interests me pedagogically about LLMs is that they unexpectedly restore one feature Socrates thought writing had lost: dialogue.
-
-<!-- K21 -->
---- full contain
-![Two Arabic quotations: “So, imagine yourself in …” from al-Ḥāriṯ al-Muḥāsibī’s Kitāb al-tawahhum, and “I am taking y’all to …” from ʿAbd al-Ḥamīd Kišk’s al-Ḫuṭab al-minbariyyat](img/arabic-quotes.png)
-
-<!-- K22 -->
---- agenda
-Case Study 1: Tracing Term Usage
-Case Study 2. Modeling Textual Typology
-Case Study 3. Charting Linguistic Evolution
-
-<!-- K23 -->
---- agenda
-* Case Study 1: Tracing Term Usage
-Case Study 2. Modeling Textual Typology
-Case Study 3. Charting Linguistic Evolution
+<!-- S2 -->
+--- section
+<p class="kicker">Case 1</p>
+# A term in time
+<p>When did <em>al-kutub al-sittaŧ</em> come to be?</p>
 
 <!-- K24 -->
 --- figure
@@ -274,11 +173,81 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 --- figure
 ![Authors mentioning al-kutub al-sittat by century and region](img/fig-19-authors-by-region.png)
 
-<!-- K32 -->
---- agenda
-Case Study 1: Tracing Term Usage
-* Case Study 2. Modeling Textual Typology
-Case Study 3. Charting Linguistic Evolution
+<!-- S3 -->
+--- section
+<p class="kicker">Case 2</p>
+# A book among books
+<p>Text reuse and the modeling of text types</p>
+
+<!-- G19 -->
+--- text
+# A Story and Its Versions: Ṯimār al-qulūb of al-Ṯaʿālibī (d. 429/1038)
+
+<p class="ar" dir="rtl">ومنهم عبد الله بن خازم السلمى والى خراسان لعبد الله بن الزبير ومن عجيب أمره أنه كان نهاية فى الشجاعة والنجدة وكان يخاف الفأر أشد مخافة فبينما هو ذات يوم عند عبيد الله بن زياد إذ أدخل عليه جرذا أبيض فتعجب منه فقال لعبد الله يا أبا صالح هل رأيت أعجب من هذا وإذا عبد الله قد تضاءل كأنه فرخ وأصفر كأنه جرادة فقال عبيد الله أبو صالح يعصى الرحمن ويتهاون بالسلطان ويقبض على الثعبان ويمشى إلى الأسد الورد ويلقى الرماح بوجهه والسيوف بيده وقد اعتراه من جرذ ما ترون أشهد أن الله على كل شيء قدير</p>
+- Among them was Abd Allãh b. Ḫāzim al-Sulamī, the governor of Ḫurāsān for Abd Allãh b. al-Zubayr. What was remarkable about him was that he was extremely brave and resourceful, yet he was terrified of mice. One day, while he was with ʿUbayd Allãh b. Ziyād, a white rat was brought before him and he was astonished. ʿUbayd Allãh said to ʿAbd Allãh, ‘O Abū Ṣāliḥ, have you ever seen anything more astonishing than this?’ And there was Abd Allãh, who had shrunk as if he were a chick and turned yellow as if he were a male locust. ʿUbayd Allãh then said, “Abū Ṣaliḥ disobeys the Merciful, takes lightly the authority, seizes the snake, walks toward the blooming lion, faces spears with his face and swords with his hands, and yet, he is overcome by a rat as you see. I testify that Allãh is capable of everything.
+
+<!-- G20 -->
+--- split w-35-65 vcenter
+
+<div class="small" markdown="1">
+
+- Among them was Abd Allãh b. Ḫāzim al-Sulamī, the governor of Ḫurāsān for Abd Allãh b. al-Zubayr. What was remarkable about him was that he was extremely brave and resourceful, yet he was terrified of mice. One day, while he was with ʿUbayd Allãh b. Ziyād, a white rat was brought before him and he was astonished. ʿUbayd Allãh said to ʿAbd Allãh, ‘O Abū Ṣāliḥ, have you ever seen anything more astonishing than this?’ And there was Abd Allãh, who had shrunk as if he were a chick and turned yellow as if he were a male locust. ʿUbayd Allãh then said, “Abū Ṣaliḥ disobeys the Merciful, takes lightly the authority, seizes the snake, walks toward the blooming lion, faces spears with his face and swords with his hands, and yet, he is overcome by a rat as you see. I testify that Allãh is capable of everything.
+
+</div>
+
+|||
+
+![](img/057675d523.png)
+
+<!-- G21 -->
+--- figure
+
+![](img/4914026269.png)
+
+<!-- G22 -->
+--- figure
+
+![](img/a1f44cf8ba.png)
+
+<!-- G23 -->
+--- figure
+
+![](img/95bac7cb74.png)
+
+<!-- G25 -->
+--- figure
+
+![](img/9bd39b4ca3.png)
+
+<!-- G26 -->
+--- figure
+
+![](img/348f9c0157.png)
+
+<!-- G27 -->
+--- figure
+
+![](img/2b69b32cac.png)
+
+<!-- G29 -->
+--- figure
+
+![](img/46b7ded308.png)
+
+<!-- G30 -->
+--- figure
+
+![](img/45bf9c2eae.png)
+
+<!-- G31 -->
+--- figure
+
+![](img/42e2bb6436.png)
+
+<!-- G32 -->
+--- figure
+
+![](img/60377618ed.png)
 
 <!-- K33 -->
 --- text
@@ -311,11 +280,11 @@ Case Study 3. Charting Linguistic Evolution
 # Majmūʿāt Case
 ![Rolling assessment of an artificial majmūʿat](img/fig-27-majmua.png)
 
-<!-- K37 -->
---- agenda
-Case Study 1: Tracing Term Usage
-Case Study 2. Modeling Textual Typology
-* Case Study 3. Charting Linguistic Evolution
+<!-- S4 -->
+--- section
+<p class="kicker">Case 3</p>
+# A language and a tradition in time
+<p>Periodization from how language and topics change</p>
 
 <!-- K38 -->
 --- text
