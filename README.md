@@ -28,6 +28,27 @@ Write the slides in `deck.md`, drop images into `img/`, rebuild, preview, commit
 `docs/` together, push. The deck appears in the list at the root and can be linked from the website's
 Talks page.
 
+## Converting a Google Slides or PowerPoint deck
+
+Export the deck as PPTX and as PDF (File → Download in Google Slides), then:
+
+```
+python3 tools/extract_pptx.py "talk.pptx" work/talk        # text, notes, images, positions -> work/talk/
+python3 tools/extract_tables.py "talk.pptx" work/talk/tables.json
+python3 tools/draft_deck.py work/talk "talk.pdf" decks/<date>-<name> front-matter.md [pdf-render slides] [skip slides]
+python3 build.py
+python3 tools/contact_sheets.py <date>-<name> work/shots    # needs a local server on :8800
+```
+
+`draft_deck.py` writes a first `deck.md`: each original slide becomes a slide with the closest layout
+(text, figure, split, section), tables become Markdown tables, and slides listed as "pdf-render"
+(diagrams built from many shapes) are taken as an image of the PDF page. Read the result against
+the contact sheets and fix by hand what the heuristics got wrong; the `<!-- n -->` comments keep
+the original slide numbers.
+
+A deck with `draft: true` in its front matter is skipped by the build and does not appear in the
+list; remove the line to publish it.
+
 ## Writing a deck
 
 `deck.md` starts with YAML front matter (`title`, `subtitle`, `event`, `author`, `affiliation`,

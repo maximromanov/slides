@@ -19,6 +19,8 @@
   --red: #B5140E; --red-soft: #D14A40; --red-wash: #F4E2DE; --gold: #B8923F;
   --navy: #1F3A5F; --navy-2: #2B4C7E;
   --f-text: "Literata", "Iowan Old Style", Georgia, serif;
+  --f-head: var(--f-text);
+  --w-text: 400; --w-head: 600; --ls-text: 0;
   --f-ui: "Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   --f-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
   --f-ar: "Amiri", "Scheherazade New", "Noto Naskh Arabic", "Geeza Pro", serif;
@@ -26,7 +28,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html, body { margin: 0; height: 100%; background: #111; color: var(--ink); font-family: var(--f-text); overflow: hidden; }
+html, body { margin: 0; height: 100%; background: #111; color: var(--ink); font-family: var(--f-text); font-weight: var(--w-text); letter-spacing: calc(var(--ls-text) * 1em); overflow: hidden; }
 body.deck { -webkit-font-smoothing: antialiased; }
 
 /* ---------- viewport and stage ---------- */
@@ -71,18 +73,18 @@ body.deck { -webkit-font-smoothing: antialiased; }
 .slide > * { position: relative; z-index: 1; }
 
 /* ---------- typography ---------- */
-.slide h1 { font-family: var(--f-text); font-weight: 600; font-size: 1.5em; line-height: 1.12; letter-spacing: -.015em; margin: 0 0 .65em; text-wrap: balance; }
+.slide h1 { font-family: var(--f-head); font-weight: var(--w-head); font-size: 1.5em; line-height: 1.12; letter-spacing: -.015em; margin: 0 0 .65em; text-wrap: balance; }
 .slide h1 em, .slide h1 i { font-style: italic; font-weight: 500; }
 .slide h1 .accent, .slide .accent { color: var(--red); }
 .slide h1::after { content: ""; display: block; width: 1.6em; height: 3px; background: var(--red); margin-top: .36em; }
-.slide h2 { font-size: 1.15em; font-weight: 600; margin: 0 0 .45em; line-height: 1.2; }
+.slide h2 { font-family: var(--f-head); font-size: 1.15em; font-weight: var(--w-head); margin: 0 0 .45em; line-height: 1.2; }
 .slide p { margin: 0 0 .7em; text-wrap: pretty; }
 .slide ul, .slide ol { margin: 0 0 .7em; padding-left: 1.2em; }
 .slide li { margin: 0 0 .45em; padding-left: .15em; }
 .slide li::marker { color: var(--red); }
 .slide ul.plain { list-style: none; padding-left: 0; }
 .slide em { font-style: italic; }
-.slide strong { font-weight: 600; }
+.slide strong { font-weight: calc(var(--w-text) + 200); }
 .slide blockquote { margin: .6em 0; padding: .1em 0 .1em 1em; border-left: 4px solid var(--gold); color: var(--muted); font-style: italic; }
 .slide .small { font-size: .75em; line-height: 1.4; color: var(--muted); }
 .slide .tiny { font-size: .6em; line-height: 1.35; color: var(--muted); }
@@ -99,13 +101,21 @@ body.deck { -webkit-font-smoothing: antialiased; }
 .slide.text, .slide.split { display: none; flex-direction: column; }
 .slide.text.current, .slide.split.current { display: flex; }
 
+/* tables */
+.slide table { border-collapse: collapse; width: 100%; font-size: .72em; line-height: 1.3; margin: .4em 0 .8em; font-family: var(--f-ui); }
+.slide th, .slide td { text-align: left; vertical-align: top; padding: .3em .55em; border-bottom: 1px solid var(--rule-soft); }
+.slide th { font-family: var(--f-mono); font-size: .8em; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--rule); }
+.slide tr:first-child th:empty { border-bottom: 0; }
+.slide td:first-child { font-weight: 600; }
+.slide .small table { font-size: .9em; }
+
 /* ---------- layouts ---------- */
 /* title */
 .slide.title { padding: 0; }
 .slide.title .cover { position: absolute; inset: 0; }
 .slide.title .cover img { width: 100%; height: 100%; object-fit: cover; }
 .slide.title .block { position: absolute; left: 160px; right: 160px; top: 200px; display: flex; flex-direction: column; gap: 22px; }
-.slide.title h1 { font-size: 92px; letter-spacing: -.03em; line-height: 1.02; margin: 0; }
+.slide.title h1 { font-family: var(--f-head); font-size: 92px; letter-spacing: -.03em; line-height: 1.02; margin: 0; }
 .slide.title h1::after { width: 140px; margin-top: 34px; }
 .slide.title .sub { font-size: 44px; color: var(--red); font-style: italic; }
 .slide.title .who { font-size: 40px; margin-top: 30px; }
@@ -208,7 +218,7 @@ body.deck { -webkit-font-smoothing: antialiased; }
 
 /* two text columns */
 .twocol { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5em; }
-.twocol h3 { font-size: 1em; font-weight: 600; margin: 0 0 .35em; font-style: italic; }
+.twocol h3 { font-family: var(--f-head); font-size: 1em; font-weight: var(--w-head); margin: 0 0 .35em; font-style: italic; }
 
 /* quote slide */
 .slide.quote { display: none; }
@@ -227,6 +237,20 @@ body.deck { -webkit-font-smoothing: antialiased; }
 body.preview .progress, body.preview .counter { display: none; }
 body.preview .slide, body.preview .slide * { animation: none !important; transition: none !important; }
 body.preview .stage { box-shadow: none; }
+
+/* type tester panel */
+.typepanel { position: fixed; right: 16px; top: 16px; z-index: 35; background: #1c1917; color: #eee; border: 1px solid #444; border-radius: 8px; padding: 16px 18px; font: 13px/1.5 var(--f-ui); width: 330px; display: none; box-shadow: 0 20px 50px rgba(0,0,0,.5); }
+.typepanel.on { display: block; }
+.typepanel h2 { margin: 0 0 10px; font: 600 14px var(--f-ui); color: #fff; }
+.typepanel label { display: grid; grid-template-columns: 74px 1fr 46px; gap: 8px; align-items: center; margin: 6px 0; }
+.typepanel select, .typepanel input[type=range] { width: 100%; }
+.typepanel select { background: #2a2622; color: #eee; border: 1px solid #555; border-radius: 4px; padding: 3px 4px; font: 13px var(--f-ui); }
+.typepanel output { font-family: var(--f-mono); font-size: 12px; color: #bbb; text-align: right; }
+.typepanel .row { display: flex; gap: 8px; margin-top: 10px; }
+.typepanel button { flex: 1; background: #2a2622; color: #eee; border: 1px solid #555; border-radius: 4px; padding: 6px 8px; font: 12px var(--f-ui); cursor: pointer; }
+.typepanel button:hover { border-color: var(--red-soft); }
+.typepanel .hint { color: #888; font-size: 11.5px; margin: 8px 0 0; }
+.typepanel textarea { width: 100%; height: 54px; margin-top: 8px; background: #111; color: #ccc; border: 1px solid #444; font: 11px var(--f-mono); resize: none; }
 
 /* ---------- chrome ---------- */
 .progress { position: fixed; left: 0; bottom: 0; height: 4px; background: var(--red); width: 0; z-index: 20; transition: width .2s; }

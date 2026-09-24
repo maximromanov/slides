@@ -6,6 +6,7 @@ author: "Maxim Romanov"
 affiliation: "The Evolution of Islamic Societies (c. 600–1600 CE), Universität Hamburg"
 date: "2026-09-28"
 description: ""
+draft: true   # remove this line to publish the deck
 logos:
   - ../2026-09-22-fub-keynote/img/logo-dfg.png
   - ../2026-09-22-fub-keynote/img/logo-uhh.png

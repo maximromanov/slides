@@ -139,6 +139,7 @@
       case 'f': case 'F': if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen(); break;
       case 'o': case 'O': case 'Escape': if (e.key === 'Escape' && help.classList.contains('on')) { help.classList.remove('on'); break; } toggleOverview(e.key === 'Escape' ? false : undefined); break;
       case 's': case 'S': openNotes(); break;
+      case 't': case 'T': panel.classList.toggle('on'); break;
       case '?': case 'h': case 'H': help.classList.toggle('on'); break;
     }
   });
@@ -163,6 +164,53 @@
     if (Math.abs(dx) > 40) { if (dx < 0) next(); else prev(); }
   });
   help.addEventListener('click', function () { help.classList.remove('on'); });
+
+  /* Type tester: pick faces and weights live; the choice is kept in this browser for every deck. */
+  var FACES = [
+    ['Literata (default)', '"Literata", Georgia, serif'], ['Source Serif 4', '"Source Serif 4", Georgia, serif'], ['Merriweather', '"Merriweather", Georgia, serif'],
+    ['Newsreader', '"Newsreader", Georgia, serif'], ['Lora', '"Lora", Georgia, serif'], ['PT Serif', '"PT Serif", Georgia, serif'], ['Alegreya', '"Alegreya", Georgia, serif'],
+    ['Georgia (system)', 'Georgia, serif'], ['Palatino (system)', '"Palatino Linotype", Palatino, "Book Antiqua", serif'], ['Iowan Old Style (Mac)', '"Iowan Old Style", Georgia, serif'], ['Charter (Mac)', 'Charter, Georgia, serif'],
+    ['Inter (sans)', '"Inter", system-ui, sans-serif'], ['Source Sans 3 (sans)', '"Source Sans 3", system-ui, sans-serif'], ['IBM Plex Sans (sans)', '"IBM Plex Sans", system-ui, sans-serif'], ['Helvetica Neue (system sans)', '"Helvetica Neue", Helvetica, Arial, sans-serif'], ['Avenir (Mac sans)', 'Avenir, "Avenir Next", system-ui, sans-serif']
+  ];
+  var TYPE_KEY = 'deck-type';
+  var typeDefaults = { text: 0, head: 0, wText: 400, wHead: 600, ls: 0 };
+  function loadType() { try { return Object.assign({}, typeDefaults, JSON.parse(localStorage.getItem(TYPE_KEY) || '{}')); } catch (e) { return Object.assign({}, typeDefaults); } }
+  function applyType(t) {
+    var r = document.documentElement.style;
+    r.setProperty('--f-text', FACES[t.text][1]); r.setProperty('--f-head', FACES[t.head][1]);
+    r.setProperty('--w-text', t.wText); r.setProperty('--w-head', t.wHead); r.setProperty('--ls-text', t.ls / 1000);
+  }
+  var typeState = loadType(); applyType(typeState);
+  var panel = document.createElement('div'); panel.className = 'typepanel';
+  function opts(sel) { return FACES.map(function (f, i) { return '<option value="' + i + '"' + (i === sel ? ' selected' : '') + '>' + f[0] + '</option>'; }).join(''); }
+  panel.innerHTML = '<h2>Type tester</h2>' +
+    '<label>Body face <select id="tp-text">' + opts(typeState.text) + '</select><span></span></label>' +
+    '<label>Body weight <input type="range" id="tp-wtext" min="300" max="900" step="10" value="' + typeState.wText + '"><output id="o-wtext">' + typeState.wText + '</output></label>' +
+    '<label>Spacing <input type="range" id="tp-ls" min="-20" max="40" step="1" value="' + typeState.ls + '"><output id="o-ls">' + typeState.ls + '</output></label>' +
+    '<label>Heading face <select id="tp-head">' + opts(typeState.head) + '</select><span></span></label>' +
+    '<label>Heading weight <input type="range" id="tp-whead" min="300" max="900" step="10" value="' + typeState.wHead + '"><output id="o-whead">' + typeState.wHead + '</output></label>' +
+    '<div class="row"><button id="tp-reset">Reset</button><button id="tp-copy">Copy settings</button><button id="tp-close">Close</button></div>' +
+    '<p class="hint">Weights are continuous for the variable faces (Literata, Source Serif 4, Merriweather, Newsreader, Lora, Alegreya, Source Sans 3); others snap to their available weights. Settings persist in this browser for all decks. Send the copied line to have them baked in.</p>' +
+    '<textarea id="tp-out" readonly></textarea>';
+  document.body.appendChild(panel);
+  function describe() { return 'body: ' + FACES[typeState.text][0] + ' ' + typeState.wText + ', spacing ' + typeState.ls + ' · heading: ' + FACES[typeState.head][0] + ' ' + typeState.wHead; }
+  function typeChanged() {
+    typeState.text = +panel.querySelector('#tp-text').value; typeState.head = +panel.querySelector('#tp-head').value;
+    typeState.wText = +panel.querySelector('#tp-wtext').value; typeState.wHead = +panel.querySelector('#tp-whead').value; typeState.ls = +panel.querySelector('#tp-ls').value;
+    panel.querySelector('#o-wtext').textContent = typeState.wText; panel.querySelector('#o-whead').textContent = typeState.wHead; panel.querySelector('#o-ls').textContent = typeState.ls;
+    applyType(typeState); try { localStorage.setItem(TYPE_KEY, JSON.stringify(typeState)); } catch (e) {}
+    panel.querySelector('#tp-out').value = describe();
+    clearTimeout(typeChanged.t); typeChanged.t = setTimeout(fitText, 150);
+  }
+  panel.addEventListener('input', typeChanged); panel.addEventListener('change', typeChanged);
+  panel.addEventListener('keydown', function (e) { e.stopPropagation(); });
+  panel.querySelector('#tp-out').value = describe();
+  panel.querySelector('#tp-reset').addEventListener('click', function () {
+    typeState = Object.assign({}, typeDefaults); try { localStorage.removeItem(TYPE_KEY); } catch (e) {}
+    panel.querySelector('#tp-text').value = 0; panel.querySelector('#tp-head').value = 0; panel.querySelector('#tp-wtext').value = 400; panel.querySelector('#tp-whead').value = 600; panel.querySelector('#tp-ls').value = 0; typeChanged();
+  });
+  panel.querySelector('#tp-copy').addEventListener('click', function () { var o = panel.querySelector('#tp-out'); o.select(); try { navigator.clipboard.writeText(o.value); } catch (e) { document.execCommand('copy'); } });
+  panel.querySelector('#tp-close').addEventListener('click', function () { panel.classList.remove('on'); });
   var lightbox = document.createElement('div'); lightbox.className = 'lightbox'; lightbox.innerHTML = '<img alt="">'; document.body.appendChild(lightbox);
   lightbox.addEventListener('click', function () { lightbox.classList.remove('on'); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && lightbox.classList.contains('on')) { lightbox.classList.remove('on'); e.stopImmediatePropagation(); } }, true);

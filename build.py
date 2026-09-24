@@ -190,6 +190,9 @@ def main():
     entries = []
     for d in sorted(DECKS.iterdir()):
         if (d / "deck.md").exists():
+            head = (d / "deck.md").read_text(encoding="utf-8")[:2000]
+            if re.search(r"^draft:\s*true", head, flags=re.M):
+                print(f"{d.name}: draft, skipped"); shutil.rmtree(OUT / d.name, ignore_errors=True); continue
             fm, n = build_deck(d)
             entries.append((d.name, fm, n))
             print(f"{d.name}: {n} slides")
