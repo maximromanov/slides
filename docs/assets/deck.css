@@ -109,6 +109,18 @@ body.deck { -webkit-font-smoothing: antialiased; }
 .slide td:first-child { font-weight: 600; }
 .slide .small table { font-size: .9em; }
 
+/* word-ambiguity table (Cairo) */
+.ayn { display: grid; grid-template-columns: 1.15fr .55fr 1fr; gap: 0 1em; margin-top: .3em; }
+.ayn .row { display: contents; }
+.ayn .row > div { padding: .45em 0; border-top: 1px solid var(--rule-soft); }
+.ayn .row:first-child > div { border-top: 0; }
+.ayn .ar-x { font-family: var(--f-ar); font-size: 1.25em; line-height: 1.5; }
+.ayn .ar-x b { color: var(--red); font-weight: 700; }
+.ayn .rd { font-size: .95em; }
+.ayn .rd b { color: var(--red); }
+.ayn .tr { font-size: .78em; line-height: 1.35; color: var(--ink); }
+.ayn .src { display: block; font-family: var(--f-ui); font-size: .8em; color: var(--muted); margin-top: .2em; }
+
 /* ---------- layouts ---------- */
 /* title */
 .slide.title { padding: 0; }

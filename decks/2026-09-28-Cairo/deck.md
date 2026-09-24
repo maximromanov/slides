@@ -1,6 +1,6 @@
 ---
 title: "Why One Manuscript Needs All The Others"
-subtitle: ""
+subtitle: "The Case for a Unified Arabic Corpus"
 event: "Cairo · 28 September 2026"
 author: "Maxim Romanov"
 affiliation: "The Evolution of Islamic Societies (c. 600–1600 CE), Universität Hamburg"
@@ -15,6 +15,19 @@ logos:
 
 <!-- K2 -->
 --- title
+
+<!-- N1 -->
+--- text
+# One written form, four readings: <span class="ar" style="font-size:1.25em">عين</span>
+
+<div class="ayn">
+<div class="row"><div class="ar-x" lang="ar" dir="rtl">ما لا <b>عين</b> رأت ولا أذن سمعت</div><div class="rd"><b>ʿayn</b> · eye</div><div class="tr">“What no eye has seen and no ear has heard.”<span class="src">Ṣaḥīḥ al-Buḫārī, no. 3244</span></div></div>
+<div class="row"><div class="ar-x" lang="ar" dir="rtl">فيها <b>عين</b> جارية</div><div class="rd"><b>ʿayn</b> · spring</div><div class="tr">“In it is a flowing spring.”<span class="src">Qurʾān 88:12, on Paradise</span></div></div>
+<div class="row"><div class="ar-x" lang="ar" dir="rtl">فبعث <b>عينا</b> له من جهينة … فأتاه بخبر القوم</div><div class="rd"><b>ʿayn</b> · scout, spy</div><div class="tr">“He sent a scout of his from Juhaynaŧ … and the man brought him news of the people.”<span class="src">al-Ṭabarī, Jāmiʿ al-bayān, on Q 8:7</span></div></div>
+<div class="row"><div class="ar-x" lang="ar" dir="rtl">ثم <b>عين</b> له السلطان محمد خان … كل يوم ثمانين درهما</div><div class="rd"><b>ʿayyana</b> · assigned</div><div class="tr">“Sultan Meḥmed Ḫān then assigned him … eighty dirhams a day.”<span class="src">Ṭāšköprüzāde, al-Šaqāʾiq al-nuʿmāniyyaŧ, p. 94</span></div></div>
+</div>
+
+<p class="bottom punch">Three senses of one noun, and a verb whose <em>šaddaŧ</em> vanishes in unvowelled writing: only the surrounding text resolves them.</p>
 
 <!-- K3 -->
 --- full contain
