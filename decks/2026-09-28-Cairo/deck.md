@@ -20,27 +20,27 @@ logos:
 --- text
 # How do we know what a word means?
 
-<div class="ayn-bare"><span lang="ar" dir="rtl">عين</span></div>
-
-<div class="small" style="margin-top:.4em">
-<p class="step">Not from the word itself: the written form is the same.</p>
-<p class="step">Not from a dictionary: it lists all four and chooses none.</p>
+<div class="ayn2">
+<div class="row">
+<div class="ph"><span class="ctx">ما لا</span><b>عين</b><span class="ctx">رأت ولا أذن سمعت</span></div>
+<div class="gl"><b>ʿayn</b> · eye <span class="tr">“What no eye has seen and no ear has heard.”</span><span class="src">Ṣaḥīḥ al-Buḫārī, no. 3244</span></div>
+</div>
+<div class="row">
+<div class="ph"><span class="ctx">فيها</span><b>عين</b><span class="ctx">جارية</span></div>
+<div class="gl"><b>ʿayn</b> · spring <span class="tr">“In it is a flowing spring.”</span><span class="src">Qurʾān 88:12</span></div>
+</div>
+<div class="row">
+<div class="ph"><span class="ctx">فبعث</span><b>عينا</b><span class="ctx">له من جهينة … فأتاه بخبر القوم</span></div>
+<div class="gl"><b>ʿayn</b> · scout, spy <span class="tr">“He sent a scout of his from Juhaynaŧ … and the man brought him news of the people.”</span><span class="src">al-Ṭabarī, Jāmiʿ al-bayān, on Q 8:7</span></div>
+</div>
+<div class="row">
+<div class="ph"><span class="ctx">ثم</span><b>عين</b><span class="ctx">له السلطان محمد خان … كل يوم ثمانين درهما</span></div>
+<div class="gl"><b>ʿayyana</b> · assigned <span class="tr">“Sultan Meḥmed Ḫān then assigned him … eighty dirhams a day.”</span><span class="src">Ṭāšköprüzāde, al-Šaqāʾiq al-nuʿmāniyyaŧ, p. 94</span></div>
+</div>
+<span class="step sw-ctx"></span><span class="step sw-gl"></span>
 </div>
 
-<p class="bottom punch step">One written form. Four words.</p>
-
-<!-- N1 -->
---- text
-# We know it from what surrounds it
-
-<div class="ayn">
-<div class="row"><div class="ar-x" lang="ar" dir="rtl">ما لا <b>عين</b> رأت ولا أذن سمعت</div><div class="rd"><b>ʿayn</b> · eye</div><div class="tr">“What no eye has seen and no ear has heard.”<span class="src">Ṣaḥīḥ al-Buḫārī, no. 3244</span></div></div>
-<div class="row"><div class="ar-x" lang="ar" dir="rtl">فيها <b>عين</b> جارية</div><div class="rd"><b>ʿayn</b> · spring</div><div class="tr">“In it is a flowing spring.”<span class="src">Qurʾān 88:12, on Paradise</span></div></div>
-<div class="row"><div class="ar-x" lang="ar" dir="rtl">فبعث <b>عينا</b> له من جهينة … فأتاه بخبر القوم</div><div class="rd"><b>ʿayn</b> · scout, spy</div><div class="tr">“He sent a scout of his from Juhaynaŧ … and the man brought him news of the people.”<span class="src">al-Ṭabarī, Jāmiʿ al-bayān, on Q 8:7</span></div></div>
-<div class="row"><div class="ar-x" lang="ar" dir="rtl">ثم <b>عين</b> له السلطان محمد خان … كل يوم ثمانين درهما</div><div class="rd"><b>ʿayyana</b> · assigned</div><div class="tr">“Sultan Meḥmed Ḫān then assigned him … eighty dirhams a day.”<span class="src">Ṭāšköprüzāde, al-Šaqāʾiq al-nuʿmāniyyaŧ, p. 94</span></div></div>
-</div>
-
-<p class="bottom punch">Three senses of one noun, and a verb whose <em>šaddaŧ</em> vanishes in unvowelled writing: only the surrounding text resolves them.</p>
+<p class="bottom punch step">We know it from what surrounds it.</p>
 
 <!-- N3 -->
 --- text
