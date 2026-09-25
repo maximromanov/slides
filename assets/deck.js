@@ -13,7 +13,8 @@
   function fit() {
     if (document.body.classList.contains('overview')) { stage.style.transform = ''; return; }
     var s = Math.min(window.innerWidth / W, window.innerHeight / H);
-    stage.style.transform = 'scale(' + s + ')';
+    var x = Math.round((window.innerWidth - W * s) / 2), y = Math.round((window.innerHeight - H * s) / 2);
+    stage.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(' + s + ')';
   }
 
   function steps(s) { return Array.prototype.slice.call(s.querySelectorAll('.step')); }
