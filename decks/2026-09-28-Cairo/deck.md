@@ -159,6 +159,21 @@ logos:
 ![](img/057675d523.png)
 
 <!-- G21 -->
+--- text
+# al-Ḏahabī and his <i>Tārīḫ al-islām</i>
+
+<div class="indent">
+<p>Šams al-dīn al-Ḏahabī (d. 748/1348): historian, ḥadīṯ scholar, biographer.</p>
+<p><em>Tārīḫ al-islām</em> — a universal chronicle-cum-biographical collection covering seven centuries of Islamic history (1–700 AH / 622–1301 CE), organized decade by decade.</p>
+<ul>
+<li>c. 30,000 biographies</li>
+<li>c. 3 million words</li>
+<li>Two modern editions: 50 vols. (Tadmurī) and 16 vols. (Maʿrūf)</li>
+</ul>
+<p class="small" style="margin-top:1em">Built largely from earlier sources — an ideal test case for text-reuse detection at scale.</p>
+</div>
+
+<!-- G21b -->
 --- figure
 
 ![](img/4914026269.png)
@@ -219,7 +234,8 @@ logos:
 ![](img/table-9-altafsir.png)
 
 <!-- K35 -->
---- text steps
+--- text
+
 # The eight exceptions
 
 <ul class="indent small" style="max-width:44em">
