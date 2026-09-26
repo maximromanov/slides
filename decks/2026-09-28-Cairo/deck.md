@@ -6,7 +6,6 @@ author: "Maxim Romanov"
 affiliation: "The Evolution of Islamic Societies (c. 600–1600 CE), Universität Hamburg"
 date: "September 27–28, 2026 · Cairo"
 description: ""
-unlisted: true   # built and reachable by its address, but not shown in the list; remove when ready
 host_logos:
   - img/logo-fu-berlin.png
   - img/logo-iars.png
