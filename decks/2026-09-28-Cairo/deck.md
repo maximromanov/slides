@@ -40,7 +40,7 @@ logos:
 <span class="step sw-ctx"></span><span class="step sw-gl"></span>
 </div>
 
-<p class="bottom punch step">We know it from what surrounds it.</p>
+<p class="bottom punch ayn-punch">We know it from what surrounds it.</p>
 
 <!-- N3 -->
 --- text
@@ -53,7 +53,7 @@ logos:
 <div class="box hi"><span class="num">٤</span><span class="name">A tradition</span><span class="desc">is periodized by how its language and its topics change</span></div>
 </div>
 
-<p class="bottom punch">No manuscript can be read alone. Every text needs all the others.</p>
+<p class="bottom punch">No manuscript can be read alone.<br>Every text needs all the others.</p>
 
 <!-- K3 -->
 --- full contain
