@@ -53,8 +53,6 @@ logos:
 <div class="box hi"><span class="num">٤</span><span class="name">A tradition</span><span class="desc">is periodized by how its language and its topics change</span></div>
 </div>
 
-<p class="bottom punch">No manuscript can be read alone.<br>Every text needs all the others.</p>
-
 <!-- K3 -->
 --- full contain
 ![Cover of Digital Humanities for Arabic and Islamic Studies beside the publisher’s page](img/brill-page.png)
@@ -614,6 +612,9 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 <li><strong>c. 1540</strong> emerges as a major structural break (essentially, the end of the Mamluk period)</li>
 <li>Chronology &amp; geography become part of the same explanation</li>
 </ul>
+
+--- quote
+<span style="color: var(--red); font-style: italic;">No manuscript can be read alone.<br>Every text needs all the others.</span>
 
 <!-- K71 -->
 --- full contain
