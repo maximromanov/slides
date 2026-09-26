@@ -77,14 +77,22 @@ def render_slide(layout, opts, body, deck):
     if layout == "title":
         fm = deck
         logos = "".join(f'<img src="{esc(l)}" alt="">' for l in (fm.get("logos") or []))
+        host_logos = "".join(f'<img src="{esc(l)}" alt="">' for l in (fm.get("host_logos") or []))
         cover = f'<div class="cover"><img src="{esc(opts["cover"])}" alt=""></div>' if opts.get("cover") else ""
         inner = (
             f'{cover}<div class="block"><p class="kicker">{esc(fm.get("event", ""))}</p><h1>{mdi(fm["title"])}</h1>'
             + (f'<p class="sub">{mdi(fm["subtitle"])}</p>' if fm.get("subtitle") else "")
             + f'<p class="who">{mdi(fm.get("author", ""))}</p><p class="meta">{mdi(fm.get("date", ""))}'
             + (f' · {mdi(fm["affiliation"])}' if fm.get("affiliation") else "") + "</p></div>"
-            + (f'<div class="logos">{logos}</div>' if logos else "")
         )
+        if host_logos and logos:
+            inner += (f'<div class="logo-stack">'
+                      f'<div class="logos hosts"><span class="label">{esc(fm.get("host_label", "Hosted & funded by"))}</span>{host_logos}</div>'
+                      f'<div class="logos">{logos}</div></div>')
+        elif host_logos:
+            inner += f'<div class="logos"><span class="label">{esc(fm.get("host_label", "Hosted & funded by"))}</span>{host_logos}</div>'
+        elif logos:
+            inner += f'<div class="logos">{logos}</div>' 
         title = re.sub(r"<[^>]+>", "", mdi(fm["title"]))
     elif layout == "section":
         inner = f'<div class="inner">{md(body)}</div>'

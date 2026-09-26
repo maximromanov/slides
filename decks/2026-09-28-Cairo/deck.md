@@ -1,12 +1,17 @@
 ---
 title: "Why One Manuscript Needs All The Others"
 subtitle: "The Case for a Unified Arabic Corpus"
-event: "Cairo · 28 September 2026"
+event: "Unlocking Arabic Manuscripts: The Potential of Digital Humanities for Egypt’s Collections"
 author: "Maxim Romanov"
 affiliation: "The Evolution of Islamic Societies (c. 600–1600 CE), Universität Hamburg"
-date: "September 28, 2026"
+date: "September 27–28, 2026 · Cairo"
 description: ""
 unlisted: true   # built and reachable by its address, but not shown in the list; remove when ready
+host_logos:
+  - img/logo-fu-berlin.png
+  - img/logo-iars.png
+  - img/logo-ffo.png
+  - img/logo-daad-cosimena.png
 logos:
   - img/logo-dfg.png
   - img/logo-uhh.png
@@ -44,50 +49,32 @@ logos:
 
 <!-- N3 -->
 --- text
-# The same answer at every scale
+# The same framing at every scale
 
 <div class="chain">
-<div class="box"><span class="num">١</span><span class="name">A word</span><span class="desc">is read from the words around it</span></div>
-<div class="box"><span class="num">٢</span><span class="name">A term</span><span class="desc">is understood from the corpus across time: when it appears, who uses it</span></div>
-<div class="box"><span class="num">٣</span><span class="name">A book</span><span class="desc">is known by the other books: what it reuses, what type of text it is</span></div>
-<div class="box hi"><span class="num">٤</span><span class="name">A tradition</span><span class="desc">is periodized by how its language and its topics change</span></div>
+<div class="box"><span class="num">١</span><span class="name">A word</span><span class="desc">is understood through the words around it: its company restricts its meaning</span></div>
+<div class="box"><span class="num">٢</span><span class="name">A term</span><span class="desc">is understood through the corpus: when does it appear across time and space? who uses it? and who doesn’t?</span></div>
+<div class="box"><span class="num">٣</span><span class="name">A book</span><span class="desc">is understood through other books: what other books it builds on? how does it fit among the rest?</span></div>
+<div class="box hi"><span class="num">٤</span><span class="name">A tradition</span><span class="desc">is understood through the geographical and chronological layers of books: how does its language change? how do its topics shift?</span></div>
 </div>
 
 <!-- K3 -->
---- full contain
-![Cover of Digital Humanities for Arabic and Islamic Studies beside the publisher’s page](img/brill-page.png)
-
-<!-- K4 -->
---- text
-# What’s in the book?
-
-**Three Chapters**
-
-1. A Pitch for the DH
-2. Digital Avatars and Metaobjects
-3. Computational Inquiries
-
-<p class="callout" style="margin-top:1em">In short, this book asks: <em>What does it mean for our field when the entire library becomes a vademecum—something that, quite literally, “goes with me” everywhere? What new possibilities and responsibilities does this transformation bring?</em></p>
-
-<!-- S1 -->
---- section
+--- section light
 <p class="kicker">The instrument</p>
-# A corpus in time
-<p>OpenITI: the Arabic written tradition as a chronological distribution</p>
+# A Proxy to the Arabic Written Tradition
+<p>OpenITI as a chronological and geographical representation</p>
 
 <!-- K11 -->
 --- text
-# The Library That Arrived Unexpected
+# OpenITI <span class="small" style="font-weight:400"><a href="https://github.com/OpenITI">github.com/OpenITI</a></span>
 
 <div class="stats">
-<div class="stat"><b>8,600+</b><span>classical Arabic texts</span></div>
-<div class="stat"><b>1 billion+</b><span>words in the corpus</span></div>
-<div class="stat"><b>1,300+</b><span>years of written Arabic</span></div>
+<div class="stat"><b>8,700+</b><span>titles</span></div>
+<div class="stat"><b>3,300+</b><span>authors</span></div>
+<div class="stat"><b>2.4 billion</b><span>words, all versions</span></div>
 </div>
 
-<p style="text-align:center;font-style:italic;color:var(--muted);margin-top:1.2em">A treasure without a map. A library without a methodology.<br>A field that found itself unprepared.</p>
-
-<p class="bottom punch">What do we do when the entire library becomes a <span style="font-style:normal">vademecum</span>?!</p>
+<p class="small" style="text-align:center;color:var(--muted);margin-top:1.6em">Nigst, Lorenz, Maxim Romanov, Sarah Bowen Savant, Masoumeh Seydi, and Peter Verkinderen. <em>OpenITI: A Machine-Readable Corpus of Islamicate Texts, Primary Version.</em> Version 2025.1.9. Zenodo, 2026. <a href="https://doi.org/10.5281/zenodo.18613982">doi.org/10.5281/zenodo.18613982</a></p>
 
 <!-- K12 -->
 --- text
@@ -108,64 +95,38 @@ logos:
 ![Chronological distribution of the volume of the OpenITI subcorpus](img/fig-2-31-chronological-volume.png)
 
 <!-- K14 -->
---- text steps
-# But a corpus is also a historical source
-
-<ul class="indent">
-<li>Survival bias — what reached us</li>
-<li>Editorial / digitization bias — what modern scholars chose to publish</li>
-<li>Uneven genre and chronological coverage</li>
-</ul>
-
-<p class="bottom punch">Source criticism begins with the instrument.</p>
-
-<!-- K15 -->
 --- figure
-![Density plots of books by century in three libraries and the Hadiyyat al-ʿārifīn](img/fig-1-10-density-libraries.png)
+![The same chronological distribution, with the smallest period circled: even the thinnest slice, 1200–1300 AH, just 14 million clean words, is enough for many purposes](img/fig-2-31-chronological-volume-highlight.png)
 
-<!-- K16 -->
---- figure
-![Share of series total by century: Hadiyyat al-ʿārifīn, major libraries, and OpenITI unique texts](img/openiti-mirrors-libraries.png)
-
-<!-- S2 -->
---- section
+<!-- K14b -->
+--- section light
 <p class="kicker">Case 1</p>
 # A term in time
 <p>When did <em>al-kutub al-sittaŧ</em> come to be?</p>
 
 <!-- K24 -->
+--- text steps
+# Case 1: <em>al-kutub al-sittaŧ</em> (<span class="ar" lang="ar" dir="rtl">الكتب الستة</span>)
+
+<div class="indent small" style="max-width:36em">
+<p>In “The Devil’s Delusions” (<em>Talbīs Iblīs</em>), Ibn al-Jawzī (d. 597/1201) uses lots of <i>ḥadīṯ</i>s:</p>
+<br>
+<p><em><strong>- &nbsp; No <i>isnād</i>s for</strong>: Muslim, al-Buḫārī, and Abū Dāwūd</em></p>
+<br>
+<p><em><strong>- &nbsp; Full <i>isnād</i>s for</strong>: al-Tirmiḏī, Ibn Mājah, and al-Nasāʾī</em></p>
+</div>
+
+<br>
+<br>
+
+<p class="bottom punch">No notion of <em>al-kutub al-sittaŧ</em> in the end of the 6th/12th century in Baġdād.</p>
+
+
+<!-- K26 -->
 --- figure
 ![Google Books Ngram Viewer: telegraph, telephone, television](img/google-ngram-viewer.png)
 
 <!-- K25 -->
---- text
-# Case Study 1: Tracing Term Usage
-
-<div class="indent small" style="max-width:36em">
-<p><strong>2.1 &nbsp; <em>From “The Devil’s Delusions” to Ḥadīṯ Studies</em></strong><br>
-Now that we have a general sense of how the OpenITI NgramReader works, let’s consider a more complex inquiry, this time into terminology central to the study of Ḥadīṯ. In the early 2000s, I made my first attempt at writing a PhD thesis at the Institute of Oriental Manuscripts of the Russian Academy of Sciences in my hometown of St. Petersburg. My dissertation focused on a close reading of “The Devil’s Delusions” (<em>Talbīs Iblīs</em>) by Ibn al-Jawzī (d. 597/1201), the renowned historian, traditionist, and—perhaps most importantly—Ḥanbalī preacher (<em>wāʿiẓ</em>) of Baġdād.</p>
-<p><strong>2.2 &nbsp; <em>Proposition 1: The Chronology of Transmission Terms</em></strong><br>
-<strong>2.3 &nbsp; <em>Proposition 2: The Decline of</em> Isnāds</strong><br>
-<strong>2.4 &nbsp; <em>Proposition 3: The Canonization of</em> Ḥadīṯ <em>Collections</em></strong></p>
-</div>
-
-<!-- K26 -->
---- figure caption="ADHFAIS Appendix 1: NgramReader, 2025 (OpenITI, release 2023.1.7). Relative frequencies of anbaʾa-nā, aḫbara-nā, and ḥaddaṯa-nā, with LOESS smoothing."
-![NgramReader: relative frequencies of three transmission terms over time](img/fig-13-ngram-transmission.png)
-
-<!-- K27 -->
---- figure
-![Transmission terms in the first four centuries of Islam](img/fig-14-transmission-terms.png)
-
-<!-- K28 -->
---- figure
-![All transmission terms aggregated](img/fig-15-transmission-aggregated.png)
-
-<!-- K29 -->
---- figure
-![Full transmission terms compared with their abbreviations](img/fig-17-full-vs-abbreviated.png)
-
-<!-- K30 -->
 --- figure
 ![Mentions of al-kutub al-sittat over time](img/fig-18-kutub-sitta.png)
 
@@ -174,22 +135,21 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 ![Authors mentioning al-kutub al-sittat by century and region](img/fig-19-authors-by-region.png)
 
 <!-- S3 -->
---- section
+--- section light
 <p class="kicker">Case 2</p>
 # A book among books
 <p>Text reuse and the modeling of text types</p>
 
 <!-- G19 -->
---- text
-# A Story and Its Versions: Ṯimār al-qulūb of al-Ṯaʿālibī (d. 429/1038)
+--- section light
+<p class="kicker">Case 2a</p>
+# Text Reuse
+<p>By tracing at scale how later texts reuse earlier texts we can understand how each book fits into the tradition and how all the books form a network of interconnections</p>
 
-<p class="ar" dir="rtl">ومنهم عبد الله بن خازم السلمى والى خراسان لعبد الله بن الزبير ومن عجيب أمره أنه كان نهاية فى الشجاعة والنجدة وكان يخاف الفأر أشد مخافة فبينما هو ذات يوم عند عبيد الله بن زياد إذ أدخل عليه جرذا أبيض فتعجب منه فقال لعبد الله يا أبا صالح هل رأيت أعجب من هذا وإذا عبد الله قد تضاءل كأنه فرخ وأصفر كأنه جرادة فقال عبيد الله أبو صالح يعصى الرحمن ويتهاون بالسلطان ويقبض على الثعبان ويمشى إلى الأسد الورد ويلقى الرماح بوجهه والسيوف بيده وقد اعتراه من جرذ ما ترون أشهد أن الله على كل شيء قدير</p>
-- Among them was Abd Allãh b. Ḫāzim al-Sulamī, the governor of Ḫurāsān for Abd Allãh b. al-Zubayr. What was remarkable about him was that he was extremely brave and resourceful, yet he was terrified of mice. One day, while he was with ʿUbayd Allãh b. Ziyād, a white rat was brought before him and he was astonished. ʿUbayd Allãh said to ʿAbd Allãh, ‘O Abū Ṣāliḥ, have you ever seen anything more astonishing than this?’ And there was Abd Allãh, who had shrunk as if he were a chick and turned yellow as if he were a male locust. ʿUbayd Allãh then said, “Abū Ṣaliḥ disobeys the Merciful, takes lightly the authority, seizes the snake, walks toward the blooming lion, faces spears with his face and swords with his hands, and yet, he is overcome by a rat as you see. I testify that Allãh is capable of everything.
+<!-- G19b -->
+--- split w-25-75 vcenter
 
-<!-- G20 -->
---- split w-35-65 vcenter
-
-<div class="small" markdown="1">
+<div class="tiny" markdown="1">
 
 - Among them was Abd Allãh b. Ḫāzim al-Sulamī, the governor of Ḫurāsān for Abd Allãh b. al-Zubayr. What was remarkable about him was that he was extremely brave and resourceful, yet he was terrified of mice. One day, while he was with ʿUbayd Allãh b. Ziyād, a white rat was brought before him and he was astonished. ʿUbayd Allãh said to ʿAbd Allãh, ‘O Abū Ṣāliḥ, have you ever seen anything more astonishing than this?’ And there was Abd Allãh, who had shrunk as if he were a chick and turned yellow as if he were a male locust. ʿUbayd Allãh then said, “Abū Ṣaliḥ disobeys the Merciful, takes lightly the authority, seizes the snake, walks toward the blooming lion, faces spears with his face and swords with his hands, and yet, he is overcome by a rat as you see. I testify that Allãh is capable of everything.
 
@@ -230,28 +190,14 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 ![](img/2b69b32cac.png)
 
 <!-- G29 -->
---- figure
+--- section light
+<p class="kicker">Case 2b</p>
+# Modeling Textual Typology
+<p>By modeling major textual types, we can identify types of unknown books and understand the structural composition of the complex books</p>
 
-![](img/46b7ded308.png)
-
-<!-- G30 -->
---- figure
-
-![](img/45bf9c2eae.png)
-
-<!-- G31 -->
---- figure
-
-![](img/42e2bb6436.png)
-
-<!-- G32 -->
---- figure
-
-![](img/60377618ed.png)
-
-<!-- K33 -->
+<!-- G29b -->
 --- text
-# Case Study 2. Modeling Textual Typology
+# Case 2b. Modeling Textual Typology
 
 <ol class="small" style="max-width:37em">
 <li><code>[B]</code> Biographical type (<em>tarājim</em>): mostly collections of biographies</li>
@@ -267,39 +213,62 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 </ol>
 
 <!-- K34 -->
---- figure frame
-![Table 9: classification of 81 texts from altafsir.com](img/table-9-altafsir.png)
+--- text
+
+# Testing the model: exegetical type (*tafsīr*)
+
+![](img/table-9-altafsir.png)
 
 <!-- K35 -->
---- figure
-# Rolling Typological Assessment
-![Rolling typological assessment of Talbīs Iblīs](img/fig-26-rolling-assessment.png)
+--- text steps
+# The eight exceptions
+
+<ul class="indent small" style="max-width:44em">
+<li><em>Mafātīḥ al-ġayb</em> by Faḫr al-dīn al-Rāzī (d. 606/1210) → classified <code>[K]</code> scholastic-theological: it is in fact a major work of <em>kalām</em>, and samples from it were used to train the <code>[K]</code> type</li>
+<li><em>Ġarīb al-Qurʾān</em> by Abū Bakr al-Sijistānī (d. 330/942) → classified <code>[L]</code> linguistic (still 26% exegetical signal): closer to a dictionary than to a traditional <em>tafsīr</em></li>
+<li>Six early ḥadīṯ-based interpretations — by Mujāhid b. Jabr, ʿAbd al-Razzāq al-Ṣanʿānī, Ibn Ḥakam al-Ḥibarī, al-Nasāʾī, al-Ṭabarī, and Furāt al-Kūfī — classified <code>[Ḥ]</code> Tradition-based: composed mainly of ḥadīṯ reports, so hardly a real mistake; three still carry a strong exegetical signal (28%, 42%, 49%)</li>
+</ul>
+
+<p class="bottom punch">73 of 81 texts (90.1%) landed correctly on the first pass; every exception is explicable.</p>
+
+<!-- K35b -->
+--- text
+
+# Rolling Assessment: al-Šāfiʿī’s <i>Kitāb al-Umm</i>
+
+![Typological profile of al-Šāfiʿī's Umm across its length: the legal type dominates almost the whole book](img/0204Shafici.Umm.png)
+
+<p>Rolling typological assessment of <i>Kitāb al-Umm</i> of al-Šāfiʿī (d. 204/820) a single dominant type — [F] legal — running almost unbroken from beginning to end.</p>
+
+<!-- G29c -->
+--- text
+
+# Rolling Assessment: Ibn al-Jawzī’s <i>Talbīs Iblīs</i>
+
+![](img/fig-26-rolling-assessment_lite.png)
+
+<p>Rolling typological assessment of <i>Talbīs Iblīs</i> of Ibn al-Jawzī (d. 597/1201) shows that individual chapters (separated by vertical black lines) usually contain text reflecting specific types.</p>
 
 <!-- K36 -->
---- figure
+--- text
 # Majmūʿāt Case
-![Rolling assessment of an artificial majmūʿat](img/fig-27-majmua.png)
+
+<p class="indent"><strong>Value for manuscripts:</strong></p>
+<ol class="indent">
+<li>When HTR starts working, we will need a mechanism to assess HTR-ed texts automatically: we can potentially identify type, author, exact text</li>
+<li>Particularly valuable for <em>majmūʿāt</em> — the most numerous kind of manuscripts, the most difficult to read and analyze</li>
+</ol>
 
 <!-- S4 -->
---- section
+--- section light
 <p class="kicker">Case 3</p>
-# A language and a tradition in time
-<p>Periodization from how language and topics change</p>
+# A Tradition
+<p>language change and topic shifts through chronological layers of books</p>
 
-<!-- K38 -->
---- text
-# Case Study 3. Charting Linguistic Evolution
-
-<ul class="small" style="max-width:36em">
-<li>The <strong>pre-classical period</strong> lasts from the appearance of Islam until the end of the Umayyad period (c. 1–132/622–750).</li>
-<li>The <strong>classical period</strong> corresponds roughly to the ʿAbbāsid period (132–656/750–1258).</li>
-<li>The <strong>postclassical period</strong> encompasses the reign of the Mamlūks (648–923/1250–1517) and most of that of the Ottomans.</li>
-<li>The <strong>modern period</strong> (from Napoleon’s invasion of Egypt in 1213/1798), extending to the present day.</li>
-</ul>
 
 <!-- K39 -->
 --- split w-60-40
-# Case Study 3. Charting Linguistic Evolution
+# Case 3. Periodization
 
 <ul class="plain" style="color:var(--muted)">
 <li>Preclassical &nbsp; c. 622–750</li>
@@ -315,7 +284,7 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 <div class="pill"><b>Modern</b>1798–</div>
 </div>
 
-<p class="punch" style="text-align:center;margin-top:1em">Where do these lines come from?</p>
+<p class="punch" style="text-align:center;margin-top:1em">Where do these boundaries come from? What if we ask the corpus?</p>
 
 |||
 
@@ -325,29 +294,6 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 <p class="small" style="margin:0"><em>Encyclopedia of Arabic Language and Linguistics</em> (Brill)</p>
 </div>
 
-<!-- K40 -->
---- text
-# A model the field built impressionistically
-
-<div class="indent">
-<p>Periodization is unavoidable:<br>
-<span class="indent" style="display:block;font-style:italic;color:var(--muted)">It organizes research, explanation, teaching.<br>It is a major historian’s tool.</span></p>
-<p>But the architecture of the standard scheme was never systematically derived from the written tradition as a whole.</p>
-</div>
-
-<p class="bottom punch">What if we ask the written tradition itself?</p>
-
-<!-- K41 -->
---- text steps
-# The obvious casualty: the Mamluk centuries
-
-<div class="indent">
-<p><strong>c. 1250–1517</strong>: one of the busiest periods of Arabic textual production</p>
-<p>Yet usually absorbed into a vast “postclassical” period, often called the “<em>Period of Decadence</em>”</p>
-<p>The category hides distinctiveness instead of explaining it</p>
-</div>
-
-<p class="bottom punch">Does the corpus itself see a coherent middle period?</p>
 
 <!-- K42 -->
 --- section light
@@ -359,7 +305,7 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 ![Chronological distribution of the volume of the OpenITI subcorpus](img/fig-2-31-chronological-volume.png)
 
 <!-- K44 -->
---- text steps
+--- text 
 # Two lenses on change
 
 <div class="indent">
@@ -379,7 +325,7 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 </div>
 
 <!-- K45 -->
---- split w-35-65 vcenter
+--- split w-25-75 vcenter tight
 # Style
 
 <p class="big muted" style="font-style:italic">stylometry</p>
@@ -396,7 +342,7 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 ![Unrooted dendrogram of authors’ writings clustered by stylometric distance](img/dendrogram-authors.png)
 
 <!-- K46 -->
---- split w-35-65 vcenter
+--- split w-25-75 vcenter tight
 # Style
 
 <p class="big muted" style="font-style:italic">stylometry</p>
@@ -407,7 +353,7 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 <li>authors</li>
 <li><strong class="accent">periods</strong></li>
 </ul>
-<p class="small" style="margin-top:1em"><strong>Jurjī Zaydān’s writings</strong><br>(1) 1891–1902 · (2) 1903–1905 · (3) 1906–1914</p>
+<p class="small" style="margin-top:1em"><strong>Jurjī Zaydān’s writings</strong><br>(1) 1891–1902<br> (2) 1903–1905<br> (3) 1906–1914</p>
 
 |||
 
@@ -443,7 +389,7 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 </div>
 
 <!-- K51 -->
---- text steps
+--- text 
 # The middle macroperiod (c. 1200–1540)
 
 <ul class="indent">
@@ -474,7 +420,7 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 <!-- K53 -->
 --- section light
 <p class="kicker">Two witnesses</p>
-# Second witness: Bio-Bibliographical Collection
+# Second witness:<br> Bio-Bibliographical Collection
 
 <!-- K54 -->
 --- text
@@ -492,73 +438,33 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 </div>
 
 <!-- K55 -->
---- figure
+--- text
 # c. 600–1200: an Iraqi-Iranian world
 ![Map of the Islamic world with the flows of scholars in the early macroperiod, centred on Iraq and Iran](img/map-early.png)
 <div class="stat red" style="position:absolute;right:24px;bottom:18px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 80% Iraq + Iran</b></div>
 
-<!-- K56 -->
---- figure caption="Annual production by region in the early macroperiod: Iraq (al-ʿIrāq) and the Iranian provinces."
-# c. 600–1200: an Iraqi-Iranian world
-![Charts of annual production for Iraq and the Iranian provinces](img/chart-early.png)
-<div class="stat red" style="position:absolute;right:24px;bottom:18px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 80% Iraq + Iran</b></div>
 
 <!-- K57 -->
---- figure
+--- text
 # c. 1200–1540: a Syrian-Egyptian world
 ![Map of the Islamic world with the flows of scholars in the middle macroperiod, centred on Egypt and Syria](img/map-middle.png)
 <div class="stat red" style="position:absolute;right:24px;bottom:18px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 55% Egypt + Syria</b></div>
 
-<!-- K58 -->
---- figure caption="Annual production by region in the middle macroperiod: Syria (al-Šām) and Egypt (Miṣr)."
-# c. 1200–1540: a Syrian-Egyptian world
-![Charts of annual production for Syria and Egypt](img/chart-middle.png)
-<div class="stat red" style="position:absolute;right:24px;bottom:18px;min-width:0;padding:14px 28px"><b style="font-size:36px">&gt; 55% Egypt + Syria</b></div>
 
 <!-- K59 -->
---- figure
-# After c. 1540–1900: a new polycentric geography
+--- text
+# c. 1540–1900: a new polycentric geography
 ![Map of the Islamic world with the flows of scholars in the late macroperiod, with Anatolia and India prominent](img/map-late.png)
-<div class="stat red" style="position:absolute;left:80px;bottom:18px;min-width:0;padding:14px 28px"><b style="font-size:36px">≈ 30% Anatolia</b></div>
+<div class="stat red" style="position:absolute;right:24px;bottom:18px;min-width:0;padding:14px 28px"><b style="font-size:36px">≈ 30%  Anatolia</b></div>
 
-<!-- K60 -->
---- figure caption="Annual production by region in the late macroperiod: India (Hind) and Anatolia (al-Rūm)."
-# After c. 1540–1900: a new polycentric geography
-![Charts of annual production for India and Anatolia](img/chart-late.png)
-<div class="stat red" style="position:absolute;left:80px;bottom:18px;min-width:0;padding:14px 28px"><b style="font-size:36px">≈ 30% Anatolia</b></div>
-
-<!-- K61 -->
---- text steps
-# Two transitions: <strong>1200–1300</strong> and 1500–1600
-
-<ul class="indent">
-<li>Westward movement from Iraq and Iran begins before the Mongol conquest</li>
-<li>Andalusi scholars move east as Christian expansion advances in Iberia</li>
-</ul>
-
-<div class="callout red bottom"><strong>Baghdad’s fall occurs inside an already-moving geography</strong></div>
-
-<!-- K62 -->
---- figure
-# Patterns: Great Cities of Islam
-![Number of biographies per 20 years for Baghdad, natives and visitors, with the Mongol sack of 656/1258 marked](img/baghdad-biographies.png)
 
 <!-- K63 -->
---- figure
+--- text
 # Two transitions: <strong>1200–1300</strong> and 1500–1600
 ![Map of the first major transition, with movements from Iraq and Iran westward and from al-Andalus eastward](img/map-transition-1.png)
 
-<!-- K64 -->
---- text
-# Two transitions: 1200–1300 and <strong>1500–1600</strong>
-
-<ul class="indent">
-<li>The rise of the Ottoman Empire marks the emergence of a Turco-Arabic world under Ottoman control</li>
-<li>and the parallel development of an Indo-Iranian sphere.</li>
-</ul>
-
 <!-- K65 -->
---- figure
+--- text
 # Two transitions: 1200–1300 and <strong>1500–1600</strong>
 ![Map of the second major transition, with flows toward Anatolia and India](img/map-transition-2.png)
 
@@ -571,10 +477,10 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 <p style="margin-top:1em"><strong>REGISTER of AUTHORS</strong><br><span class="muted">cultural geography over time</span></p>
 </div>
 
-<p class="bottom punch">Different biases. Different assumptions. Similar macro-boundaries.</p>
+<p class="bottom punch">Different biases. Different assumptions.<br> Similar macro-boundaries.</p>
 
 <!-- K67 -->
---- text steps
+--- text
 # Three long cultural regimes (macroperiods)
 
 <ol class="indent">
@@ -585,53 +491,63 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 
 <p class="indent small" style="font-style:italic;margin-top:1.2em">(with discernable sub-periods inside each)</p>
 
-<!-- K68 -->
---- figure frame
-![Table 3.34: books by region in the early, middle, and late macroperiods](img/table-3-34-regions.png)
-
 <!-- K69 -->
---- text steps
+--- text
 # Periods are also places
 
 <ul class="indent">
 <li><strong>Traditional periodization</strong> assumes universality</li>
-<li><strong>Computational periodization</strong> demonstrates that <em>language and textual production are aligned in time with changing cultural geography</em> *</li>
+<li><strong>Corpus-driven, computational periodization</strong> demonstrates that <em>language and textual production are aligned in time with changing cultural geography</em></li>
 </ul>
 
 <p class="punch" style="text-align:center;margin-top:1.2em">Each period gets not just a name, but also a map.</p>
 
-<p class="bottom tiny" style="text-align:right">(* to be redone on the EIS1600 data: 600,000 bios &gt; c. 130,000 individuals)</p>
-
 <!-- K70 -->
---- text steps
+--- text
 # What changes if we accept this model?
 
 <ul class="indent">
 <li>The Mamluk centuries become a coherent middle period, <em>not the beginning of decline</em></li>
-<li><strong>1258</strong> is recontextualized as an event within a longer transition (1200–1300)</li>
-<li><strong>c. 1540</strong> emerges as a major structural break (essentially, the end of the Mamluk period)</li>
-<li>Chronology &amp; geography become part of the same explanation</li>
+
+<li><strong>c. 1540</strong> emerges as a major structural break (essentially, the end of the Mamluk period); not 1258, the fall of Baġdād and of the ʿAbbāsids</li>
+
+<li>Chronology <i>&amp;</i> geography become part of the same explanation</li>
 </ul>
 
---- quote
-<span style="color: var(--red); font-style: italic;">No manuscript can be read alone.<br>Every text needs all the others.</span>
+--- section light
+<p class="kicker">The instrument, again</p>
+# Back to the Corpus
 
-<!-- K71 -->
---- full contain
-![Cover of Digital Humanities for Arabic and Islamic Studies beside the publisher’s page](img/brill-page-2.png)
+<p>Three case studies later — what can this instrument actually tell us?</p>
 
-<!-- K72 -->
+<!-- K70b -->
 --- text
-# Afterword: <em>farḍ al-kifāyaŧ</em>
+# But a corpus is also a historical source
 
-<p class="indent small" style="max-width:36em">A communal duty in Islamic law: if enough members of a community fulfill it, the rest are absolved. If all neglect it, the entire community is accountable.</p>
+<ul class="indent">
+<li>Survival bias — what reached us</li>
+<li>Editorial / digitization bias — what modern scholars chose to publish</li>
+<li>Uneven genre and chronological coverage</li>
+<li>Varying representation of different communities</li>
+</ul>
 
-<div class="indent" style="margin-top:1.2em;font-style:italic;color:var(--muted)">
-<p>No one else will digitize our texts.</p>
-<p>No one will create our corpora.</p>
-<p>No one will develop methods for our research questions.</p>
-<p class="accent" style="font-weight:600">This is our responsibility, and ours alone.</p>
-</div>
+<p class="bottom punch">Source criticism begins with the instrument.</p>
+
+<!-- K15 -->
+--- figure
+![Density plots of books by century in three libraries and the Hadiyyat al-ʿārifīn](img/fig-1-10-density-libraries.png)
+
+<!-- K16 -->
+--- figure
+![Share of series total by century: Hadiyyat al-ʿārifīn, major libraries, and OpenITI unique texts](img/openiti-mirrors-libraries.png)
+
+<!-- S2 -->
+--- quote
+<span style="color: var(--red); font-style: italic;">No text can be read alone.<br>Every text needs all the others.</span>
+
+<!-- S2 -->
+--- quote
+<span style="color: var(--red); font-style: italic;">No manuscript can be read alone.<br>Every manuscript needs all the others.</span>
 
 <!-- K73 -->
 --- split w-35-65 no-strip
@@ -642,7 +558,7 @@ Now that we have a general sense of how the OpenITI NgramReader works, let’s c
 <p class="kicker">In short, this book asks:</p>
 <p class="big" style="font-style:italic">«What does it mean for our field when the entire library becomes a <span style="font-style:normal">vademecum</span> — something that, quite literally, “goes with me” everywhere?»</p>
 
-<div class="twocol small" style="grid-template-columns:1fr 1fr 1fr;gap:.75em;margin-top:.75em">
+<div class="twocol small" style="grid-template-columns:1fr 1fr 1fr;--tc-gap:.75em;gap:.75em;margin-top:.75em">
 <div><h3 style="font-size:0.70em;font-style:normal;border-top:2px solid var(--red);padding-top:.35em">Chapter 1</h3><p>Why we should even bother—a question that remains at the heart of every discussion about the digital.</p></div>
 <div><h3 style="font-size:0.70em;font-style:normal;border-top:2px solid var(--red);padding-top:.35em">Chapter 2</h3><p>How we might go about harnessing the new digital opportunities within the field.</p></div>
 <div><h3 style="font-size:0.70em;font-style:normal;border-top:2px solid var(--red);padding-top:.35em">Chapter 3</h3><p>What we can expect to accomplish:<br>1) trace term usage<br>2) model textual typology<br>3) chart linguistic evolution</p></div>

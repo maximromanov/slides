@@ -181,13 +181,13 @@
 
   /* Type tester: pick faces and weights live; the choice is kept in this browser for every deck. */
   var FACES = [
-    ['Literata', '"Literata", Georgia, serif'], ['Source Serif 4', '"Source Serif 4", Georgia, serif'], ['Merriweather', '"Merriweather", Georgia, serif'],
-    ['Newsreader', '"Newsreader", Georgia, serif'], ['Lora', '"Lora", Georgia, serif'], ['PT Serif', '"PT Serif", Georgia, serif'], ['Alegreya', '"Alegreya", Georgia, serif'], ['Libre Baskerville (default)', '"Libre Baskerville", Baskerville, Georgia, serif'], ['Baskerville (Mac)', 'Baskerville, "Libre Baskerville", Georgia, serif'], ['Gentium Plus', '"Gentium Plus", Gentium, Georgia, serif'], ['Gentium Book Plus', '"Gentium Book Plus", "Gentium Plus", Georgia, serif'],
+    ['Libre Baskerville (default)', '"Libre Baskerville", Baskerville, Georgia, serif'], ['Source Serif 4', '"Source Serif 4", Georgia, serif'], ['Merriweather', '"Merriweather", Georgia, serif'],
+    ['Newsreader', '"Newsreader", Georgia, serif'], ['Lora', '"Lora", Georgia, serif'], ['PT Serif', '"PT Serif", Georgia, serif'], ['Alegreya', '"Alegreya", Georgia, serif'], ['Literata', '"Literata", Georgia, serif'], ['Baskerville (Mac)', 'Baskerville, "Libre Baskerville", Georgia, serif'], ['Gentium Plus', '"Gentium Plus", Gentium, Georgia, serif'], ['Gentium Book Plus', '"Gentium Book Plus", "Gentium Plus", Georgia, serif'],
     ['Georgia (system)', 'Georgia, serif'], ['Palatino (system)', '"Palatino Linotype", Palatino, "Book Antiqua", serif'], ['Iowan Old Style (Mac)', '"Iowan Old Style", Georgia, serif'], ['Charter (Mac)', 'Charter, Georgia, serif'],
     ['Inter (sans)', '"Inter", system-ui, sans-serif'], ['Source Sans 3 (sans)', '"Source Sans 3", system-ui, sans-serif'], ['IBM Plex Sans (sans)', '"IBM Plex Sans", system-ui, sans-serif'], ['Helvetica Neue (system sans)', '"Helvetica Neue", Helvetica, Arial, sans-serif'], ['Avenir (Mac sans)', 'Avenir, "Avenir Next", system-ui, sans-serif']
   ];
   var TYPE_KEY = 'deck-type';
-  var typeDefaults = { text: 0, head: 0, wText: 400, wHead: 600, ls: 0, scale: 100 };
+  var typeDefaults = { text: 0, head: 0, wText: 400, wHead: 700, ls: 0, scale: 100 };
   function loadType() { try { return Object.assign({}, typeDefaults, JSON.parse(localStorage.getItem(TYPE_KEY) || '{}')); } catch (e) { return Object.assign({}, typeDefaults); } }
   function applyType(t) {
     var r = document.documentElement.style;
