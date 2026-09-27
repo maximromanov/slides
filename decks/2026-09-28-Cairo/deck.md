@@ -21,19 +21,17 @@ logos:
 --- title
 
 <!-- QR -->
---- split w-55-45 vcenter
+--- split w-45-55 vcenter
 
-# Arabic Companion
-
-<div lang="ar" class="ar" style="font-size:.85em; line-height:1.7;">
-مرافقٌ عربي مفصّل لهذا العرض، بشرح لكل شريحة، أُعدّ للزملاء المصريين.
-</div>
-
-<p class="small" dir="ltr" style="margin-top:1em; white-space:nowrap">maximromanov.github.io/slides/<br>2026-09-28-Cairo/companion-ar.html</p>
+![](img/qr-companion-ar.png)
 
 |||
 
-![](img/qr-companion-ar.png)
+<div lang="ar" dir="rtl" style="text-align:right">
+<h1 lang="ar" style="font-family:var(--f-ar); font-weight:700; font-size:1.35em">دليل المحاضرة بالعربية</h1>
+<p class="ar" style="font-size:1.1em; line-height:1.7; margin:0 0 .9em">ملخّصٌ مفصّل للمحاضرة بالعربية، مع شرحٍ موجز لكل شريحة.<br>امسحوا الرمز لقراءته.</p>
+<p class="small" lang="en" dir="ltr" style="text-align:right; white-space:nowrap; font-family:var(--f-text)"><a href="https://maximromanov.github.io/slides/2026-09-28-Cairo/companion-ar.html" target="_blank" rel="noopener">maximromanov.github.io/slides/<br>2026-09-28-Cairo/companion-ar.html</a></p>
+</div>
 
 <!-- N0 -->
 --- text
