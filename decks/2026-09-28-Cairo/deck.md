@@ -20,6 +20,21 @@ logos:
 <!-- K2 -->
 --- title
 
+<!-- QR -->
+--- split w-55-45 vcenter
+
+# Arabic Companion
+
+<div lang="ar" class="ar" style="font-size:.85em; line-height:1.7;">
+مرافقٌ عربي مفصّل لهذا العرض، بشرح لكل شريحة، أُعدّ للزملاء المصريين.
+</div>
+
+<p class="small" dir="ltr" style="margin-top:1em; white-space:nowrap">maximromanov.github.io/slides/<br>2026-09-28-Cairo/companion-ar.html</p>
+
+|||
+
+![](img/qr-companion-ar.png)
+
 <!-- N0 -->
 --- text
 # How do we know what a word means?
