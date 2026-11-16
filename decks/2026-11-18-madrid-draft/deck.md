@@ -524,14 +524,6 @@ Explain the four domains: digital representations of material objects; metaobjec
 
 <div class="part">Part 2 · My contributions</div>
 
---- section light
-<!-- reuse 2026-09-28-Cairo:25 -->
-<p class="kicker">Case 2b</p>
-# Modeling Textual Typology
-<p>By modeling major textual types, we can identify types of unknown books and understand the structural composition of the complex books</p>
-
-<div class="part">Part 2 · My contributions</div>
-
 --- text max=44
 <!-- reuse 2026-09-28-Cairo:26 -->
 # Case 2b. Modeling Textual Typology
