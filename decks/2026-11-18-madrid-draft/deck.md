@@ -568,6 +568,24 @@ Notes:
 Each type has a distinct trajectory. The counts are approximate: a text is assigned to a type at a 51% match threshold, numbers are rounded, and the periods before 100/719 and after 1400/1980 are excluded. Legal writing grows steadily and dominates overall; tradition-based writing dominates early and becomes marginal after 800/1398; biographical writing grows until the end of the Mamlūk period; linguistic writing stays fairly steady; exegesis surges in the Mamlūk period; historical writing is never dominant but remains constant.
 Source: Romanov, Digital Humanities for Arabic and Islamic Studies (2026), pp. 216–217. The tafsīr validation table (old slide) is in the earlier draft and in Cairo:27.
 
+--- text max=44
+# A consistent profile and a varied composition
+
+[Ibn al-Abbār (d. 658/1260), *al-Takmilaŧ li-l-Ṣilaŧ*](https://maximromanov.github.io/classifier/#b=0658IbnAbbar.TakmilaLiSila&t=text)
+
+**A consistent biographical profile**
+
+[Ibn al-Jawzī (d. 597/1201), *Talbīs Iblīs*](https://maximromanov.github.io/classifier/#b=0597IbnJawzi.TalbisIblis&t=text)
+
+**Different chapters draw on different textual types**
+
+<div class="part">Part 2 · My contributions</div>
+
+Notes:
+Outline 2.E: Case study 2: books and their internal composition. Planned time: 110 seconds.
+
+DEMONSTRATION: begin with al-Takmila to establish a readily interpretable reference case. Then open Talbīs Iblīs and show how changing profiles relate to chapters and argument. Keep both pages prepared. Time includes transitions. The next two slides show both profiles as static figures.
+
 --- text
 <!-- reuse 2026-erc-interview:4 -->
 # A consistently biographical text
