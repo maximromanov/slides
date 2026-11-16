@@ -492,7 +492,7 @@ Explain the four domains: digital representations of material objects; metaobjec
 <br>
 <br>
 
-<p class="bottom punch">No notion of <em>al-kutub al-sittaŧ</em> in the end of the 6th/12th century in Baġdād.</p>
+<p class="bottom punch">No notion of <span style="font-style:normal">al-kutub al-sittaŧ</span> in the end of the 6th/12th century in Baġdād.</p>
 
 <div class="part">Part 2 · My contributions</div>
 
