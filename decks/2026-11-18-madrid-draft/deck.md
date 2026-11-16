@@ -520,7 +520,7 @@ Explain the four domains: digital representations of material objects; metaobjec
 <!-- reuse 2026-09-28-Cairo:15 -->
 <p class="kicker">Case 2</p>
 # A book among books
-<p>Text reuse and the modeling of text types</p>
+<p>By modeling major textual types, we can trace their presence in time, identify types of unknown books, and understand the structural composition of complex books</p>
 
 <div class="part">Part 2 · My contributions</div>
 
