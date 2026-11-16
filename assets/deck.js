@@ -158,7 +158,12 @@
     }
   });
 
-  // click: right half forward, left half back; in overview, click a slide to go there
+  // click: right half forward, left half back; in overview, click a slide to go there.
+  // Selecting text never navigates: a drag, a double/triple click, or an existing selection is left alone,
+  // and a single click on text waits a moment so that a double click (select a word) can cancel it.
+  var down = null, pending = null;
+  function hasSelection() { var s = window.getSelection(); return !!(s && !s.isCollapsed && s.toString().trim()); }
+  stage.addEventListener('mousedown', function (e) { down = { x: e.clientX, y: e.clientY }; });
   stage.addEventListener('click', function (e) {
     if (document.body.classList.contains('overview')) {
       var s = e.target.closest('.slide'); if (s) { show(slides.indexOf(s)); toggleOverview(false); }
@@ -167,8 +172,14 @@
     if (e.target.closest('a')) return;
     var img = e.target.closest('.slide.figure .fig img, .slide img.zoomable');
     if (img) { lightbox.querySelector('img').src = img.src; lightbox.classList.add('on'); return; }
+    var dragged = down && Math.abs(e.clientX - down.x) + Math.abs(e.clientY - down.y) > 4;
+    if (dragged || e.detail > 1 || hasSelection()) { clearTimeout(pending); pending = null; return; }
     var r = stage.getBoundingClientRect();
-    if ((e.clientX - r.left) / r.width > 0.5) next(); else prev();
+    var go = (e.clientX - r.left) / r.width > 0.5 ? next : prev;
+    var onText = e.target !== e.target.closest('.slide') && /\S/.test(e.target.textContent || '');
+    if (!onText) { go(); return; }
+    clearTimeout(pending);
+    pending = setTimeout(function () { pending = null; if (!hasSelection()) go(); }, 280);
   });
   // touch: swipe
   var tx = null;
