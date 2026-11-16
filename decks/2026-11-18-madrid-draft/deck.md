@@ -526,7 +526,7 @@ Explain the four domains: digital representations of material objects; metaobjec
 
 --- text max=44
 <!-- reuse 2026-09-28-Cairo:26 -->
-# Case 2b. Modeling Textual Typology
+# Case 2. Modeling Textual Typology
 
 <ol class="small" style="max-width:37em">
 <li><code>[B]</code> Biographical type (<em>tarājim</em>): mostly collections of biographies</li>
