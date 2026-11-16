@@ -352,6 +352,8 @@ My own book, published by Brill this year in the same series as van Lit's, is an
 <ul>
 <li>Articles</li>
 <li>Projects</li>
+<li>Resources</li>
+<li>Methods</li>
 <li>Occasional workshops</li>
 <li><strong>No consolidation</strong></li>
 </ul>
@@ -364,7 +366,7 @@ My own book, published by Brill this year in the same series as van Lit's, is an
 <div class="part">Part 1 · State of the field</div>
 
 Notes:
-Beyond these books, digital work in our field appears as articles, projects, and occasional workshops, but it has not consolidated. The field is small, and no place offers a critical mass of scholars to move it forward. The exception is the Centre for Digital Humanities at Aga Khan University–London, led by Sarah Savant, a close collaborator with whom I have been working on this vision of digital humanities since 2014.
+Beyond these books, digital work in our field appears as articles, projects, resources, methods, and occasional workshops, but it has not consolidated. The field is small, and no place offers a critical mass of scholars to move it forward. The exception is the Centre for Digital Humanities at Aga Khan University–London, led by Sarah Savant, a close collaborator with whom I have been working on this vision of digital humanities since 2014.
 
 --- section light partdiv
 <!-- divider · Part 2 -->
