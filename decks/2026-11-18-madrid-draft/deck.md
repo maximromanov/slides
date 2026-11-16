@@ -149,6 +149,10 @@ Part 1: State of the field.
 <style>
 .slide .part{position:fixed;right:64px;top:30px;z-index:6;font-family:var(--f-mono);font-size:18px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);background:rgba(255,255,255,.92);padding:2px 0 2px 10px}
 .slide.bkc .yrs{top:78px !important}
+/* text slides: heading at the top, the content centered in the space below it */
+.slide.text > h1 ~ :not(style,.part,aside):not(h1 ~ :not(style,.part,aside) ~ *){margin-top:auto}
+.slide.text > h1 ~ :not(style,.part,aside):not(:has(~ :not(style,.part,aside))){margin-bottom:auto}
+
 .slide.section.light.partdiv .pnum{font-family:var(--f-head);font-weight:700;font-size:240px;line-height:1;color:var(--red);margin:22px 0 4px;letter-spacing:-.02em}
 .slide.partdiv h1{font-size:96px}
 .slide.section.light.partdiv .kicker{margin-bottom:0;font-size:22px;letter-spacing:.3em}
@@ -156,19 +160,18 @@ Part 1: State of the field.
 body.overview .slide .part{display:none}
 </style>
 
-# A field taking shape
+# Digital resources have outpaced methodological development
 
-- Valuable projects, corpora, and computational methods already exist.
-- Their integration into a cumulative research practice remains uneven.
-- The next step is to connect evidence and methods across successive studies.
+- **The evidence:** thousands of Arabic works spanning fourteen centuries are now available for computational analysis.
+- **The prevailing practice:** research remains concentrated on individual texts, limited selections, and narrowly defined problems.
+- **The challenge:** develop a cumulative understanding of how language, textual types, and knowledge changed across the written tradition.
+
+<p class="punch">What becomes possible when we study the Arabic written tradition as an interconnected whole?</p>
 
 <div class="part">Part 1 · State of the field</div>
 
 Notes:
-Outline 1.A: Digital Arabic philology remains unevenly consolidated. Planned time: 50 seconds.
-
-Acknowledge existing achievements without claiming that colleagues work in isolation. The issue is how particular results become part of a sustained inquiry into the Arabic written tradition. Transition to an important precedent: biographical research.
-
+Thousands of Arabic works spanning fourteen centuries are now available for computational analysis. Yet research remains concentrated on individual texts, limited selections, and narrowly defined problems. The challenge is to develop a cumulative understanding of how language, textual types, and knowledge changed across the written tradition. So the question for this lecture: what becomes possible when we study the Arabic written tradition as an interconnected whole?
 --- text max=44
 # The precedent of prosopography
 
