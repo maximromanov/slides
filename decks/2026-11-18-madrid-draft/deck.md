@@ -147,13 +147,13 @@ Part 1: State of the field.
 
 --- text max=44
 <style>
-.slide > .part{position:fixed;right:64px;top:30px;z-index:6;font-family:var(--f-mono);font-size:18px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);background:rgba(255,255,255,.92);padding:2px 0 2px 10px}
+.slide .part{position:fixed;right:64px;top:30px;z-index:6;font-family:var(--f-mono);font-size:18px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);background:rgba(255,255,255,.92);padding:2px 0 2px 10px}
 .slide.bkc .yrs{top:78px !important}
 .slide.section.light.partdiv .pnum{font-family:var(--f-head);font-weight:700;font-size:240px;line-height:1;color:var(--red);margin:22px 0 4px;letter-spacing:-.02em}
 .slide.partdiv h1{font-size:96px}
 .slide.section.light.partdiv .kicker{margin-bottom:0;font-size:22px;letter-spacing:.3em}
 
-body.overview .slide > .part{display:none}
+body.overview .slide .part{display:none}
 </style>
 
 # A field taking shape
@@ -400,21 +400,9 @@ Outline 2.A: The book’s proposition: four connected domains. Planned time: 75 
 
 Explain the four domains: digital representations of material objects; metaobjects such as corpora and databases; computational methods; and networks of knowledge. Interpretation informs work throughout. These are the book’s methodological domains. They are distinct from VISIÓN’s four research axes: texts, textual types, transmission, and language.
 
---- text max=44
-<!-- reuse 2026-09-28-Cairo:4 -->
-# The same framing at every scale
-
-<div class="chain">
-<div class="box"><span class="num">١</span><span class="name">A term</span><span class="desc">is understood through the corpus: when does it appear across time and space? who uses it? and who doesn’t?</span></div>
-<div class="box"><span class="num">٢</span><span class="name">A book</span><span class="desc">is understood through other books: what other books it builds on? how does it fit among the rest?</span></div>
-<div class="box"><span class="num">٣</span><span class="name">A tradition</span><span class="desc">is understood through the geographical and chronological layers of books: how does its language change? how do its topics shift?</span></div>
-</div>
-
-<div class="part">Part 2 · My contributions</div>
-
 --- section light
 <!-- reuse 2026-09-28-Cairo:5 -->
-<p class="kicker">The instrument</p>
+<p class="kicker">The main resource</p>
 # A Proxy to the Arabic Written Tradition
 <p>OpenITI as a chronological and geographical representation</p>
 
@@ -459,6 +447,18 @@ Explain the four domains: digital representations of material objects; metaobjec
 --- figure
 <!-- reuse 2026-09-28-Cairo:9 -->
 ![The same chronological distribution, with the smallest period circled: even the thinnest slice, 1200–1300 AH, just 14 million clean words, is enough for many purposes](img/2026-09-28-Cairo--fig-2-31-chronological-volume-highlight.png)
+
+<div class="part">Part 2 · My contributions</div>
+
+--- text max=44
+<!-- reuse 2026-09-28-Cairo:4 -->
+# The same framing at every scale
+
+<div class="chain">
+<div class="box"><span class="num">١</span><span class="name">A term</span><span class="desc">is understood through the corpus: when does it appear across time and space? who uses it? and who doesn’t?</span></div>
+<div class="box"><span class="num">٢</span><span class="name">A book</span><span class="desc">is understood through other books: what other books it builds on? how does it fit among the rest?</span></div>
+<div class="box"><span class="num">٣</span><span class="name">A tradition</span><span class="desc">is understood through the geographical and chronological layers of books: how does its language change? how do its topics shift?</span></div>
+</div>
 
 <div class="part">Part 2 · My contributions</div>
 
