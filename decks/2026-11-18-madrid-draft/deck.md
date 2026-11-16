@@ -338,12 +338,40 @@ Notes:
 My own book, published by Brill this year in the same series as van Lit's, is an attempt to propose a coherent vision of what digital humanities can be for our field. It makes the case in three steps. Why: the written tradition is too large to be understood text by text, and we need ways to read it as a whole. How: a corpus designed for research — OpenITI, its mARkdown annotation, URIs, and versioned releases, the foundation that KITAB and EIS1600 share. And what it gives: three case studies with historical results — the history of a term (the six books), a typology of Arabic writing, and a periodization based on language and themes. This is the segue: what should digital humanities in our field be, and what can a proper implementation give us?
 [Book structure: A Pitch for Digital Humanities; Digital Avatars and Metaobjects (OpenITI: corpus design, mARkdown, URIs, metadata, releases); Computational Inquiries, Case Studies 1–3 (tracing term usage; modeling textual typology; charting linguistic evolution).]
 
+--- text cons max=40
+
+<style>
+.slide.cons .two{display:grid;grid-template-columns:.8fr 1.2fr;gap:2.2em;margin-top:.6em}
+.slide.cons .two ul{margin:0}
+.slide.cons .two .r li{margin-bottom:.5em}
+</style>
+
+# A field without consolidation
+
+<div class="two">
+<ul>
+<li>Articles</li>
+<li>Projects</li>
+<li>Occasional workshops</li>
+<li><strong>No consolidation</strong></li>
+</ul>
+<ul class="r">
+<li>The field is small: no place offers a critical mass of scholars to move this forward</li>
+<li>Exception: the Centre for Digital Humanities (CDH) at Aga Khan University–London, led by Professor Sarah Savant<br><span class="muted small">a close collaborator, with whom I have been working on this vision of DH since 2014</span></li>
+</ul>
+</div>
+
+<div class="part">Part 1 · State of the field</div>
+
+Notes:
+Beyond these books, digital work in our field appears as articles, projects, and occasional workshops, but it has not consolidated. The field is small, and no place offers a critical mass of scholars to move it forward. The exception is the Centre for Digital Humanities at Aga Khan University–London, led by Sarah Savant, a close collaborator with whom I have been working on this vision of digital humanities since 2014.
+
 --- section light partdiv
 <!-- divider · Part 2 -->
 <p class="kicker">Part</p>
 <p class="pnum">2</p>
 # My contributions
-<p>Methods, instruments, and historical results</p>
+<p>Resources, methods, and historical results</p>
 
 Notes:
 Part 2: My contributions.
