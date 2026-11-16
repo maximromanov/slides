@@ -135,6 +135,15 @@ My research program at Granada
 Notes:
 [20 sec] Four parts: the state of the field; my contributions; where the field can go next; and the research program I propose for the Escuela. The part is shown at the top of every slide.
 
+--- section
+<!-- divider · Part 1 -->
+<p class="kicker">Part 1</p>
+# State of the field
+<p>What digital Arabic philology can investigate, and what still holds it back</p>
+
+Notes:
+Part 1: State of the field.
+
 --- text max=44
 <style>
 .slide > .part{position:fixed;right:64px;top:30px;z-index:6;font-family:var(--f-mono);font-size:18px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);background:rgba(255,255,255,.92);padding:2px 0 2px 10px}
@@ -323,6 +332,15 @@ And this year the field gets its first large-scale results. The KITAB project pu
 Notes:
 My own book, published by Brill this year in the same series as van Lit's, is an attempt to propose a coherent vision of what digital humanities can be for our field. It makes the case in three steps. Why: the written tradition is too large to be understood text by text, and we need ways to read it as a whole. How: a corpus designed for research — OpenITI, its mARkdown annotation, URIs, and versioned releases, the foundation that KITAB and EIS1600 share. And what it gives: three case studies with historical results — the history of a term (the six books), a typology of Arabic writing, and a periodization based on language and themes. This is the segue: what should digital humanities in our field be, and what can a proper implementation give us?
 [Book structure: A Pitch for Digital Humanities; Digital Avatars and Metaobjects (OpenITI: corpus design, mARkdown, URIs, metadata, releases); Computational Inquiries, Case Studies 1–3 (tracing term usage; modeling textual typology; charting linguistic evolution).]
+
+--- section
+<!-- divider · Part 2 -->
+<p class="kicker">Part 2</p>
+# My contributions
+<p>Methods, instruments, and historical results</p>
+
+Notes:
+Part 2: My contributions.
 
 --- text domains max=44
 <!-- src: 2026-09-22-fub-keynote:17 -->
@@ -1023,6 +1041,15 @@ Outline 2.I: What these contributions establish together. Planned time: 40 secon
 
 Close Part 2 with the shared achievement rather than another inventory. The methodological ambition extends from morphological forms to the whole tradition, but detailed linguistic annotation belongs to the proposed next stage.
 
+--- section
+<!-- divider · Part 3 -->
+<p class="kicker">Part 3</p>
+# Future development
+<p>Where the field can go next</p>
+
+Notes:
+Part 3: Future development.
+
 --- text max=44
 # Toward a connected history of the tradition
 
@@ -1227,6 +1254,15 @@ Notes:
 Outline 3.J: The larger disciplinary opportunity. Planned time: 30 seconds.
 
 Transition to implementation. The agenda is larger than a single grant. Explain next how existing evidence and personal research make an initial program feasible, and how collaborations and funding can extend it.
+
+--- section
+<!-- divider · Part 4 -->
+<p class="kicker">Part 4</p>
+# My research program at Granada
+<p>A program for the Escuela de Estudios Árabes</p>
+
+Notes:
+Part 4: My research program at Granada.
 
 --- text max=44
 # A continuing historical program at the Escuela
