@@ -149,6 +149,10 @@ Part 1: State of the field.
 <style>
 .slide .part{position:fixed;right:64px;top:30px;z-index:6;font-family:var(--f-mono);font-size:18px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);background:rgba(255,255,255,.92);padding:2px 0 2px 10px}
 .slide.bkc .yrs{top:78px !important}
+/* chains of boxes: wider gaps, thick gold arrows */
+.slide .chain{gap:1.7em}
+.slide .chain .box + .box::before{content:"";left:-1.45em;top:50%;width:1.05em;height:.16em;background:var(--gold);border-radius:.08em;transform:translateY(-50%);font-size:inherit}
+.slide .chain .box + .box::after{content:"";position:absolute;left:-.5em;top:50%;transform:translateY(-50%);border-left:.38em solid var(--gold);border-top:.28em solid transparent;border-bottom:.28em solid transparent}
 /* text slides: heading at the top, the content centered in the space below it */
 .slide.text > h1 ~ :not(style,.part,aside):not(h1 ~ :not(style,.part,aside) ~ *){margin-top:auto}
 .slide.text > h1 ~ :not(style,.part,aside):not(:has(~ :not(style,.part,aside))){margin-bottom:auto}
