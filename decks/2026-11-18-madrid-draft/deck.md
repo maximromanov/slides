@@ -484,9 +484,9 @@ Explain the four domains: digital representations of material objects; metaobjec
 <div class="indent small" style="max-width:36em">
 <p>In “The Devil’s Delusions” (<em>Talbīs Iblīs</em>), Ibn al-Jawzī (d. 597/1201) uses lots of <i>ḥadīṯ</i>s:</p>
 <br>
-<p><em><strong>- &nbsp; No <i>isnād</i>s for</strong>: Muslim, al-Buḫārī, and Abū Dāwūd</em></p>
+<p><em><strong>- &nbsp; No <span style="font-style:normal">isnād</span>s for</strong>: Muslim, al-Buḫārī, and Abū Dāwūd</em></p>
 <br>
-<p><em><strong>- &nbsp; Full <i>isnād</i>s for</strong>: al-Tirmiḏī, Ibn Mājah, and al-Nasāʾī</em></p>
+<p><em><strong>- &nbsp; Full <span style="font-style:normal">isnād</span>s for</strong>: al-Tirmiḏī, Ibn Mājah, and al-Nasāʾī</em></p>
 </div>
 
 <br>
@@ -504,7 +504,7 @@ Explain the four domains: digital representations of material objects; metaobjec
 
 --- figure
 <!-- reuse 2026-09-28-Cairo:13 -->
-![Mentions of al-kutub al-sittat over time](img/2026-09-28-Cairo--fig-18-kutub-sitta.png)
+![Mentions of al-kutub al-sittaŧ over time, with the Mamlūk period (1250–1516) marked](img/2026-09-28-Cairo--fig-18-kutub-sitta-mamluk.png)
 
 <div class="part">Part 2 · My contributions</div>
 
