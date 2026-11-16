@@ -153,6 +153,7 @@ Part 1: State of the field.
 .slide .chain{gap:1.7em}
 .slide .chain .box + .box::before{content:"";left:-1.45em;top:50%;width:1.05em;height:.16em;background:var(--gold);border-radius:.08em;transform:translateY(-50%);font-size:inherit}
 .slide .chain .box + .box::after{content:"";position:absolute;left:-.5em;top:50%;transform:translateY(-50%);border-left:.38em solid var(--gold);border-top:.28em solid transparent;border-bottom:.28em solid transparent}
+.slide.lowfig{padding-top:84px}
 /* text slides: heading at the top, the content centered in the space below it */
 .slide.text > h1 ~ :not(style,.part,aside):not(h1 ~ :not(style,.part,aside) ~ *){margin-top:auto}
 .slide.text > h1 ~ :not(style,.part,aside):not(:has(~ :not(style,.part,aside))){margin-bottom:auto}
@@ -508,9 +509,9 @@ Explain the four domains: digital representations of material objects; metaobjec
 
 <div class="part">Part 2 · My contributions</div>
 
---- figure
+--- figure lowfig
 <!-- reuse 2026-09-28-Cairo:14 -->
-![Authors mentioning al-kutub al-sittat by century and region](img/2026-09-28-Cairo--fig-19-authors-by-region.png)
+![Authors mentioning al-kutub al-sittaŧ by century and region, with Miṣr + al-Šām outlined](img/2026-09-28-Cairo--fig-19-authors-by-region-boxed.png)
 
 <div class="part">Part 2 · My contributions</div>
 
