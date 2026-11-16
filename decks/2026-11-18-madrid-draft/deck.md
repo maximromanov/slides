@@ -368,7 +368,7 @@ My own book, published by Brill this year in the same series as van Lit's, is an
 </ul>
 <ul class="r">
 <li>The field is small: no place offers a critical mass of scholars to move this forward</li>
-<li>Exception: the Centre for Digital Humanities (CDH) at Aga Khan University–London, led by Professor Sarah Savant<br><span class="muted small">a close collaborator, with whom I have been working on this vision of DH since 2014</span></li>
+<li><em>Exception:</em> the Centre for Digital Humanities (CDH) at Aga Khan University–London, led by Professor Sarah Savant<br><span class="muted small">a close collaborator, with whom I have been working on this vision of DH since 2014</span></li>
 </ul>
 </div>
 
