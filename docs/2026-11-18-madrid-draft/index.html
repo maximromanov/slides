@@ -753,32 +753,80 @@ body.overview .slide .part{display:none}
 
 <div class="part">Part 2 · My contributions</div><aside class="notes"><p>Each type has a distinct trajectory. The counts are approximate: a text is assigned to a type at a 51% match threshold, numbers are rounded, and the periods before 100/719 and after 1400/1980 are excluded. Legal writing grows steadily and dominates overall; tradition-based writing dominates early and becomes marginal after 800/1398; biographical writing grows until the end of the Mamlūk period; linguistic writing stays fairly steady; exegesis surges in the Mamlūk period; historical writing is never dominant but remains constant.
 Source: Romanov, Digital Humanities for Arabic and Islamic Studies (2026), pp. 216–217. The tafsīr validation table (old slide) is in the earlier draft and in Cairo:27.</p></aside></section>
-<section class="slide text" data-title="The eight exceptions" data-fit-max="44"><!-- reuse 2026-09-28-Cairo:28 -->
+<section class="slide text" data-title="A consistently biographical text"><!-- reuse 2026-erc-interview:4 -->
+<h1>A consistently biographical text</h1>
+<style>
+.sub{font-family:var(--f-text);font-size:34px;color:var(--muted);margin:-14px 0 22px}
+.sub i{font-style:italic;color:var(--ink)}
+.roll{position:relative;margin-top:6px}
+.roll img{display:block;width:100%;height:auto}
+.roll .note{position:absolute;font-family:var(--f-ui);font-size:21px;line-height:1.2;color:#fff;background:var(--red);padding:6px 12px;border-radius:3px;white-space:nowrap}
+.roll .note::after{content:"";position:absolute;left:50%;bottom:-9px;margin-left:-8px;border:8px solid transparent;border-top-color:var(--red);border-bottom:0}
+.roll .note.below::after{bottom:auto;top:-9px;border-top:0;border-bottom:8px solid var(--red)}
+.roll .note.left::after{left:-9px;top:50%;margin:-8px 0 0;border:8px solid transparent;border-right:8px solid var(--red);border-left:0}
+.axisnote{font-family:var(--f-ui);font-size:20px;line-height:1.35;color:var(--muted);margin-top:16px;max-width:1500px}
+.take{font-family:var(--f-head);font-size:38px;color:var(--red);margin-top:26px;line-height:1.25;text-align:center}
+.take small{display:block;font-family:var(--f-ui);font-size:24px;color:var(--muted);margin-top:6px}
+</style>
 
-<h1>The eight exceptions</h1>
-<ul class="indent small" style="max-width:44em">
-<li><em>Mafātīḥ al-ġayb</em> by Faḫr al-dīn al-Rāzī (d. 606/1210) → classified <code>[K]</code> scholastic-theological: it is in fact a major work of <em>kalām</em>, and samples from it were used to train the <code>[K]</code> type</li>
-<li><em>Ġarīb al-Qurʾān</em> by Abū Bakr al-Sijistānī (d. 330/942) → classified <code>[L]</code> linguistic (still 26% exegetical signal): closer to a dictionary than to a traditional <em>tafsīr</em></li>
-<li>Six early ḥadīṯ-based interpretations — by Mujāhid b. Jabr, ʿAbd al-Razzāq al-Ṣanʿānī, Ibn Ḥakam al-Ḥibarī, al-Nasāʾī, al-Ṭabarī, and Furāt al-Kūfī — classified <code>[Ḥ]</code> Tradition-based: composed mainly of ḥadīṯ reports, so hardly a real mistake; three still carry a strong exegetical signal (28%, 42%, 49%)</li>
-</ul>
+<p class="sub">Ibn al-Abbār (d. 658/1260), <i>al-Takmilaŧ li-l-Ṣilaŧ</i> · rolling typological assessment</p>
 
-<p class="bottom punch">73 of 81 texts (90.1%) landed correctly on the first pass; every exception is explicable.</p>
+<div class="roll">
+<img src="img/2026-erc-interview--takmila-rolling.png" alt="Rolling typological assessment of al-Takmilaŧ li-l-Ṣilaŧ: a continuous biographical band">
+<div class="note below" style="left:60%;top:13%">biographical profile, start to end</div>
+</div>
 
-<div class="part">Part 2 · My contributions</div></section>
-<section class="slide text" data-title="Rolling Assessment: al-Šāfiʿī’s Kitāb al-Umm" data-fit-max="44"><!-- reuse 2026-09-28-Cairo:29 -->
+<p class="axisnote">Each trace: the model’s probability for one textual type in a rolling window of 3,000 words, moving in steps of 200 (0 to 1). Horizontal axis: position in the text in thousands of words; this work runs to about 300,000 words.</p>
 
-<h1>Rolling Assessment: al-Šāfiʿī’s <i>Kitāb al-Umm</i></h1>
-<img alt="Typological profile of al-Šāfiʿī's Umm across its length: the legal type dominates almost the whole book" src="img/2026-09-28-Cairo--0204Shafici.Umm.png" />
-<p>Rolling typological assessment of <i>Kitāb al-Umm</i> of al-Šāfiʿī (d. 204/820) a single dominant type — [F] legal — running almost unbroken from beginning to end.</p>
+<p class="take">A biographical profile persists throughout the work.<small>What happens when an author combines different kinds of material within one book?</small></p>
 
-<div class="part">Part 2 · My contributions</div></section>
-<section class="slide text" data-title="Rolling Assessment: Ibn al-Jawzī’s Talbīs Iblīs" data-fit-max="44"><!-- reuse 2026-09-28-Cairo:30 -->
+<div class="part">Part 2 · My contributions</div><aside class="notes"><p>My proof-of-concept model already demonstrates a useful distinction. Here is Ibn al-Abbār’s biographical collection. Notice the continuous biographical band: the profile stays strong passage by passage. What happens when an author combines different kinds of material within one book?</p></aside></section>
+<section class="slide text" data-title="Different textual types within one argument"><!-- reuse 2026-erc-interview:5 -->
+<h1>Different textual types within one argument</h1>
+<style>
+.sub .pill{display:inline-block;font-family:var(--f-mono);font-size:18px;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);border:1px solid var(--navy);border-radius:3px;padding:4px 12px;margin-left:22px;vertical-align:middle}
+.ruler{position:relative;height:34px;margin-top:4px}
+.ruler div{position:absolute;top:0;height:34px;border-left:2px solid #fff;font-family:var(--f-ui);font-size:19px;line-height:34px;text-align:center;color:#fff;background:#B9B2A6;overflow:hidden;white-space:nowrap}
+.ruler div.h{background:var(--navy)}
+.ruler div.r{background:var(--red)}
+.ruler div.g{background:var(--gold)}
+.ruler .lab{position:absolute;left:0;top:0;line-height:34px;font-family:var(--f-mono);font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.roll.r4{max-width:1540px}
+.key{display:grid;grid-template-columns:1fr 1fr;gap:4px 40px;margin-top:18px;font-family:var(--f-ui);font-size:22px;line-height:1.25}
+.key div{padding-left:34px;position:relative}
+.key div::before{content:"";position:absolute;left:0;top:9px;width:20px;height:14px;border-radius:2px;background:#B9B2A6}
+.key div.h::before{background:var(--navy)}.key div.r::before{background:var(--red)}.key div.g::before{background:var(--gold)}
+.key b{font-weight:600;color:var(--ink)}
+.take4{display:flex;gap:40px;align-items:baseline;margin-top:16px}
+.take4 .t{font-family:var(--f-head);font-size:33px;color:var(--red);line-height:1.25;flex:1 1 auto}
+.take4 .s{font-family:var(--f-ui);font-size:21px;color:var(--muted);flex:0 0 720px;line-height:1.3}
+</style>
 
-<h1>Rolling Assessment: Ibn al-Jawzī’s <i>Talbīs Iblīs</i></h1>
-<img alt="" src="img/2026-09-28-Cairo--fig-26-rolling-assessment_lite.png" />
-<p>Rolling typological assessment of <i>Talbīs Iblīs</i> of Ibn al-Jawzī (d. 597/1201) shows that individual chapters (separated by vertical black lines) usually contain text reflecting specific types.</p>
+<p class="sub">Ibn al-Jawzī (d. 597/1201), <i>Talbīs Iblīs</i><span class="pill">Whole-work assessment: biographical</span></p>
 
-<div class="part">Part 2 · My contributions</div></section>
+<div class="roll r4">
+<img src="img/2026-erc-interview--fig-26-rolling-assessment_Talbis.png" alt="Rolling typological assessment of Talbīs Iblīs with chapter boundaries">
+<div class="ruler">
+<span class="lab">chapters</span>
+<div class="h" style="left:22.9%;width:5.85%">1–4</div>
+<div class="g" style="left:28.75%;width:13.35%">5</div>
+<div class="r" style="left:42.1%;width:7.0%">6–8</div>
+<div style="left:49.1%;width:2.17%">9</div>
+<div class="h" style="left:51.27%;width:42.6%">10</div>
+<div style="left:93.9%;width:6.1%">11–13</div>
+</div>
+</div>
+
+<div class="key">
+<div class="h"><b>Chapters 1–4:</b> tradition-based reports (<i>ḥadīṯ</i>) establish the necessity of the work.</div>
+<div class="r"><b>Chapters 6–8:</b> legal discourse.</div>
+<div class="g"><b>Chapter 5:</b> scholastic-theological, historical, and biographical material on different beliefs and communities.</div>
+<div class="h"><b>Chapter 10:</b> biographical anecdotes in the critique of Sufism.</div>
+</div>
+
+<div class="take4"><div class="t">Textual profiles help locate the materials an author combines to construct an argument.</div><div class="s">The chart detects changes in textual profile; close reading explains what those materials do in the argument. Vertical lines: chapter boundaries. Horizontal axis: thousands of words, about 130,000 in all; not to scale with the previous chart.</div></div>
+
+<div class="part">Part 2 · My contributions</div><aside class="notes"><p>Ibn al-Jawzī’s Talbīs Iblīs offers that contrast. A whole-book assessment classifies it as biographical, but the passage-level view reveals a complex composition. Reading from left to right, the opening chapters draw on hadith reports. Discussions of beliefs and communities combine theological, historical, and biographical material. Religious practice brings legal discourse, while the critique of Sufism relies on biographical anecdotes. The model locates these shifts; close reading explains how the author uses different materials to construct his social critique.</p></aside></section>
 <section class="slide text" data-title="Majmūʿāt Case" data-fit-max="44"><!-- reuse 2026-09-28-Cairo:31 -->
 <h1>Majmūʿāt Case</h1>
 <p class="indent"><strong>Value for manuscripts:</strong></p>
@@ -1318,7 +1366,7 @@ The team carries out most ArabesQuery work, with my scientific direction, while 
   </div>
 </div>
 <div class="progress"></div>
-<div class="counter">1 / 88</div>
+<div class="counter">1 / 87</div>
 <div class="help">
   <div class="box">
     <h2>Keys</h2>
