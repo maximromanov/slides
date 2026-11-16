@@ -166,18 +166,18 @@ Part 1: State of the field.
 body.overview .slide .part{display:none}
 </style>
 
-# Digital resources have outpaced methodological development
+# The development of digital resources and methods has outpaced their integration into research practice
 
 - **The evidence:** thousands of Arabic works spanning fourteen centuries are now available for computational analysis.
 - **The prevailing practice:** research remains concentrated on individual texts, limited selections, and narrowly defined problems.
-- **The challenge:** develop a cumulative understanding of how language, textual types, and knowledge changed across the written tradition.
+- **The challenge:** build a cumulative understanding of social history, cultural production, the development of textual types (“genres”), and the historical development of the Arabic language itself.
 
 <p class="punch">What becomes possible when we study the Arabic written tradition as an interconnected whole?</p>
 
 <div class="part">Part 1 · State of the field</div>
 
 Notes:
-Thousands of Arabic works spanning fourteen centuries are now available for computational analysis. Yet research remains concentrated on individual texts, limited selections, and narrowly defined problems. The challenge is to develop a cumulative understanding of how language, textual types, and knowledge changed across the written tradition. So the question for this lecture: what becomes possible when we study the Arabic written tradition as an interconnected whole?
+Digital resources and methods have developed faster than their integration into research practice. Thousands of Arabic works spanning fourteen centuries are now available for computational analysis. Yet research remains concentrated on individual texts, limited selections, and narrowly defined problems. The challenge is to build a cumulative understanding of social history, cultural production, the development of textual types, or “genres,” and the historical development of the Arabic language itself. So the question for this lecture: what becomes possible when we study the Arabic written tradition as an interconnected whole?
 --- text max=44
 # The precedent of prosopography
 
