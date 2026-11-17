@@ -554,11 +554,11 @@ Explain the four domains: digital representations of material objects; metaobjec
 # Textual types over fourteen centuries
 
 <ul class="dash small">
-<li>The <code>[F]</code> legal type (represented by approximately 1,600 titles) shows steady growth in prevalence over time, with consistently high relative counts across different thresholds, peaking around 1000–1200/1592–1786. It is the dominant type in the corpus overall.</li>
-<li>The <code>[Ḥ]</code> Tradition-based type (approximately 1,250 titles) exhibits pronounced early dominance, peaking around 400/1010, and then declines sharply and becomes marginal after 800/1398.</li>
-<li>The <code>[B]</code> biographical type (approximately 1,050 titles) grows steadily until the end of the Mamlūk period, after which it declines. Notably, most biographical collections from that point on tend to focus more on rehashing earlier biographies than on describing contemporaries.</li>
-<li>The <code>[L]</code> linguistic type (approximately 790 titles) is somewhat more prevalent in the early period but generally remains steady across the centuries, with a slight decline after 1000/1592.</li>
-<li>The <code>[E]</code> exegetical type (approximately 750 titles) grows gradually, its numbers remaining within a fairly consistent range over time, except for a notable surge during the Mamlūk period.</li>
+<li>The <code>[F]</code> <strong>legal type</strong> (represented by approximately 1,600 titles) shows steady growth in prevalence over time, with consistently high relative counts across different thresholds, peaking around 1000–1200/1592–1786. It is the dominant type in the corpus overall.</li>
+<li>The <code>[Ḥ]</code> <strong>Tradition-based type</strong> (approximately 1,250 titles) exhibits pronounced early dominance, peaking around 400/1010, and then declines sharply and becomes marginal after 800/1398.</li>
+<li>The <code>[B]</code> <strong>biographical type</strong> (approximately 1,050 titles) grows steadily until the end of the Mamlūk period, after which it declines. Notably, most biographical collections from that point on tend to focus more on rehashing earlier biographies than on describing contemporaries.</li>
+<li>The <code>[L]</code> <strong>linguistic type</strong> (approximately 790 titles) is somewhat more prevalent in the early period but generally remains steady across the centuries, with a slight decline after 1000/1592.</li>
+<li>The <code>[E]</code> <strong>exegetical type</strong> (approximately 750 titles) grows gradually, its numbers remaining within a fairly consistent range over time, except for a notable surge during the Mamlūk period.</li>
 </ul>
 
 <div class="part">Part 2 · My contributions</div>
