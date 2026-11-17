@@ -549,16 +549,24 @@ Explain the four domains: digital representations of material objects; metaobjec
 .slide.trends ul.dash{list-style:none;padding-left:0;margin:0;color:var(--ink)}
 .slide.trends ul.dash li{margin:0 0 1em;line-height:1.3}
 .slide.trends ul.dash code{font-family:var(--f-mono);color:var(--red);font-weight:700}
+.slide.trends ul.dash ul.sub{list-style:disc;padding-left:1.6em;margin:.25em 0 0;font-size:1em}
+.slide.trends ul.dash ul.sub li{margin:0;color:var(--ink);font-size:1em}
+.slide.trends ul.dash ul.sub li::marker{color:var(--red)}
 </style>
 
-# Textual types over fourteen centuries
+# Textual types over 14 centuries
 
 <ul class="dash small">
-<li>The <code>[F]</code> <strong>legal type</strong> (represented by approximately 1,600 titles) shows steady growth in prevalence over time, with consistently high relative counts across different thresholds, peaking around 1000–1200/1592–1786. It is the dominant type in the corpus overall.</li>
-<li>The <code>[Ḥ]</code> <strong>Tradition-based type</strong> (approximately 1,250 titles) exhibits pronounced early dominance, peaking around 400/1010, and then declines sharply and becomes marginal after 800/1398.</li>
-<li>The <code>[B]</code> <strong>biographical type</strong> (approximately 1,050 titles) grows steadily until the end of the Mamlūk period, after which it declines. Notably, most biographical collections from that point on tend to focus more on rehashing earlier biographies than on describing contemporaries.</li>
-<li>The <code>[L]</code> <strong>linguistic type</strong> (approximately 790 titles) is somewhat more prevalent in the early period but generally remains steady across the centuries, with a slight decline after 1000/1592.</li>
-<li>The <code>[E]</code> <strong>exegetical type</strong> (approximately 750 titles) grows gradually, its numbers remaining within a fairly consistent range over time, except for a notable surge during the Mamlūk period.</li>
+<li>The <code>[F]</code> <strong>legal type</strong> (represented by approximately 1,600 titles)
+<ul class="sub"><li>steady growth in prevalence over time, peaking around 1000–1200/1592–1786. It is the dominant type in the corpus overall.</li></ul></li>
+<li>The <code>[Ḥ]</code> <strong>Tradition-based type</strong> (approximately 1,250 titles)
+<ul class="sub"><li>pronounced early dominance, peaking around 400/1010, and then declines sharply.</li></ul></li>
+<li>The <code>[B]</code> <strong>biographical type</strong> (approximately 1,050 titles)
+<ul class="sub"><li>grows steadily until the end of the Mamlūk period, after which it declines.</li></ul></li>
+<li>The <code>[L]</code> <strong>linguistic type</strong> (approximately 790 titles)
+<ul class="sub"><li>somewhat more prevalent in the early period but generally remains steady across the centuries.</li></ul></li>
+<li>The <code>[E]</code> <strong>exegetical type</strong> (approximately 750 titles)
+<ul class="sub"><li>grows gradually, its numbers remaining within a fairly consistent range over time.</li></ul></li>
 </ul>
 
 <div class="part">Part 2 · My contributions</div>
@@ -572,11 +580,11 @@ Source: Romanov, Digital Humanities for Arabic and Islamic Studies (2026), pp. 2
 
 [Ibn al-Abbār (d. 658/1260), *al-Takmilaŧ li-l-Ṣilaŧ*](https://maximromanov.github.io/classifier/#b=0658IbnAbbar.TakmilaLiSila&t=text)
 
-**A consistent biographical profile**
+<p style="margin-left:1.5em">— a consistent biographical profile</p>
 
 [Ibn al-Jawzī (d. 597/1201), *Talbīs Iblīs*](https://maximromanov.github.io/classifier/#b=0597IbnJawzi.TalbisIblis&t=text)
 
-**Different chapters draw on different textual types**
+<p style="margin-left:1.5em">— different chapters draw on different textual types</p>
 
 <div class="part">Part 2 · My contributions</div>
 
