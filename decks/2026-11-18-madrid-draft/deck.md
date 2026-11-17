@@ -70,6 +70,12 @@ Explain the intellectual precedent rather than judging software age or current p
 .slide.text > h1 + img:not(:has(~ :not(style,.part,aside,.stat))){margin-top:auto;margin-bottom:auto}
 .slide.text > h1 + img{margin-top:auto;margin-bottom:auto}
 .slide.title h1{line-height:1.16;letter-spacing:-.015em}
+.slide.alt{background:#DCDCDA}
+.slide.alt .part{background:transparent}
+.slide .altlab{position:fixed;left:200px;top:30px;z-index:6;font-family:var(--f-mono);font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:#6b6b6b;padding:3px 10px;border-radius:3px}
+body.overview .slide .altlab{display:none}
+.slide.split.tight .altlab{top:auto;bottom:22px}
+.slide.figure .altlab{left:auto;right:64px;top:62px}
 /* text slides: heading at the top, the content centered in the space below it */
 .slide.text > h1 ~ :not(style,.part,aside):not(h1 ~ :not(style,.part,aside) ~ *){margin-top:auto}
 .slide.text > h1 ~ :not(style,.part,aside):not(:has(~ :not(style,.part,aside))){margin-bottom:auto}
@@ -81,7 +87,9 @@ Explain the intellectual precedent rather than judging software age or current p
 body.overview .slide .part{display:none}
 </style>
 
-# The development of digital resources and methods has outpaced their integration into research practice
+# Integrating digital methods into Arabic philology
+
+<p style="font-family:var(--f-head);font-size:1.05em;color:var(--red);margin:-.2em 0 .6em">The development of digital resources and methods has outpaced their integration into research practice.</p>
 
 - **The evidence:** thousands of Arabic works spanning fourteen centuries are now available for computational analysis.
 - **The prevailing practice:** research remains concentrated on individual texts, limited selections, and narrowly defined problems.
@@ -93,6 +101,7 @@ body.overview .slide .part{display:none}
 
 Notes:
 Digital resources and methods have developed faster than their integration into research practice. Thousands of Arabic works spanning fourteen centuries are now available for computational analysis. Yet research remains concentrated on individual texts, limited selections, and narrowly defined problems. The challenge is to build a cumulative understanding of social history, cultural production, the development of textual types, or “genres,” and the historical development of the Arabic language itself. So the question for this lecture: what becomes possible when we study the Arabic written tradition as an interconnected whole?
+
 --- text bkc nofit
 <!-- src: 2026-11-16-dh-books-soa:1 -->
 <style>
@@ -127,7 +136,7 @@ Digital resources and methods have developed faster than their integration into 
 <div class="bk">
 <div class="cv"><img src="img/2026-11-16-dh-books-soa--muhanna-2016-cover.png" alt="Cover of The Digital Humanities and Islamic & Middle East Studies, ed. Elias Muhanna (De Gruyter, 2016)"></div>
 <div>
-<p class="yr">2016 · the first attempt</p>
+<p class="yr">2016 · a collective starting point</p>
 <p class="ttl">The Digital Humanities and Islamic &amp; Middle East Studies</p>
 <p class="who">Elias Muhanna (ed.)</p>
 <p class="pub">Berlin: De Gruyter, 2016 · doi.org/10.1515/9783110376517</p>
@@ -144,6 +153,7 @@ Outline 1.C: Book-length contributions show a field taking shape. Planned time: 
 Introduce the first volume in the supplied book sequence. Preserve the distinction between reflecting on digital scholarship and applying computational methods. Editorial change: removed the unverified “3 of 11” count because the supplied notes explicitly leave the classification undecided. The rest of the supplied critical framing is retained. Transition to digital manuscript work.
 
 <!-- reuse 2026-11-16-dh-books-soa:2 -->
+
 --- text bkc nofit
 <div class="yrs"><span>2016</span><span class="on">2020</span><span>2024</span><span>2026</span></div>
 
@@ -158,7 +168,7 @@ Introduce the first volume in the supplied book sequence. Preserve the distincti
 <li>Digitized versus physical manuscripts; twenty online repositories ranked by ten criteria</li>
 <li>TEI, IIIF, catalog databases, Python and OpenCV</li>
 </ul>
-<p class="take">Formats and tools, but no research question and no analytical result.</p>
+<p class="take">A methodological handbook whose historical and philological applications remain to be developed.</p>
 </div>
 </div>
 
@@ -169,6 +179,9 @@ Four years later, Brill published Cornelis van Lit's Among Digitized Manuscripts
 [Bockholt, review of van Lit, MIDÉO 37 (2022): 215–218, journals.openedition.org/mideo/8299. Chapter list from the review: 1 manuscript, print, digital worlds; 2 digital materiality; 3 twenty repositories, an ethnography; 4 paleography; 5 digital editing standards (TEI); 6 cataloging; 7 codicology with Python and OpenCV; 8 “A Digital Orientalist”; postscript after Kračkovskij.]
 
 <!-- reuse 2026-11-16-dh-books-soa:3 -->
+
+In speech, acknowledge the treatment of digital materiality and explain the criterion used to assess the contribution.
+
 --- text bkc nofit
 <div class="yrs"><span>2016</span><span>2020</span><span class="on">2024</span><span>2026</span></div>
 
@@ -183,7 +196,7 @@ Four years later, Brill published Cornelis van Lit's Among Digitized Manuscripts
 <li>Variation and mutability across the versions of one text</li>
 <li>The digital infrastructure the project needed, including a chapter on its software</li>
 </ul>
-<p class="take">Digital infrastructure in the service of a question, but a single textual tradition.</p>
+<p class="take">A detailed study of variation and transmission across a single textual tradition.</p>
 </div>
 </div>
 
@@ -194,6 +207,9 @@ A more engaging example came in 2024 from the Kalīla and Dimna project in Berli
 [Chapters (Crossref): Gründler and Toral, introduction; Gründler, Arabic versions as continua; Khalfallah, the chapter of the king and his dreams; Redwan, illustrations; van Ginkel, friendship; Beers, Naṣr Allāh Munšī’s preface; Toral, the panther and the fox; Stephan, poetic moments; Kozae, software use in the project; lists of manuscripts.]
 
 <!-- reuse 2026-11-16-dh-books-soa:4 -->
+
+Then ask orally which comparisons can extend across traditions.
+
 --- text bkc nofit
 <div class="yrs"><span>2016</span><span>2020</span><span>2024</span><span class="on">2026</span></div>
 
@@ -284,6 +300,18 @@ Beyond these books, digital work in our field appears as articles, projects, res
 Notes:
 Part 2: My contributions.
 
+--- text max=40
+# The Vision
+
+The work I’ll show you starts from one proposition:
+
+> digital Arabic philology allows us to study the Arabic written tradition as a whole through a unified, machine-readable corpus. We can ask how scholarly communities changed, how texts drew on one another, how their typology developed, and how Arabic itself evolved. And we can move from a single passage to patterns across centuries and regions, then return to the passages and their contexts to see what those patterns mean. And never lose the sight of the big picture.
+
+<div class="part">Part 2 · My contributions</div>
+
+Notes:
+The work I’ll show you starts from one proposition: digital Arabic philology allows us to study the Arabic written tradition as a whole through a unified, machine-readable corpus. We can ask how scholarly communities changed, how texts drew on one another, how their typology developed, and how Arabic itself evolved. And we can move from a single passage to patterns across centuries and regions, then return to the passages and their contexts to see what those patterns mean. And never lose the sight of the big picture.
+
 --- split w-35-65 max=44
 <!-- reuse 2026-09-28-Cairo:62 -->
 ![Cover of Digital Humanities for Arabic and Islamic Studies](img/2026-09-28-Cairo--book-cover.png)
@@ -349,19 +377,20 @@ Explain the four domains: digital representations of material objects; metaobjec
 
 --- text max=44
 <!-- reuse 2026-09-28-Cairo:7 -->
-# OpenITI, v. 2023.1.8 — “clean”
+# The book’s analytical subcorpus
 
-<div class="indent">
-<p>Our final subcorpus, based on version 2023.1.8, consisting solely of “clean” unique texts written up to 1400/1980:</p>
-<ul class="plain">
-<li>– 2,783 unique authors (156 fewer than in the set above, or 94.69%)</li>
-<li>– 7,058 unique texts (−407 fewer, or 94.55%)</li>
-<li>– 927.37 million tokens before cleaning</li>
-<li>– 868.81 million tokens after removal of most paraeditorial material and remaining “unclean” (93.68% of the uncleaned set)</li>
-</ul>
-</div>
+Selected from **OpenITI 2023.1.8** for the analyses through **1400 AH / 1980 CE**.
+
+- **2,783** authors
+- **7,058** unique texts
+- **868.81 million** tokens after cleaning
+
+<p class="small muted">Figures describe the selected analytical subcorpus. Most editorial material was removed before analysis.</p>
 
 <div class="part">Part 2 · My contributions</div>
+
+Notes:
+The comparisons with “the set above” are removed: their baseline is not shown.
 
 --- figure
 <!-- reuse 2026-09-28-Cairo:8 -->
@@ -381,11 +410,14 @@ Explain the four domains: digital representations of material objects; metaobjec
 
 <div class="chain">
 <div class="box"><span class="num">١</span><span class="name">A term</span><span class="desc">is understood through the corpus: when does it appear across time and space? who uses it? and who doesn’t?</span></div>
-<div class="box"><span class="num">٢</span><span class="name">A book</span><span class="desc">is understood through other books: what other books it builds on? how does it fit among the rest?</span></div>
+<div class="box"><span class="num">٢</span><span class="name">A book</span><span class="desc">is understood through other books: what other books does it build on? how does it fit among the rest?</span></div>
 <div class="box"><span class="num">٣</span><span class="name">A tradition</span><span class="desc">is understood through the geographical and chronological layers of books: how does its language change? how do its topics shift?</span></div>
 </div>
 
 <div class="part">Part 2 · My contributions</div>
+
+Notes:
+
 
 --- section light
 <!-- reuse 2026-09-28-Cairo:10 -->
@@ -584,8 +616,8 @@ My proof-of-concept model already demonstrates a useful distinction. Here is Ibn
 
 <div class="key">
 <div class="h"><b>Chapters 1–4:</b> tradition-based reports (<i>ḥadīṯ</i>) establish the necessity of the work.</div>
-<div class="r"><b>Chapters 6–8:</b> legal discourse.</div>
 <div class="g"><b>Chapter 5:</b> scholastic-theological, historical, and biographical material on different beliefs and communities.</div>
+<div class="r"><b>Chapters 6–8:</b> legal discourse.</div>
 <div class="h"><b>Chapter 10:</b> biographical anecdotes in the critique of Sufism.</div>
 </div>
 
@@ -595,6 +627,8 @@ My proof-of-concept model already demonstrates a useful distinction. Here is Ibn
 
 Notes:
 Ibn al-Jawzī’s Talbīs Iblīs offers that contrast. A whole-book assessment classifies it as biographical, but the passage-level view reveals a complex composition. Reading from left to right, the opening chapters draw on hadith reports. Discussions of beliefs and communities combine theological, historical, and biographical material. Religious practice brings legal discourse, while the critique of Sufism relies on biographical anecdotes. The model locates these shifts; close reading explains how the author uses different materials to construct his social critique.
+
+Chapter explanations in reading order. The rolling window size determines the resolution at which a mixture is observed; reading the passages distinguishes interweaving from shifts within a window.
 
 --- text max=44
 <!-- reuse 2026-09-28-Cairo:31 -->
@@ -667,9 +701,10 @@ Ibn al-Jawzī’s Talbīs Iblīs offers that contrast. A whole-book assessment c
 <p><strong>Keywords</strong> (TF–IDF): <em class="muted">what texts are about</em><br>
 <strong>Style</strong> (MFV): <em class="muted">how texts are written</em></p>
 <ul>
-<li><strong>Hundreds of parameter combinations</strong></li>
+<li><strong>12 distance measures × 2 clustering methods</strong></li>
 <li><strong>3,000 random samples (MFV)</strong></li>
-<li><strong>72,000 dendrograms » 48 consensus trees</strong></li>
+<li><strong>72,000 stylometric trees → 48 consensus trees</strong></li>
+<li><strong>48 separate keyword tests</strong></li>
 </ul>
 <p>Do not trust a tree. Ask what survives across trees.</p>
 </div>
@@ -681,13 +716,16 @@ Ibn al-Jawzī’s Talbīs Iblīs offers that contrast. A whole-book assessment c
 
 <div class="part">Part 2 · My contributions</div>
 
+Notes:
+Stylometry: 3,000 random sampling runs × 12 distance measures × 2 clustering methods = 72,000 trees, summarized in 48 consensus trees. Keywords: 48 separate keyword tests.
+
 --- split w-25-75 vcenter tight max=44
 <!-- reuse 2026-09-28-Cairo:37 -->
 # Style
 
 <p class="big muted" style="font-style:italic">stylometry</p>
 <ul class="small" style="font-style:italic">
-<li>distributions of frequencies of most frequent words (function words) are unique to individual:</li>
+<li>distributions of frequencies of most frequent words (function words) can help distinguish:</li>
 </ul>
 <ul class="small" style="font-style:italic;list-style:disc">
 <li><strong class="accent">authors</strong></li>
@@ -700,13 +738,16 @@ Ibn al-Jawzī’s Talbīs Iblīs offers that contrast. A whole-book assessment c
 
 <div class="part">Part 2 · My contributions</div>
 
+Notes:
+
+
 --- split w-25-75 vcenter tight max=44
 <!-- reuse 2026-09-28-Cairo:38 -->
 # Style
 
 <p class="big muted" style="font-style:italic">stylometry</p>
 <ul class="small" style="font-style:italic">
-<li>distributions of frequencies of most frequent words (function words) are unique to individual:</li>
+<li>distributions of frequencies of most frequent words (function words) can help distinguish:</li>
 </ul>
 <ul class="small" style="font-style:italic;list-style:disc">
 <li>authors</li>
@@ -719,6 +760,9 @@ Ibn al-Jawzī’s Talbīs Iblīs offers that contrast. A whole-book assessment c
 ![Dendrogram of Jurjī Zaydān’s writings in three periods](img/2026-09-28-Cairo--dendrogram-zaydan.png)
 
 <div class="part">Part 2 · My contributions</div>
+
+Notes:
+
 
 --- figure caption="A single dendrogram of 50-lunar-year samples of the corpus, colored by macroperiod. Hijrī dates!"
 <!-- reuse 2026-09-28-Cairo:39 -->
@@ -792,7 +836,7 @@ Ibn al-Jawzī’s Talbīs Iblīs offers that contrast. A whole-book assessment c
 <div class="indent">
 <p>Ismāʿīl Bāšā al-Baġdādī (d. 1338/1919)</p>
 <p class="indent"><em>Hadiyyaŧ al-ʿārifīn</em><br><em>c. 8,800 authors; 40,000+ titles</em><br>A bio-bibliographical model of the tradition</p>
-<p><strong>Independent of the corpus experiments</strong></p>
+<p><strong>Bibliographical evidence for a separate comparison</strong></p>
 </div>
 
 <div class="stats bottom" style="width:20em;margin-left:auto">
@@ -801,6 +845,9 @@ Ibn al-Jawzī’s Talbīs Iblīs offers that contrast. A whole-book assessment c
 </div>
 
 <div class="part">Part 2 · My contributions</div>
+
+Notes:
+
 
 --- text max=44
 <!-- reuse 2026-09-28-Cairo:47 -->
@@ -842,16 +889,19 @@ Ibn al-Jawzī’s Talbīs Iblīs offers that contrast. A whole-book assessment c
 
 --- text max=44
 <!-- reuse 2026-09-28-Cairo:52 -->
-# Two independent witnesses
+# Two sources, converging patterns
 
 <div class="indent">
 <p><strong>CORPUS of TEXTS</strong><br><span class="muted">lexical/thematic and stylometric change</span></p>
 <p style="margin-top:1em"><strong>REGISTER of AUTHORS</strong><br><span class="muted">cultural geography over time</span></p>
 </div>
 
-<p class="bottom punch">Different biases. Different assumptions.<br> Similar macro-boundaries.</p>
+<p class="bottom punch">Textual change and bibliographical geography point to a broad historical reconfiguration.</p>
 
 <div class="part">Part 2 · My contributions</div>
+
+Notes:
+Acknowledge that survival and selection can affect both sources.
 
 --- text max=44
 <!-- reuse 2026-09-28-Cairo:53 -->
@@ -886,6 +936,8 @@ Outline 2.G: The heuristic loop between close and distant reading. Planned time:
 
 Interpretation is involved throughout, from evidence construction to explanation. Avoid a rigid division between quantitative discovery and qualitative interpretation. This connects all three case studies and prepares the shift to biographical evidence.
 
+[ChAstra, C15] Citation practice in Talbīs Iblīs supplies the question. The corpus provides a distribution of the Six Books designation. Reading the hits determines what that distribution means. The same movement between scales guides the biographical studies.
+
 --- section light
 <p class="kicker">EIS1600 · Ongoing research</p>
 # Evolution of Islamic Societies (c. 600–1600)
@@ -916,6 +968,17 @@ Notes:
 Outline 2.H: EIS1600: from biographical evidence to historical research. Planned time: 75 seconds.
 
 Distinguish records from linked individuals. Around 340,000 records with chronological or geographical evidence form the usable merged subset; do not suggest all 604,000 records independently resolve to 140,000 people. Approximately 80,000 dated individuals concern the first millennium of Islamic history in the agreed outline. Credit the project team. The comparison with PUA is one of scope, not scholarly quality.
+
+--- text max=44
+<!-- PLACEHOLDER: replaces ChAstra's A2 ("How al-Ḏahabī rewrote Andalusian biographies"); Maxim will pick slides from the library -->
+# Al-Ḏahabī and his Andalusian sources
+
+<p class="muted" style="font-style:italic">[Placeholder: a couple of slides from the presentation library to follow]</p>
+
+<div class="part">Part 2 · My contributions</div>
+
+Notes:
+Placeholder. Candidate material in the library: the Vienna 2025 deck (2025-12-09-vienna, the Golden Sample block) and the NRLXU paired biography prepared for the first CSIC draft.
 
 --- text max=44
 # 3 volumes establish the research foundation
@@ -1014,16 +1077,32 @@ Notes:
 I will first explain how these activities would work at the Escuela, then develop the research agenda in more detail, moving from social history and historiography through texts to language. Finally, I will explain the initial priorities and how additional funding could expand the program.
 
 --- text p3 max=44
+# Why the Escuela de Estudios Árabes
+
+- **A scholarly connection:** María Luisa Ávila, Luis Molina, and the *Prosopografía de los ulemas de al-Andalus* helped shape my dissertation methodology.
+- **A community of colleagues:** sustained exchange with specialists in Arabic philology, history, and the western Islamic world.
+- **Granada as an international meeting place:** a European city with a central place in the history of al-Andalus.
+
+<p class="punch">A setting for developing the Digital Arabic Philology Laboratory through research, training, and collaboration.</p>
+
+<div class="part">Part 3 · Research at the Escuela</div>
+
+Notes:
+PUA, together with Onomasticon Arabicum and the Netherlands Ulama Project, helped me develop my own approach. Working at the Escuela would mean carrying this line of inquiry forward alongside colleagues who know the sources and their historical contexts.
+
+The concentration of relevant expertise matters for methodological development as well as interpretation. Granada’s history and international recognition can also help make it a meeting place for scholars working on the Arabic written tradition. Emphasize the personal and intellectual connection to the institution. [40–50 seconds]
+
+--- text p3 max=44
 <!-- P3.02 · Instruction · 50 seconds -->
 # Instruction through active research
 
-- Begin with participants’ own questions and sources.
-- Work through source assessment, analysis, and interpretation.
-- Develop an article, dataset, or dissertation component.
+1. **Introduce the methodology** and explain what the analysis can establish.
+2. **Work through the same texts together**, using the same data and settings.
+3. **Design an investigation for participants’ own texts** and research questions.
 
-**Research apprenticeship · Workshops · Summer schools**
+<p class="punch">Develop the judgment to choose, apply, and interpret an analysis independently.</p>
 
-<p class="punch">The objective is independent research judgment.</p>
+<p class="small muted">At the Escuela in 2024 · Computational analysis of Andalusian prosopography</p>
 
 <div class="part">Part 3 · Research at the Escuela</div>
 
@@ -1033,6 +1112,8 @@ Notes:
 This can take the form of individual mentoring, focused workshops, or summer schools with follow-up. The computational Andalusian prosopography activity at the Escuela in 2024 provides a direct precedent. Other experience includes Tokyo, Hamburg, Bern, and Madrid; mention only one further example if useful. The scale and frequency of future activities would be developed with colleagues and available resources.
 
 Transition: instruction develops a sustained skill set; consultations can also help with a specific problem within an existing project.
+
+A shared exercise gives participants a common result to understand and discuss. This helps them focus on the unfamiliar method before working through a new interpretation as well. Their own sources enter at the research-design stage. Language models make coding and command-line work easier to introduce, while beginners still require guided practice. For stochastic analyses, explain the seed or expected variability.
 
 --- text p3 max=44
 <!-- P3.03 · Consultations · 45 seconds -->
@@ -1059,6 +1140,8 @@ The outcome might be a comparison to try, a plan for preparing the sources, or a
 - Connect al-Andalus and the Maghrib with the wider Arabic written tradition.
 - Build shared studies, supervision, and proposals through existing research networks.
 
+<p class="small" style="margin-top:.4em">An initial conversation with José Bellver concerns computational approaches to the concepts and relationships in Ibn ʿArabī’s thought.</p>
+
 <p class="p3-sub">OpenITI · KITAB · Spanish and German collaborations · International research and training exchanges</p>
 
 <div class="part">Part 3 · Research at the Escuela</div>
@@ -1068,13 +1151,16 @@ Notes:
 
 Existing relationships provide a basis for joint projects and exchanges. Depending on the example, mention Maribel Fierro or Mayte Penelas; OpenITI and KITAB collaborators such as Sarah Bowen Savant, Matthew Thomas Miller, and David Smith; or German philological and historical collaborations. These are existing connections, not commitments by those colleagues to a new project. Emphasize what a collaboration would investigate rather than reciting a list of names.
 
+Begin with a few concepts in selected works. José’s expertise would shape the concepts, examples, and interpretation. Develop and evaluate a method through those examples. This is an exploratory collaboration already discussed, with its scope to be worked out together.
+
 --- text p3 max=44
 <!-- P3.05 · Laboratory · 50 seconds -->
-# A Digital Arabic Philology Laboratory
+# A Digital Arabic Philology Lab
 
 - Develop instruments for language, textual composition, and biographical evidence.
 - Connect corpus analysis with passages, sources, and historical context.
 - Make methods and resources from individual studies usable in further research.
+- Research instruments can bring several analyses of a text together for rapid hypothesis testing and passage-level review.
 
 <p class="punch">Research questions guide the development of new instruments.</p>
 
@@ -1087,14 +1173,16 @@ Its work includes documented corpora, datasets, methods, and applications. Prese
 
 Transition: these are the ways I would contribute. What research would give this program its substance?
 
+Longer-term institutional possibility raised by José: a future research-software post with CSIC in the Escala de Técnicos Especializados de los Organismos Públicos de Investigación. The initial research uses existing data and tools.
+
 --- text p3 max=44
 <!-- P3.06 · Research overview · 40 seconds -->
 # Three connected research directions
 
 <div class="p3-rows">
-<div class="p3-row"><b>Social history and historiography</b><br>Social transformation and its representation in biographical collections.</div>
-<div class="p3-row"><b>Texts and the written tradition</b><br>Typology, cultural production, transmission, and reception.</div>
-<div class="p3-row"><b>Language in historical context</b><br>Change and variation across periods, regions, and textual types.</div>
+<div class="p3-row"><b>[1] Social history and historiography</b><br>Social transformation and its representation in biographical collections and chronicles.</div>
+<div class="p3-row"><b>[2] Texts and the written tradition</b><br>Typology (“genres”), cultural production, transmission, and reception.</div>
+<div class="p3-row"><b>[3] Language in historical context</b><br>Change and variation across periods, regions, and textual types.</div>
 </div>
 
 <div class="part">Part 3 · Research at the Escuela</div>
@@ -1106,13 +1194,15 @@ Transmission, reuse, and intellectual networks remain explicit research concerns
 
 --- text p3 max=44
 <!-- P3.07 · Historical synthesis · 70 seconds -->
-# Historical synthesis: social transformation
+# [1a] Historical synthesis: social transformation
 
 **Did scholarly life change, or did its historians’ vantage point change?**
 
 - Compare social groups, geographical distributions, and mobility.
 - Test historical interpretations across different collections.
 - Connect regional studies into a broader account of Islamic societies.
+
+<p class="punch">A research direction emerging from EIS1600’s extensive evidence.</p>
 
 <div class="part">Part 3 · Research at the Escuela</div>
 
@@ -1125,13 +1215,13 @@ I would develop the synthesis through focused comparative studies before bringin
 
 --- text p3 max=44
 <!-- P3.08 · Historiographical synthesis · 65 seconds -->
-# Historiographical synthesis: shaping the past
+# [1b] Historiographical synthesis: shaping the past
 
 - How do biographers select, omit, abbreviate, and expand earlier accounts?
 - How do those choices change the representation of people and communities?
 - Which patterns reflect shared sources or changing historiographical priorities?
 
-<p class="punch">A new research direction emerging from EIS1600’s evidence.</p>
+<p class="punch">A research direction emerging from EIS1600’s extensive evidence.</p>
 
 <div class="part">Part 3 · Research at the Escuela</div>
 
@@ -1142,31 +1232,108 @@ The Golden Sample study provides a starting example through more than two thousa
 
 The two syntheses therefore develop together. Historical patterns direct attention to the sources; analysis of those sources changes how we interpret the patterns.
 
---- text p3 max=44
-<!-- src: 2026-erc-interview:2 -->
-<!-- P3.09 · ArabesQuery questions · 65 seconds -->
-# ArabesQuery: typology of the tradition
+--- text class="ident"
+<!-- reuse 2026-erc-interview:1 -->
 
-**How did branches of knowledge emerge, interact, and change across time and space?**
+<style>
+.slide.ident.current{display:flex;flex-direction:column;justify-content:center}
+.counter{bottom:24px;right:22px;font-size:14px}
+.ident .wrap{display:grid;grid-template-columns:600px 1fr;gap:80px;align-items:center;width:100%}
+.ident .wrap img{width:600px;height:600px;display:block}
+.ident .ttl{font-family:var(--f-head);font-weight:700;font-size:62px;line-height:1.12;letter-spacing:-.015em;color:var(--ink);text-wrap:balance}
+.ident .ttl::after{content:"";display:block;width:110px;height:3px;background:var(--red);margin:26px 0 30px}
+.ident .who{font-size:42px;color:var(--ink);line-height:1.2}
+.ident .aff{font-family:var(--f-ui);font-size:30px;color:var(--muted);margin-top:8px}
+.ident .erc{font-family:var(--f-mono);font-size:20px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-top:44px}
+</style>
 
-- How did textual types develop and combine within works?
-- Why did some persist, while others gained or lost prominence?
-- How did these changes relate to scholarly geography and wider historical transformations?
-
-<p class="p3-sub">Computational Typology of the Arabic Written Tradition · ERC Consolidator proposal</p>
+<div class="wrap">
+<img src="img/2026-erc-interview--ASQ_logo_t.png" alt="ArabesQuery logo">
+<div>
+<div class="ttl">[2a] Computational Typology of the Arabic Written Tradition</div>
+<div class="who">Maxim Romanov</div>
+<div class="aff">Universität Hamburg</div>
+<div class="erc">ERC Consolidator Grant 2026 · interview</div>
+</div>
+</div>
 
 <div class="part">Part 3 · Research at the Escuela</div>
 
 Notes:
-[65 seconds] ArabesQuery develops the typological case study into a historical investigation of the organization of writing. Arabic scholars classified knowledge into branches, or ʿulūm. We can compare those historical classifications with patterns in the texts themselves and ask how their relationships changed.
+ArabesQuery investigates the Arabic written tradition as an interconnected and historically changing system of knowledge.
 
-The aim is to understand differentiation, combinations within individual books, continuity, and transformation across the tradition. These are questions about cultural production and its historical setting. Conventional disciplinary and generic labels remain evidence to investigate, rather than categories to assume are stable throughout fourteen centuries.
+--- text class="q1"
+<!-- reuse 2026-erc-interview:2 -->
 
-ArabesQuery is currently a proposal. Its funding status affects the scale and organization of the work; I return to that at the end of this section.
+<style>
+.erc-mark{position:absolute;right:120px;top:92px;text-align:right;line-height:1}
+.erc-mark .n{font-family:var(--f-head);font-weight:700;font-size:40px;letter-spacing:-.02em;color:var(--red)}
+.slide.q1.current{display:flex;flex-direction:column}
+.q1 .ask{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:54px;padding:60px 0 40px}
+.q1 .ask p{font-family:var(--f-head);font-weight:400;font-size:56px;line-height:1.3;letter-spacing:-.012em;color:var(--ink);text-wrap:balance;margin:0}
+.q1 .ask p b{color:var(--red);font-weight:400}
+.q1 .ask p.q1b{font-size:40px;line-height:1.32}
+</style>
+
+<div class="erc-mark" style="top:64px;right:64px"><div class="n" style="font-size:32px">[2a] ArabesQuery</div></div>
+
+<div class="ask">
+<p>How did its <b>branches of knowledge</b> (<i>ʿulūm</i>) emerge, interact, and change across time and space?</p>
+<p class="q1b">How did changes in the written tradition relate to shifts in scholarly geography and wider social, cultural, and political transformations?</p>
+<p class="q1b">Why did some textual types retain their presence, while others became more prominent or declined?</p>
+</div>
+
+<p class="bottom punch">The Arabic written tradition as an interconnected whole</p>
+
+<div class="part">Part 3 · Research at the Escuela</div>
+
+Notes:
+For centuries, scholars writing in Arabic organized knowledge into branches such as law, medicine, history, and Qurʾānic interpretation. We have rich studies of individual branches and extensive bibliographies. What remains unclear is how these branches fitted together: how distinct they were, how they interacted, and how those relationships changed across time and space. ArabesQuery addresses this question through systematic analysis of the texts, in dialogue with the tradition’s own classifications.
+
+--- text max=44
+<!-- reuse 2026-erc-interview:6 -->
+<div class="erc-mark" style="top:64px;right:64px"><div class="n" style="font-size:32px">[2a] ArabesQuery</div></div>
+
+# Reconstructing the tradition through its texts
+
+<style>
+.flow{position:relative;margin-top:70px;padding-top:70px}
+.flow .stages{display:grid;grid-template-columns:repeat(4,1fr);gap:54px;position:relative}
+.flow .st{position:relative;background:#fff;border-top:5px solid var(--navy);box-shadow:0 1px 0 rgba(0,0,0,.08),0 8px 24px rgba(0,0,0,.06);padding:26px 26px 30px;min-height:330px}
+.flow .st .n{font-family:var(--f-mono);font-size:19px;letter-spacing:.16em;color:var(--red)}
+.flow .st .t{font-family:var(--f-head);font-weight:700;font-size:32px;line-height:1.15;margin:10px 0 16px;color:var(--ink)}
+.flow .st .d{font-family:var(--f-ui);font-size:23px;line-height:1.35;color:var(--muted)}
+.flow .st+.st::before{content:"→";position:absolute;left:-46px;top:150px;font-size:44px;color:var(--red);line-height:1}
+.flow .st.last{border-top-color:var(--red)}
+.flow svg{position:absolute;left:0;top:0;width:100%;height:78px;overflow:visible}
+.flow .fb{position:absolute;left:50%;top:14px;transform:translateX(-50%);font-family:var(--f-ui);font-size:21px;color:var(--muted);background:var(--paper);padding:0 14px}
+.flow .base{font-family:var(--f-ui);font-size:23px;color:var(--muted);margin-top:40px;text-align:center}
+</style>
+
+<div class="flow">
+<svg viewBox="0 0 1600 78" preserveAspectRatio="none" aria-hidden="true"><path d="M1400 72 V 24 Q1400 10 1386 10 H214 Q200 10 200 24 V 64" fill="none" stroke="var(--red)" stroke-width="2" stroke-dasharray="8 8"/><path d="M190 56 L200 72 L210 56" fill="none" stroke="var(--red)" stroke-width="2"/></svg>
+<div class="fb">interpretation refines the profiles</div>
+<div class="stages">
+<div class="st"><div class="n">1</div><div class="t">Identify textual profiles</div><div class="d">Recurring types, and their combinations within works.</div></div>
+<div class="st"><div class="n">2</div><div class="t">Test their robustness</div><div class="d">Vary the exemplars; compare across authors, periods, and model settings; read the uncertain and mixed cases.</div></div>
+<div class="st"><div class="n">3</div><div class="t">Connect the evidence</div><div class="d">Texts, bibliographical classifications, and scholarly biographies.</div></div>
+<div class="st last"><div class="n">4</div><div class="t">Interpret historical change</div><div class="d">Disciplines and their relationships across time and space.</div></div>
+</div>
+<p class="base">Continuity and transformation: a type may stay recognizable while its composition and its place in the tradition change.</p>
+</div>
+
+<p class="bottom punch">Corpus through corpus, bibliography through bibliography,<br><span style="font-size:.72em">supported with 604,000 biographies from EIS1600</span></p>
+
+<div class="part">Part 3 · Research at the Escuela</div>
+
+Notes:
+The four stages shown here form a cycle. We vary the reference works used in training and repeat the analysis across authors and periods. We examine uncertain and mixed cases through close reading, allowing our categories to change. We then compare the profiles with bibliographical classifications and evidence about scholars’ activities and locations. Interpretation feeds back into modeling. A type may remain recognizable even as its internal composition and its place within the tradition change.
 
 --- text p3 max=42
 <!-- src: 2026-erc-interview:3 -->
 <!-- P3.10 · Evidence · 45 seconds -->
+<div class="erc-mark" style="top:64px;right:64px"><div class="n" style="font-size:32px">[2a] ArabesQuery</div></div>
+
 # Connecting three bodies of evidence
 
 **Texts — OpenITI**<br>
@@ -1187,56 +1354,24 @@ Notes:
 
 Their coverage and dependencies must be examined: a bibliography or a biographical collection is itself a historical source. Linking authors and works allows us to compare these perspectives without treating any one of them as a complete account. Credit the OpenITI collaborators and EIS1600 team for the foundations already presented in Part 2.
 
---- text p3 max=44
-<!-- src: 2026-erc-interview:6 -->
-<!-- P3.11 · Analytical sequence · 55 seconds -->
-# Reconstructing the tradition through its texts
-
-1. **Identify textual profiles:** recurring types and their combinations.
-2. **Test their robustness:** vary exemplars, periods, and model settings.
-3. **Connect the evidence:** texts, classifications, and scholarly biographies.
-4. **Interpret historical change:** relationships among branches of knowledge across time and space.
-
-<p class="punch">Interpretation refines the profiles and the next comparison.</p>
-
-<div class="part">Part 3 · Research at the Escuela</div>
-
-Notes:
-[55 seconds] This is an iterative process. We vary the reference works used to model textual types and examine whether the patterns remain stable across authors, periods, and analytical choices. Uncertain and mixed cases require close reading and can prompt changes to the profiles.
-
-We then compare these patterns with historical bibliographical classifications and the evidence about scholars’ activities and locations. Interpretation feeds back into modeling. A textual type may remain recognizable while its internal composition or its relationship to other types changes.
-
-The corpus and the bibliographical tradition each need to be investigated on their own terms before their results are brought into comparison: corpus through corpus, bibliography through bibliography.
-
---- text p3 max=44
-<!-- P3.12 · Mapping tradition · 45 seconds -->
-# Writing in its social and geographical settings
-
-- Link authors and works to biographical attestations.
-- Compare textual developments with scholarly communities and mobility.
-- Trace where forms of writing became concentrated and how this changed.
-
-<p class="punch">EIS1600’s data support the mapping of cultural production.</p>
-
-<div class="part">Part 3 · Research at the Escuela</div>
-
-Notes:
-[45 seconds] This is a direct connection between the social-history program and ArabesQuery. Preparing author–work links and geographical evidence can proceed alongside work on the syntheses. It supports the mapping-tradition dimension of ArabesQuery while retaining the independent historical purposes of the biographical research.
-
-An author’s geographical association is not automatically the place where a particular work was composed. We need to preserve that distinction and extend coverage where the existing evidence is thinner, especially for later centuries. The goal is to investigate relationships between textual change and the social settings of cultural production.
+[ChAstra, C19] Example: follow a work’s textual profile, compare its bibliographical classification, and investigate its author’s recorded affiliations. This gives a concrete way to assess what linking the three bodies of evidence adds.
 
 --- text p3 max=42
 <!-- P3.13 · Corpus expansion and OCR · 60 seconds -->
-# Expanding the textual evidence (OpenITI)
+# [2b] Expanding the OpenITI Corpus through Automated OCR
+
+<p class="kicker" style="margin:0">Estimated pool for expansion</p>
 
 **≈50,000 digitized volumes / PDFs**<br>
 **≈25,000 distinct works**, subject to bibliographical reconciliation
 
-- Prioritize gaps that matter for specific research questions.
-- Compare multiple OCR outputs and check uncertain readings against page images.
-- Recover textual structure and preserve links to the evidence.
+- developed within the EIS1600 project
+- automaticaly identfies bibliographical details: author, title, edition, etc.  
+- uses multiple models to OCR the same page
+- compares multiple OCR outputs identifying and fixing disagrements
+- produces fully structured, clean texts (paratextual information removed)
 
-<p class="punch">Broader coverage lets us test patterns beyond the present corpus.</p>
+<p class="punch">Expanding OpenITI from 8,600 to 25,000–32,000 unique texts.</p>
 
 <div class="part">Part 3 · Research at the Escuela</div>
 
@@ -1247,9 +1382,11 @@ The existing workflow adapts the logic of double-keying: produce multiple OCR re
 
 Begin with selections justified by research questions. Large-scale processing can grow with collaboration and resources.
 
+The recognition and metadata workflow is already operational. Describe the expansion target separately from completed, reconciled text releases.
+
 --- text p3 max=44
 <!-- P3.14 · Manuscripts, transmission, and reception · 65 seconds -->
-# From production to transmission and reception
+# [2c] From production to transmission and reception
 
 - Where and for how long did a work circulate?
 - Which communities copied, owned, read, or taught it?
@@ -1270,7 +1407,7 @@ Selective studies can begin through collaboration. The proposed German Akademie 
 
 --- text p3 max=44
 <!-- P3.15 · Language evolution · 60 seconds -->
-# Language evolution at several levels
+# [3a] Language evolution at several levels
 
 **How did Arabic change across the written tradition?**
 
@@ -1291,7 +1428,7 @@ Begin with selected features and validated subsets, then extend the coverage as 
 
 --- text p3 max=44
 <!-- P3.16 · Regional language variation · 60 seconds -->
-# Classical Arabics?
+# [3b] Classical Arabics?
 
 **Did Classical Arabic in the West differ from Classical Arabic in the East?**
 
@@ -1308,37 +1445,36 @@ West and East provide an initial question rather than an exhaustive geographical
 
 This direction connects the linguistic agenda with both the textual and the social-historical strands.
 
+[ChAstra, C19] Example: compare one construction in western and eastern legal prose from the same period. Inspect the passages and repeat the comparison across authors.
+
 --- text p3 max=44
-<!-- P3.17 · Instruments answering the questions · 40 seconds -->
-# Instruments for rapid hypothesis checks
+# Sharing the research
 
-Extend **NgramReader** with morphological, lexical, and syntactic information.
-
-Compare a feature across **time, space, and textual type**.
-
-Return to the passages and assess the pattern in context.
-
-<p class="punch">New research questions become directly testable.</p>
+- Publish historical and philological findings alongside documented corpora and models.
+- Provide worked examples and research applications through which others can explore the evidence.
+- Share results through workshops, public demonstrations, and accessible accounts of the historical questions.
 
 <div class="part">Part 3 · Research at the Escuela</div>
 
 Notes:
-[40 seconds] This gives a concrete example of the laboratory’s role. The proposed extensions would allow researchers to move beyond exact phrases and examine annotated forms and constructions, with comparisons by period, region, and textual type.
-
-For example, one could ask whether a construction has a regional distribution within a particular kind of writing, then inspect the passages behind the result. Links to Book Classifier, biographical metadata, and bibliography can make the comparisons more informative. These are proposed extensions, not functions already demonstrated earlier in the talk. Their development follows the research questions and the quality of the underlying annotations.
+Connect dissemination to the forms of output already demonstrated in the talk. The book communicates the interpretation and methods. Research applications let colleagues explore and test them. Public talks and demonstrations can explain what the evidence changes about our understanding of the past. Choose suitable formats with the Escuela. [25–30 seconds; responds to José’s suggestion about dissemination]
 
 --- text p3 max=42
 <!-- P3.18 · Initial priorities · 55 seconds -->
-# Initial priorities at the Escuela
+# Initial priorities at the Escuela (no funding)
+
+
 
 **Historical research**<br>
-Comparative studies for the two syntheses, building on EIS1600’s data and foundational volumes.
+Continue the work on the two syntheses using EIS1600’s data and foundational volumes.
 
-**Textual research**<br>
-Focused typological studies and author–work links for mapping cultural production.
+**Typology of the Arabic written tradition**<br>
+Begin the work on computational typology.
 
 **Shared research practice**<br>
-Methodological consultations, a focused training activity, and development of existing instruments.
+Shape initial collaborations with colleagues and organize a focused training activity.
+
+<p class="punch">The data, methods, and instruments are already in place to begin.</p>
 
 <div class="part">Part 3 · Research at the Escuela</div>
 
@@ -1353,14 +1489,16 @@ Larger corpus expansion, recruitment, and extensive manuscript integration can g
 <!-- P3.19 · Leadership and funding · 50 seconds -->
 # Research leadership and external funding
 
-**An existing foundation**<br>
-EIS1600 experience in research coordination, supervision, and shared outputs.
+**Spanish national funding · AEI 2027**<br>
+Develop a *Proyectos de Generación de Conocimiento* proposal with colleagues, with associated predoctoral funding where appropriate.
 
-**If ArabesQuery receives ERC funding**<br>
-A team advances the project under my scientific direction while I complete the syntheses and connect their evidence to the wider program.
+**European funding · ERC**<br>
+If ArabesQuery is funded, both historical-historiographical research can continue in parallel with the study of the typology of the Arabic written tradition.
 
-**Further development**<br>
-Spanish and international proposals developed around substantive research questions and collaborations.
+**German funding · *ʿAlamāt* Akademie Projekt**<br>
+a 25-year project proposal is in active development in collaboration with Professor Beatrice Gruendler (Freie Universität Berlin) and Professor Jens Scheiner (Göttingen)—the project extends the ambition of ArabesQuery into manuscripts. 
+
+<p class="small muted">The AEI application will follow the published terms of the 2027 call.</p>
 
 <div class="part">Part 3 · Research at the Escuela</div>
 
@@ -1371,24 +1509,21 @@ If ERC funding is awarded, the team would carry out the lion’s share of Arabes
 
 The initial priorities just outlined can proceed without assuming that grant. Further Spanish and international funding would support larger collaborations, recruitment, corpus expansion, and training. Developing proposals is also an area in which I can contribute to joint work at the Escuela.
 
---- text p3 max=44
-<!-- P3.20 · Conclusion · 30 seconds -->
-# The proposition for the Escuela
+Article 8.2(b)(3) of the 2026 AEI call accepts documented expectation of appointment following a successful competitive public-sector selection. The 2027 application will depend on that call’s published terms. José’s indicative humanities budgets are planning guidance, so omit a numerical budget from the projected slide. Predoctoral support would require an appropriate research and supervision plan.
 
-**Sustained research connecting social history, texts, and language.**
+The submitted Hamburg plan provides for a computational/DH postdoctoral position and two sequential subject postdoctoral appointments. Any revised recruitment structure at CSIC would depend on the agreed budget and grant arrangements. Maxim retains scientific direction and integration.
 
-Instruction, consultations, and collaborations that enable others to pursue their own questions.
+--- text max=40
+# To conclude
 
-A **Digital Arabic Philology Laboratory** developing the evidence and instruments this work requires.
+My proposition is that:
 
-<p class="punch">A cumulative understanding of the Arabic written tradition and the societies that produced and transmitted it.</p>
+> digital Arabic philology allows us to study the Arabic written tradition as a whole through a unified, machine-readable corpus. We can ask how scholarly communities changed, how texts drew on one another, how their typology developed, and how Arabic itself evolved. And we can move from a single passage to patterns across centuries and regions, then return to the passages and their contexts to see what those patterns mean. And never lose the sight of the big picture.
 
 <div class="part">Part 3 · Research at the Escuela</div>
 
 Notes:
-[30 seconds] Return to the challenge posed in Part 1: integrating digital resources and methods into sustained historical and philological inquiry. My contribution would combine a continuing research agenda with instruction, methodological consultations, collaboration, and the development of research instruments.
-
-The Escuela provides a setting in which social history, the study of texts, and the history of language can inform one another. The aim is a cumulative understanding of the Arabic written tradition and the societies that produced and transmitted it. End here.
+My proposition is that digital Arabic philology allows us to study the Arabic written tradition as a whole through a unified, machine-readable corpus. We can ask how scholarly communities changed, how texts drew on one another, how their typology developed, and how Arabic itself evolved. And we can move from a single passage to patterns across centuries and regions, then return to the passages and their contexts to see what those patterns mean. And never lose the sight of the big picture.
 
 --- section light
 
