@@ -969,16 +969,38 @@ Outline 2.H: EIS1600: from biographical evidence to historical research. Planned
 
 Distinguish records from linked individuals. Around 340,000 records with chronological or geographical evidence form the usable merged subset; do not suggest all 604,000 records independently resolve to 140,000 people. Approximately 80,000 dated individuals concern the first millennium of Islamic history in the agreed outline. Credit the project team. The comparison with PUA is one of scope, not scholarly quality.
 
---- text max=44
-<!-- PLACEHOLDER: replaces ChAstra's A2 ("How al-Ḏahabī rewrote Andalusian biographies"); Maxim will pick slides from the library -->
-# Al-Ḏahabī and his Andalusian sources
+--- text max=40
+<!-- text from 2025-12-09-vienna:53; figures from the Golden Sample, Table 1.1 -->
+# al-Ḏahabī and his Andalusian sources
 
-<p class="muted" style="font-style:italic">[Placeholder: a couple of slides from the presentation library to follow]</p>
+<p style="margin-bottom:.6em">al-Ḏahabī took <strong>2,109 of 6,782</strong> (31%) biographies from the three Andalusian collections by Ibn al-Faraḍī, Ibn Baškuwāl, and Ibn al-Abbār. Altogether, his <em>Tārīḫ al-islām</em> amassed 30,000 biographies</p>
+
+- did not select only longest biographies (not only the elite);
+- optimized biographies, without tarnishing or embellishment;
+- aimed at simplification and unification of the language;
+- shortened them:
+    - 24-38% reduction per biography
+    - Cutting just 4 words from each biography saves 120,000 words: three copies of “The Ring of the Dove” of Ibn Ḥazm (d. 456/1064).
 
 <div class="part">Part 2 · My contributions</div>
 
 Notes:
-Placeholder. Candidate material in the library: the Vienna 2025 deck (2025-12-09-vienna, the Golden Sample block) and the NRLXU paired biography prepared for the first CSIC draft.
+al-Ḏahabī took 2,109 of the 6,782 biographies (about 31%, almost a third) in the three Andalusian collections: Ibn al-Faraḍī, Ibn Baškuwāl, and Ibn al-Abbār (Golden Sample, Table 1.1). Conclusions from the Golden Sample study, as presented in Vienna, December 2025.
+
+--- text max=40
+<!-- text from 2025-12-09-vienna:54 -->
+# al-Ḏahabī and his Andalusian sources
+
+- seems to have “dehumanized” people:
+    - simplification of the language improves retrievability
+- genuinely tried to represent al-Andalus in his *History*
+    - by preserving the distribution of “disciplinary” profiles (comparable % of jurists, grammarians, etc.);
+    - by preserving chronological distribution: his data follows the overall curve of al-Andalus;
+
+<div class="part">Part 2 · My contributions</div>
+
+Notes:
+Conclusions from the Golden Sample study, continued (Vienna, December 2025).
 
 --- text max=44
 # 3 volumes establish the research foundation
@@ -1083,7 +1105,7 @@ I will first explain how these activities would work at the Escuela, then develo
 - **A community of colleagues:** sustained exchange with specialists in Arabic philology, history, and the western Islamic world.
 - **Granada as an international meeting place:** a European city with a central place in the history of al-Andalus.
 
-<p class="punch">A setting for developing the Digital Arabic Philology Laboratory through research, training, and collaboration.</p>
+<p class="punch">A setting for developing the Digital Arabic Philology Lab through research, training, and collaboration.</p>
 
 <div class="part">Part 3 · Research at the Escuela</div>
 
