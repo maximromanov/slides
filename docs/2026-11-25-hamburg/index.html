@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modeling the Social History of the Islamic World (c. 600–1600) from 600,000 Biographies</title>
+<meta name="description" content="A lecture on modeling the social history of the Islamic world from Arabic biographical collections.">
+<meta name="author" content="Maxim Romanov">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/deck.css">
+<link rel="stylesheet" href="../assets/fonts-extra.css">
+</head>
+<body class="deck" data-deck="Modeling the Social History of the Islamic World (c. 600–1600) from 600,000 Biographies">
+<div class="viewport">
+  <div class="stage">
+<section class="slide full" data-title=""><img class="bg" src="img/2025-12-09-vienna--8e42f82a39.jpg" alt=""><div class="overlay bl">“Any sufficiently advanced technology is indistinguishable from magic.” — Arthur C. Clarke</div></section>
+<section class="slide title" data-title="Modeling the Social History of the Islamic World (c. 600–1600) from 600,000 Biographies"><div class="block"><p class="kicker">Lecture · Universität Hamburg · ESA West 221</p><h1>Modeling the Social History of the Islamic World (c. 600–1600) from 600,000 Biographies</h1><p class="who">Maxim Romanov</p><p class="meta">November 25, 2026 · 10:15–11:45 · Universität Hamburg · EIS1600</p></div><div class="logos"><img src="img/logo-dfg.png" alt=""><img src="img/logo-uhh.png" alt=""><img src="img/logo-eis1600.png" alt=""></div><aside class="notes"><p>Modeling the Social History of the Islamic World (c. 600–1600) from 600,000 Biographies.</p></aside></section>
+<section class="slide agenda" data-title="Structure" data-fit-max="44"><h1>Structure</h1><ol><li class=""><span class="n">١</span><span><i>History</i>: Vastness of Islamic Tradition</span></li><li class=""><span class="n">٢</span><span><i>Historiography</i>: “Golden Sample” Case Study</span></li><li class=""><span class="n">٣</span><span><i>Method</i>: Generative LLMs as assistants</span></li></ol><aside class="notes"><p>Three parts: history, historiography, and method.</p></aside></section>
+<section class="slide text nofit" data-title="[EIS1600] Evolution of Islamic Societies (c. 600-1600): Algorithmic Analysis into Social History"><!-- src: 2025-12-09-vienna:3 -->
+<h1>[EIS1600]<br> Evolution of Islamic Societies (c. 600-1600):<br> Algorithmic Analysis into Social History</h1>
+<div style="text-align:center"><img src="img/2025-12-09-vienna--f24d4270cd.png" alt="" style="height:560px"></div></section>
+<section class="slide text bkc nofit" data-title=""><style>
+.slide.bkc.current{display:flex;flex-direction:column;justify-content:center}
+.bk{display:grid;grid-template-columns:470px 1fr;gap:80px;align-items:start;margin-top:10px}
+.bk.two{grid-template-columns:700px 1fr;gap:60px}
+.bk .cv img{width:470px;height:auto;display:block;box-shadow:0 10px 30px rgba(0,0,0,.18);border:1px solid rgba(0,0,0,.08)}
+.bk .cv.pair{display:flex;gap:24px}
+.bk .cv.pair img{width:338px}
+.bk .yr{font-family:var(--f-mono);font-size:20px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin:0 0 14px}
+.bk .ttl{font-family:var(--f-head);font-weight:700;font-size:50px;line-height:1.12;color:var(--ink);margin:0;text-wrap:balance}
+.bk .ttl small{display:block;font-weight:400;font-size:.62em;line-height:1.25;margin-top:8px;color:var(--ink)}
+.bk .who{font-family:var(--f-text);font-size:32px;color:var(--ink);margin:18px 0 4px}
+.bk .who.sm{font-size:25px;line-height:1.35}
+.bk .pub{font-family:var(--f-ui);font-size:23px;color:var(--muted);margin:0}
+.bk .pub i{font-style:italic}
+.bk .facts{font-family:var(--f-text);font-size:31px;line-height:1.35;margin:34px 0 0;padding:0;list-style:none}
+.bk .facts li{padding:10px 0;border-top:1px solid rgba(0,0,0,.12)}
+.bk .facts li:last-child{border-bottom:1px solid rgba(0,0,0,.12)}
+.bk .big{font-family:var(--f-head);font-weight:700;font-size:96px;line-height:1;color:var(--red);letter-spacing:-.02em}
+.bk .big small{font-family:var(--f-ui);font-weight:400;font-size:26px;letter-spacing:0;color:var(--muted);margin-left:16px;vertical-align:middle}
+.bk .take{font-family:var(--f-head);font-size:38px;line-height:1.25;color:var(--red);margin-top:30px;text-wrap:balance}
+.found{margin-top:34px;padding:18px 26px;border-left:6px solid var(--red);background:#F7F6F2;font-family:var(--f-ui);font-size:24px;line-height:1.35;color:var(--ink)}
+.found b{font-family:var(--f-mono);font-size:18px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:400;display:block;margin-bottom:4px}
+.yrs{position:absolute;right:64px;top:44px;display:flex;gap:10px}
+.yrs span{font-family:var(--f-mono);font-size:18px;letter-spacing:.12em;color:var(--muted);border:1px solid rgba(0,0,0,.18);border-radius:3px;padding:4px 12px}
+.yrs span.on{color:#fff;background:var(--red);border-color:var(--red)}
+</style>
+<!-- slides 5 and 6 combined -->
+<div class="bk">
+<div class="cv"><img src="img/2026-11-16-dh-books-soa--romanov-2026-cover.png" alt="Cover of Digital Humanities for Arabic and Islamic Studies: A Proposition for the Field by Maxim Romanov (Brill, 2026)"></div>
+<div>
+
+<p class="yr">2026 · a proposition for the field</p>
+<p class="ttl">Digital Humanities for Arabic and Islamic Studies: A Proposition for the Field</p>
+<p class="who">Maxim Romanov</p>
+<p class="pub">Handbook of Oriental Studies 199 · Leiden: Brill, 2026 · doi.org/10.1163/9789004760530</p>
+<ul class="facts">
+<li><b>Chapter 1:</b> Why we should even bother—a question that remains at the heart of every discussion about the digital.</li>
+<li><b>Chapter 2:</b> How we might go about harnessing the new digital opportunities within the field.</li>
+<li><b>Chapter 3:</b> What we can expect to accomplish: 1) trace term usage; 2) model textual typology; 3) chart linguistic evolution.</li>
+</ul>
+<p class="take" style="font-size:36px;font-style:italic">«What does it mean for our field when the entire library becomes a <span style="font-style:normal">vademecum</span> — something that, quite literally, “goes with me” everywhere?»</p>
+</div>
+</div></section>
+<section class="slide section light partdiv" data-title="Vastness of Islamic Tradition"><div class="inner"><style>
+.slide.section.light.partdiv .pnum{font-family:var(--f-head);font-weight:700;font-size:240px;line-height:1;color:var(--red);margin:22px 0 4px;letter-spacing:-.02em}
+.slide.partdiv h1{font-size:96px}
+.slide.section.light.partdiv .kicker{margin-bottom:0;font-size:22px;letter-spacing:.3em}
+</style>
+<p class="kicker">Part</p>
+<p class="pnum">1</p>
+<h1>Vastness of Islamic Tradition</h1>
+<p>History</p></div></section>
+<section class="slide text" data-title="OpenITI github.com/OpenITI" data-fit-max="44"><!-- src: 2026-11-18-madrid:17 -->
+<h1>OpenITI <span class="small" style="font-weight:400"><a href="https://github.com/OpenITI">github.com/OpenITI</a></span></h1>
+<div class="stats">
+<div class="stat"><b>8,700+</b><span>titles</span></div>
+<div class="stat"><b>3,300+</b><span>authors</span></div>
+<div class="stat"><b>2.4 billion</b><span>words, all versions</span></div>
+</div>
+
+<p class="small" style="text-align:center;color:var(--muted);margin-top:1.6em">Nigst, Lorenz, Maxim Romanov, Sarah Bowen Savant, Masoumeh Seydi, and Peter Verkinderen. <em>OpenITI: A Machine-Readable Corpus of Islamicate Texts, Primary Version.</em> Version 2025.1.9. Zenodo, 2026. <a href="https://doi.org/10.5281/zenodo.18613982">doi.org/10.5281/zenodo.18613982</a></p>
+
+<!-- reuse 2025-12-09-vienna:7 --></section>
+<section class="slide text" data-title="OpenITI Corpus"><h1>OpenITI Corpus</h1>
+<ol>
+<li>Machine-readable texts;</li>
+<li><em>mARkdown</em> annotation scheme (flavors: OpenITI, EIS1600);</li>
+<li>Machine-readable URIs and structure allows us to focus on:
+    <ol type="a">
+    <li><b>URI</b>: specific language (for now, mostly Arabic; Persian is growing);</li>
+    <li><b>URI</b>: specific authors;</li>
+    <li><b>URI</b>: different editions (versions) of a specific text;</li>
+    <li><b>URI</b>: chronological periods;</li>
+    <li><i>metadata:</i> religious communities — Sunnī, 12 Shīʿī, Zaydī, Ibāḍī, plus large subcommunities in Sunnī Islam (legal schools, Ṣūfīs, Salafīs, etc.);</li>
+    <li><i>provisionally</i>: different types/“genres” (<i>computationally modelled</i>);</li>
+    <li><i>nearest future (in šāʾa allãh)</i>: geographical regions;</li>
+    </ol></li>
+</ol>
+<!-- reuse 2025-12-09-vienna:8 --></section>
+<section class="slide text" data-title="How much is 1.05 billion tokens?"><h1>How much is 1.05 billion tokens?</h1>
+<ul>
+<li>equivalent to an English corpus of about 1.34 billion tokens (English translations are 15-23% longer than Arabic originals)</li>
+<li><strong><em>Word Count per Book</em></strong>: assuming each book contains about 90,000 words (300 words per page and 300 pages per book).</li>
+<li><strong><em>Total Books Equivalent</em></strong>: approximately 14,889 books.</li>
+<li><strong><em>Library Size</em></strong>: roughly 50 bookshelves (<em>ca. 300 books per shelf</em>).</li>
+<li><strong><em>Physical Dimensions</em></strong>: about 50 meters of shelf space (<em>1 meter per shelf</em>).</li>
+</ul>
+<div style="border:3px solid var(--red);padding:.1em .4em;margin-top:.2em">
+<ul>
+<li><strong><em>In Bibles</em></strong>: approximately 1,711 copies of the Bible.</li>
+<li><strong><em>In Qurʾāns</em></strong>: about 17,403 copies of the Qurʾān.</li>
+</ul>
+</div></section>
+<section class="slide figure" data-title=""><!-- src: 2026-11-18-madrid:19 --><figure class="fig"><div class="imgs"><img src="img/2026-11-18-madrid--2026-09-28-Cairo--fig-2-31-chronological-volume.png" alt="Chronological distribution of the volume of the OpenITI subcorpus"></div></figure></section>
+<section class="slide text" data-title="EIS1600: biographies linked across collections" data-fit-max="44"><!-- src: 2026-11-18-madrid:56 -->
+<h1>EIS1600: biographies linked across collections</h1>
+<div class="stats">
+<div class="stat"><b>604,000</b><span>biographical records</span></div>
+<div class="stat red"><b>≈140,000</b><span>identified individuals</span></div>
+<div class="stat paper"><b>285</b><span>biographical collections</span></div>
+</div>
+
+<ul>
+<li>Approximately <strong>104,000 individuals with explicit dates, geographies, and social profiles</strong> (based on <em>nisbaŧ</em>s)</li>
+<li>Compare recorded lives across collections, regions, and periods</li>
+</ul>
+<p class="small muted" style="text-align:center">EIS1600 team · current project figures, November 2026</p>
+
+<!-- reuse 2025-12-09-vienna:11 --></section>
+<section class="slide text" data-title="Arabic Biographical Collections"><h1>Arabic Biographical Collections</h1>
+<ul>
+<li><strong>One of the major “genres” in Arabic written tradition;</strong></li>
+<li><strong>Structure</strong>:<ul>
+<li>chronological, generational, alphabetical;</li>
+</ul>
+</li>
+<li><strong>Coverage</strong>:<ul>
+<li>professional, religious, regional groups; everyone (later);</li>
+</ul>
+</li>
+<li><strong>Biographies</strong>: well-structured short texts:<ul>
+<li>onomastic section; birth [date <em>&amp;</em>] place; teachers, students, contribution, miscellaneous facts, death date <em>&amp;</em> place, reaction of the community</li>
+</ul>
+</li>
+</ul>
+<!-- from hamburg-lecture --></section>
+<section class="slide text nm2 nofit" data-title="Richness of Onomastics"><h1>Richness of Onomastics</h1>
+<p class="nmtext all">ʿAbd al-Raḥmãn b. ʿAlī b. Muḥammad b. ʿUbayd Allãh b. ʿAbd Allãh b. Ḥamādá b. Muḥammad b. Jaʿfar b. ʿAbd Allãh b. al-Qāsim b. al-Naḍar b. al-Qāsim b. Muḥammad b. ʿAbd Allãh b. ʿAbd al-Raḥmãn b. al-Qāsim b. Muḥammad b. Abī Bakr al-Ṣiddīq <em>(may God be pleased with him!)</em> al-Qurašī al-Taymī al-Bakrī al-Baġdādī al-Ḥāfiẓ al-Mufassir al-Ḥanbalī al-Wāʿiẓ al-Ṣaffār, Jamāl al-Dīn, Abū al-Faraj, known as Ibn al-Jawzī (d. 597/1201 CE)</p>
+
+<!-- reuse 2025-12-09-vienna:12 --></section>
+<section class="slide text nm2 nofit" data-title="Traditional Arabic Name: 1. Lineage (nasab نسب)"><style>
+.slide.nm2 .nmtext{font-size:40px;line-height:1.5;color:#cbc6bc;margin:0}
+.slide.nm2 > h1 ~ .nmtext,.slide.nmg > h1 ~ table{margin-top:auto;margin-bottom:auto}
+.slide.nm2 .nmtext.all{color:var(--ink)}
+.slide.nm2 .nmtext .k{color:var(--ink)}
+.slide.nm2 .nmtext .r{color:var(--red)}
+.slide.nm2 h1 em,.slide.nmg h1 em{color:var(--red)}
+.slide.nmg table{font-size:34px;font-family:var(--f-text);width:100%}
+.slide.nmg td{padding:.18em .5em;border-bottom:1px solid var(--rule-soft)}
+.slide.nmg td:first-child{font-weight:400;white-space:nowrap}
+.slide.nmg .r{color:var(--red)}
+.slide.nmg .cat{color:var(--red);font-style:italic}
+</style>
+<!-- src: 2026-09-11-mainz-teaching:19 (rebuilt as text) -->
+<h1>Traditional Arabic Name: <em>1. Lineage (<i>nasab</i> <span class="ar" lang="ar" dir="rtl" style="font-size:1em;line-height:1">نسب</span>)</em></h1>
+<p class="nmtext">ʿAbd al-Raḥmãn <span class="r">b.</span> <span class="k">ʿAlī</span> <span class="r">b.</span> <span class="k">Muḥammad</span> <span class="r">b.</span> <span class="k">ʿUbayd Allãh</span> <span class="r">b.</span> <span class="k">ʿAbd Allãh</span> <span class="r">b.</span> <span class="k">Ḥamādá</span> <span class="r">b.</span> <span class="k">Muḥammad</span> <span class="r">b.</span> <span class="k">Jaʿfar</span> <span class="r">b.</span> <span class="k">ʿAbd Allãh</span> <span class="r">b.</span> <span class="k">al-Qāsim</span> <span class="r">b.</span> <span class="k">al-Naḍar</span> <span class="r">b.</span> <span class="k">al-Qāsim</span> <span class="r">b.</span> <span class="k">Muḥammad</span> <span class="r">b.</span> <span class="k">ʿAbd Allãh</span> <span class="r">b.</span> <span class="k">ʿAbd al-Raḥmãn</span> <span class="r">b.</span> <span class="k">al-Qāsim</span> <span class="r">b.</span> <span class="k">Muḥammad</span> <span class="r">b.</span> <span class="k">Abī</span> <span class="k">Bakr</span> <span class="k">al-Ṣiddīq</span> <em>(may God be pleased with him!)</em> al-Qurašī al-Taymī al-Bakrī al-Baġdādī al-Ḥāfiẓ al-Mufassir al-Ḥanbalī al-Wāʿiẓ al-Ṣaffār, Jamāl al-Dīn, Abū al-Faraj, known as Ibn al-Jawzī (d. 597/1201 CE)</p><aside class="notes"><p>The lineage (nasab): the chain of “son of” (b.) links back to the ancestors.</p></aside></section>
+<section class="slide text nm2 nofit" data-title="Traditional Arabic Name: 2. Given name (ism اسم)"><!-- src: 2026-09-11-mainz-teaching:20 (rebuilt as text) -->
+<h1>Traditional Arabic Name: <em>2. Given name (<i>ism</i> <span class="ar" lang="ar" dir="rtl" style="font-size:1em;line-height:1">اسم</span>)</em></h1>
+<p class="nmtext"><span class="k">ʿAbd al-Raḥmãn</span> b. ʿAlī b. Muḥammad b. ʿUbayd Allãh b. ʿAbd Allãh b. Ḥamādá b. Muḥammad b. Jaʿfar b. ʿAbd Allãh b. al-Qāsim b. al-Naḍar b. al-Qāsim b. Muḥammad b. ʿAbd Allãh b. ʿAbd al-Raḥmãn b. al-Qāsim b. Muḥammad b. Abī Bakr al-Ṣiddīq <em>(may God be pleased with him!)</em> al-Qurašī al-Taymī al-Bakrī al-Baġdādī al-Ḥāfiẓ al-Mufassir al-Ḥanbalī al-Wāʿiẓ al-Ṣaffār, Jamāl al-Dīn, Abū al-Faraj, known as Ibn al-Jawzī (d. 597/1201 CE)</p><aside class="notes"><p>The given name (ism): ʿAbd al-Raḥmãn.</p></aside></section>
+<section class="slide text nm2 nofit" data-title="Traditional Arabic Name: 3. “Father of …” (kunyaŧ كنية)"><!-- src: 2026-09-11-mainz-teaching:21 (rebuilt as text) -->
+<h1>Traditional Arabic Name: <em>3. “Father of …” (<i>kunyaŧ</i> <span class="ar" lang="ar" dir="rtl" style="font-size:1em;line-height:1">كنية</span>)</em></h1>
+<p class="nmtext">ʿAbd al-Raḥmãn b. ʿAlī b. Muḥammad b. ʿUbayd Allãh b. ʿAbd Allãh b. Ḥamādá b. Muḥammad b. Jaʿfar b. ʿAbd Allãh b. al-Qāsim b. al-Naḍar b. al-Qāsim b. Muḥammad b. ʿAbd Allãh b. ʿAbd al-Raḥmãn b. al-Qāsim b. Muḥammad b. <span class="r">Abī</span> <span class="k">Bakr</span> al-Ṣiddīq <em>(may God be pleased with him!)</em> al-Qurašī al-Taymī al-Bakrī al-Baġdādī al-Ḥāfiẓ al-Mufassir al-Ḥanbalī al-Wāʿiẓ al-Ṣaffār, Jamāl al-Dīn, <span class="r">Abū</span> <span class="k">al-Faraj</span>, known as Ibn al-Jawzī (d. 597/1201 CE)</p><aside class="notes"><p>The kunyaŧ, “father of …”: Abū al-Faraj; and in the nasab, Abī Bakr.</p></aside></section>
+<section class="slide text nm2 nofit" data-title="Traditional Arabic Name: 4. Title, nickname (laqab لقب)"><!-- src: 2026-09-11-mainz-teaching:22 (rebuilt as text) -->
+<h1>Traditional Arabic Name: <em>4. Title, nickname (<i>laqab</i> <span class="ar" lang="ar" dir="rtl" style="font-size:1em;line-height:1">لقب</span>)</em></h1>
+<p class="nmtext">ʿAbd al-Raḥmãn b. ʿAlī b. Muḥammad b. ʿUbayd Allãh b. ʿAbd Allãh b. Ḥamādá b. Muḥammad b. Jaʿfar b. ʿAbd Allãh b. al-Qāsim b. al-Naḍar b. al-Qāsim b. Muḥammad b. ʿAbd Allãh b. ʿAbd al-Raḥmãn b. al-Qāsim b. Muḥammad b. Abī Bakr al-Ṣiddīq <em>(may God be pleased with him!)</em> al-Qurašī al-Taymī al-Bakrī al-Baġdādī al-Ḥāfiẓ al-Mufassir al-Ḥanbalī al-Wāʿiẓ al-Ṣaffār, <span class="k">Jamāl</span> <span class="r">al-Dīn</span>, Abū al-Faraj, known as Ibn al-Jawzī (d. 597/1201 CE)</p><aside class="notes"><p>The laqab, an honorific title: Jamāl al-Dīn.</p></aside></section>
+<section class="slide text nm2 nofit" data-title="Traditional Arabic Name: 5. “Byname” (šuhraŧ شهرة)"><!-- src: 2026-09-11-mainz-teaching:23 (rebuilt as text) -->
+<h1>Traditional Arabic Name: <em>5. “Byname” (<i>šuhraŧ</i> <span class="ar" lang="ar" dir="rtl" style="font-size:1em;line-height:1">شهرة</span>)</em></h1>
+<p class="nmtext">ʿAbd al-Raḥmãn b. ʿAlī b. Muḥammad b. ʿUbayd Allãh b. ʿAbd Allãh b. Ḥamādá b. Muḥammad b. Jaʿfar b. ʿAbd Allãh b. al-Qāsim b. al-Naḍar b. al-Qāsim b. Muḥammad b. ʿAbd Allãh b. ʿAbd al-Raḥmãn b. al-Qāsim b. Muḥammad b. Abī Bakr al-Ṣiddīq <em>(may God be pleased with him!)</em> al-Qurašī al-Taymī al-Bakrī al-Baġdādī al-Ḥāfiẓ al-Mufassir al-Ḥanbalī al-Wāʿiẓ al-Ṣaffār, Jamāl al-Dīn, Abū al-Faraj, known as <span class="k">Ibn al-Jawzī</span> (d. 597/1201 CE)</p><aside class="notes"><p>The šuhraŧ, the name by which he is known: Ibn al-Jawzī.</p></aside></section>
+<section class="slide text nm2 nofit" data-title="Traditional Arabic Name: 6. Descriptors (nisbaŧ نسبة)"><!-- src: 2026-09-11-mainz-teaching:24 (rebuilt as text) -->
+<h1>Traditional Arabic Name: <em>6. Descriptors (<i>nisbaŧ</i> <span class="ar" lang="ar" dir="rtl" style="font-size:1em;line-height:1">نسبة</span>)</em></h1>
+<p class="nmtext">ʿAbd al-Raḥmãn b. ʿAlī b. Muḥammad b. ʿUbayd Allãh b. ʿAbd Allãh b. Ḥamādá b. Muḥammad b. Jaʿfar b. ʿAbd Allãh b. al-Qāsim b. al-Naḍar b. al-Qāsim b. Muḥammad b. ʿAbd Allãh b. ʿAbd al-Raḥmãn b. al-Qāsim b. Muḥammad b. Abī Bakr al-Ṣiddīq <em>(may God be pleased with him!)</em> <span class="k">al-Quraš</span><span class="r">ī</span> <span class="k">al-Taym</span><span class="r">ī</span> <span class="k">al-Bakr</span><span class="r">ī</span> <span class="k">al-Baġdād</span><span class="r">ī</span> <span class="k">al-Ḥāfiẓ</span> <span class="k">al-Mufassir</span> <span class="k">al-Ḥanbal</span><span class="r">ī</span> <span class="k">al-Wāʿiẓ</span> <span class="k">al-Ṣaffār</span>, Jamāl al-Dīn, Abū al-Faraj, known as Ibn al-Jawzī (d. 597/1201 CE)</p><aside class="notes"><p>The nisbaŧ-s, descriptors: tribe, descent, city, specializations, legal school.</p></aside></section>
+<section class="slide text nmg nofit" data-title="Traditional Arabic Name: Descriptors (nisbaŧ نسبة)"><!-- src: 2026-09-11-mainz-teaching:25 (rebuilt as text) -->
+<h1>Traditional Arabic Name: <em>Descriptors (<i>nisbaŧ</i> <span class="ar" lang="ar" dir="rtl" style="font-size:1em;line-height:1">نسبة</span>)</em></h1>
+<table><tr><td>al-Quraš<span class="r">ī</span></td><td><em>of the tribe of</em> Qurayš (<span class="cat">tribal</span>)</td></tr><tr><td>al-Taym<span class="r">ī</span></td><td><em>of the clan of</em> Taym (<span class="cat">tribal</span>)</td></tr><tr><td>al-Bakr<span class="r">ī</span></td><td><em>of descent from</em> Abū Bakr al-Ṣiddīq (<span class="cat">ancestral</span>)</td></tr><tr><td>al-Baġdād<span class="r">ī</span></td><td><em>of the city of</em> Baġdād (<span class="cat">geographical</span>)</td></tr><tr><td>al-Ḥāfiẓ</td><td>“Preserver”, master of <i>ḥadīṯ</i> (<span class="cat">religious specialization</span>)</td></tr><tr><td>al-Mufassir</td><td>exegete of the Qurʾān (<span class="cat">religious specialization</span>)</td></tr><tr><td>al-Ḥanbal<span class="r">ī</span></td><td>jurist of the Ḥanbalī legal school (<span class="cat">religious affiliation</span>)</td></tr><tr><td>al-Wāʿiẓ</td><td>public preacher (<span class="cat">religious specialization</span>)</td></tr><tr><td>al-Ṣaffār</td><td>coppersmith (<span class="cat">occupational, familial</span>)</td></tr><tr><td>al-Jawz<span class="r">ī</span></td><td>“of the man with the nut tree” (<span class="cat">ancestral</span>)</td></tr></table><aside class="notes"><p>What the nisbaŧ-s tell us: tribal, ancestral, geographical, religious specialization and affiliation. This is the kind of information we extract from hundreds of thousands of names.</p></aside></section>
+<section class="slide figure" data-title="Biographical Collections: a typical biography"><h1>Biographical Collections: a typical biography</h1><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--8c4fef8fe4.png" alt=""></div></figure></section>
+<section class="slide text" data-title="al-Ḏahabī and his Tārīḫ al-islām"><h1>al-Ḏahabī and his <i>Tārīḫ al-islām</i></h1>
+<div class="indent">
+<p>Šams al-dīn al-Ḏahabī (d. 748/1348): historian, ḥadīṯ scholar, biographer.</p>
+<p><em>Tārīḫ al-islām</em> — a universal chronicle-cum-biographical collection covering seven centuries of Islamic history (1–700 AH / 622–1301 CE), organized decade by decade.</p>
+<ul>
+<li>c. 30,000 biographies</li>
+<li>c. 3 million words</li>
+<li>Two modern editions: 50 vols. (Tadmurī) and 16 vols. (Maʿrūf)</li>
+</ul>
+<p class="small" style="margin-top:1em">Built largely from earlier sources — an ideal test case for text-reuse detection at scale.</p>
+</div>
+
+<!-- reuse 2025-12-09-vienna:27 --></section>
+<section class="slide text" data-title="Biographies into Data Points" data-fit-max="40"><h1>Biographies into Data Points</h1>
+<ol>
+<li><strong>Dates</strong> → graphs</li>
+<li><strong>Places</strong> (explicit toponyms or toponymic <em>nisbaŧ</em>s) → maps</li>
+<li><strong>Places</strong> + <strong>Dates</strong> → chronological maps</li>
+<li><strong>Social markers</strong> (<em>nisbaŧ</em>s) + <strong>Dates</strong> → social graphs</li>
+<li><strong>Social markers</strong> (<em>nisbaŧ</em>s) + <strong>Dates</strong> + <strong>Places</strong> → social chronological maps</li>
+<li><strong>Places of individuals</strong> + <strong>Dates</strong> → geographical networks of connections</li>
+</ol><aside class="notes"><p>Three kinds of information that we take from every biography: dates become graphs, places become maps, and social markers become both.</p></aside></section>
+<section class="slide figure" data-title="Patterns: Geography of the Islamic World - Geographical Texts"><h1>Patterns: Geography of the Islamic World - Geographical Texts</h1><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--fb167b6c89.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Geography of the Islamic World - Biographical Texts"><h1>Patterns: Geography of the Islamic World - Biographical Texts</h1>
+<!-- reuse 2024-11-08-tuebingen:68 --><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--a9b569fdd4.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Great Cities of Islam - Early"><h1>Patterns: Great Cities of Islam - Early</h1>
+<!-- reuse 2024-11-08-tuebingen:94 --><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--a3a819edad.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Great Cities of Islam - Early"><h1>Patterns: Great Cities of Islam - Early</h1>
+<!-- reuse 2024-11-08-tuebingen:95 --><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--de8aba0827.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Great Cities of Islam - Early"><h1>Patterns: Great Cities of Islam - Early</h1>
+<!-- reuse 2024-11-08-tuebingen:96 --><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--3ade5cb0c5.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Great Cities of Islam - Early"><h1>Patterns: Great Cities of Islam - Early</h1>
+<!-- reuse 2024-11-08-tuebingen:97 --><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--ad111b4708.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Great Cities of Islam - Middle"><!-- reuse 2024-11-08-tuebingen:98 --><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--slide-097.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Great Cities of Islam - Middle"><!-- reuse 2024-11-08-tuebingen:99 --><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--slide-098.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Great Cities of Islam - Middle"><!-- reuse 2024-11-08-tuebingen:100 --><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--slide-099.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Great Cities of Islam - Middle"><!-- reuse 2024-11-08-tuebingen:101 --><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--slide-100.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Great Cities of Islam - Late"><!-- reuse 2024-11-08-tuebingen:102 --><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--slide-101.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Great Cities of Islam - Late"><!-- reuse 2024-11-08-tuebingen:103 --><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--slide-102.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Great Cities of Islam - Late"><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--slide-103.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Regional Representations / Floruits (?)"><h1>Patterns: Regional Representations / Floruits (?)</h1>
+<!-- reuse 2024-11-08-tuebingen:70 --><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--02e9e113d1.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Regional Representations / Floruits (?)"><h1>Patterns: Regional Representations / Floruits (?)</h1><figure class="fig"><div class="imgs"><img src="img/2024-11-08-tuebingen--ed6e018602.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Connections"><h1>Patterns: Connections</h1>
+<!-- reuse 2025-12-09-vienna:15 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--5682e1624e.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Connections"><h1>Patterns: Connections</h1>
+<!-- reuse 2025-12-09-vienna:16 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--5b8ee1bd02.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Connections"><h1>Patterns: Connections</h1>
+<!-- reuse 2025-12-09-vienna:17 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--3941693bb3.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Connections"><h1>Patterns: Connections</h1>
+<!-- reuse 2025-12-09-vienna:18 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--6af4d1cf97.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Connections"><h1>Patterns: Connections</h1>
+<!-- reuse 2025-12-09-vienna:19 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--ebad4acbd1.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Connections"><h1>Patterns: Connections</h1>
+<!-- reuse 2025-12-09-vienna:20 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--4dffae50f5.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Connections"><h1>Patterns: Connections</h1>
+<!-- reuse 2025-12-09-vienna:21 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--af71b03b4c.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Connections in the 6th century AH"><h1>Patterns: Connections in the 6th century AH</h1>
+<!-- reuse 2025-12-09-vienna:22 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--9c8ec3d9a1.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="Patterns: Connections in the 6th century AH"><h1>Patterns: Connections in the 6th century AH</h1>
+<!-- reuse 2026-09-22-fub-keynote:62 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--9c8ec3d9a1-regions.png" alt=""></div></figure></section>
+<section class="slide text" data-title="Relevance?"><h1>Relevance?</h1>
+<ol>
+<li>Prominence of cities and regions (modeled from cities);</li>
+<li>Connectednes of cities and regions (modeled from cities);</li>
+<li>Social transformations and composition of Islamic elites;</li>
+<li>Development of professional and religious groups;</li>
+<li>General and particular views of mobility;</li>
+<li>Broad variety of problems that can be modeled from this data (demographical questions, family structures, onomastic questions, various historical phenomena)</li>
+</ol>
+<p class="indent"><b><i>your imagination is the limit!</i></b></p>
+
+<!-- reuse 2025-12-09-vienna:24 --></section>
+<section class="slide section light partdiv" data-title="“Golden Sample” Case Study"><div class="inner"><p class="kicker">Part</p>
+<p class="pnum">2</p>
+<h1>“Golden Sample” Case Study</h1>
+<p>Historiography</p>
+
+<!-- reuse 2025-12-09-vienna:25 --></div></section>
+<section class="slide text" data-title="Historiographical Issues"><h1><em>Historiographical Issues</em></h1>
+<ol>
+<li>Hundreds of BIO Collections &gt; Thousands of duplicate BIOs</li>
+<li>Problem: Convert BIO &gt; Persons</li>
+<li>Solutions:
+    <ol type="a">
+    <li><b>KITAB</b>: Text Reuse Detection</li>
+    <li><b>EIS1600</b>: Same Biography Identification with different computational methods, further enhanced with latest LLMs</li>
+    </ol></li>
+</ol>
+<!-- reuse 2026-09-28-Cairo:18 --></section>
+<section class="slide text" data-title="al-Ḏahabī and his Tārīḫ al-islām"><h1>al-Ḏahabī and his <i>Tārīḫ al-islām</i></h1>
+<div class="indent">
+<p>Šams al-dīn al-Ḏahabī (d. 748/1348): historian, ḥadīṯ scholar, biographer.</p>
+<p><em>Tārīḫ al-islām</em> — a universal chronicle-cum-biographical collection covering seven centuries of Islamic history (1–700 AH / 622–1301 CE), organized decade by decade.</p>
+<ul>
+<li>c. 30,000 biographies</li>
+<li>c. 3 million words</li>
+<li>Two modern editions: 50 vols. (Tadmurī) and 16 vols. (Maʿrūf)</li>
+</ul>
+<p class="small" style="margin-top:1em">Built largely from earlier sources — an ideal test case for text-reuse detection at scale.</p>
+</div>
+
+<!-- reuse 2025-12-09-vienna:27 --></section>
+<section class="slide text" data-title="How does one write a 50-volume book in 14th-century Damascus?"><h1><em>How does one write a 50-volume book in 14th-century Damascus?</em></h1>
+<ol>
+<li>How to assess authors’ methodology?</li>
+<li>Which works did they use as their sources?</li>
+<li>How did they select biographies? What were their criteria?</li>
+<li>How did he modify those biographies? What did he add? What did he drop?</li>
+</ol>
+<!-- reuse 2026-09-28-Cairo:17 --></section>
+<section class="slide split vcenter" data-title=""><div class="cols w-25-75"><div class="col"><div class="tiny">
+<ul>
+<li>Among them was Abd Allãh b. Ḫāzim al-Sulamī, the governor of Ḫurāsān for Abd Allãh b. al-Zubayr. What was remarkable about him was that he was extremely brave and resourceful, yet he was terrified of mice. One day, while he was with ʿUbayd Allãh b. Ziyād, a white rat was brought before him and he was astonished. ʿUbayd Allãh said to ʿAbd Allãh, ‘O Abū Ṣāliḥ, have you ever seen anything more astonishing than this?’ And there was Abd Allãh, who had shrunk as if he were a chick and turned yellow as if he were a male locust. ʿUbayd Allãh then said, “Abū Ṣaliḥ disobeys the Merciful, takes lightly the authority, seizes the snake, walks toward the blooming lion, faces spears with his face and swords with his hands, and yet, he is overcome by a rat as you see. I testify that Allãh is capable of everything.</li>
+</ul>
+</div></div><div class="col center"><img alt="" src="img/2026-09-28-Cairo--057675d523.png" />
+<!-- reuse 2025-12-09-vienna:29 --></div></div></section>
+<section class="slide figure" data-title="KITAB: Text Reuse Detection — quite successful…"><h1><em>KITAB: Text Reuse Detection — quite successful…</em></h1>
+<!-- reuse 2026-09-28-Cairo:19 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--7640fb55ba-crop.png" alt=""></div></figure></section>
+<section class="slide figure" data-title=""><!-- reuse 2026-09-28-Cairo:20 --><figure class="fig"><div class="imgs"><img src="img/2026-09-28-Cairo--4914026269.png" alt=""></div></figure></section>
+<section class="slide figure" data-title=""><!-- reuse 2026-09-28-Cairo:21 --><figure class="fig"><div class="imgs"><img src="img/2026-09-28-Cairo--a1f44cf8ba.png" alt=""></div></figure></section>
+<section class="slide figure" data-title=""><!-- reuse 2026-09-28-Cairo:22 --><figure class="fig"><div class="imgs"><img src="img/2026-09-28-Cairo--95bac7cb74.png" alt=""></div></figure></section>
+<section class="slide figure" data-title=""><!-- reuse 2026-09-28-Cairo:23 --><figure class="fig"><div class="imgs"><img src="img/2026-09-28-Cairo--9bd39b4ca3.png" alt=""></div></figure></section>
+<section class="slide figure" data-title=""><!-- reuse 2025-12-09-vienna:31 --><figure class="fig"><div class="imgs"><img src="img/2026-09-28-Cairo--348f9c0157.png" alt=""></div></figure></section>
+<section class="slide figure" data-title=""><!-- reuse 2025-12-09-vienna:32 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--slide-031.png" alt=""></div></figure></section>
+<section class="slide text" data-title="EIS1600 ML Method"><h1><em>EIS1600 ML Method</em></h1>
+<ol>
+<li>Pregenerate possible matches (ngram overlap)</li>
+<li>Review these pairs &gt; create ground truth</li>
+<li>Train a series of models, to identify the best performing one experimentally</li>
+</ol>
+<!-- reuse 2025-12-09-vienna:33 --></section>
+<section class="slide figure" data-title="EIS1600 ML Method: Same-Person Annotation Tool"><h1>EIS1600 ML Method: Same-Person Annotation Tool</h1>
+<!-- reuse 2025-12-09-vienna:34 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--a087ca64af.png" alt=""></div></figure></section>
+<section class="slide figure" data-title=""><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--slide-034.png" alt=""></div></figure><aside class="notes"><p>Similarity Metrics:
+TF-IDF with cosine similarity (Unigrams, Bigrams)
+Ngrams Overlap (Jaccard, Dice)
+Ent_overlap Entities Overlap
+Length_rate = max(l1, l2)/min(l1, l2)</p>
+<!-- reuse 2025-12-09-vienna:35 --></aside></section>
+<section class="slide text" data-title="EIS1600 ML Method"><h1><em>EIS1600 ML Method</em></h1>
+<ol>
+<li>Pregenerate possible matches (ngram overlap)</li>
+<li>Review these pairs > create ground truth</li>
+<li>Train a series of models, to identify the best performing one experimentally</li>
+</ol>
+<ol start="4" style="border:3px solid var(--red);border-radius:.6em;padding:.2em .4em .2em 2em">
+<li>Results: <i>good-ish, but:</i>
+<ol type="a">
+<li>Not as good, when applied to new data</li>
+<li>Difficult to determining the cut-off threshold</li>
+<li>Differences in length of biographies create most problems</li>
+</ol></li>
+</ol>
+
+<!-- reuse 2025-12-09-vienna:36 --></section>
+<section class="slide text" data-title="EIS1600 ML Method + ChatGPT"><h1><em>EIS1600 ML Method + ChatGPT</em></h1>
+<ol>
+<li>We generate possible matches with B25 (<em>pyserini</em> for <em>python</em>)</li>
+<li>We pull 350 top matches for each biography
+    <ul class="small" style="list-style:circle">
+    <li>In most cases the number of matches is significantly smaller; 350 is the maximum possible number of duplicates (the number of texts in the EIS1600 subcorpus; technically 350-1);</li>
+    <li>Reduces the number of 186 billion pairs (610,000 squared) to 143 million pairs (theoretically);</li>
+    <li>Remove “matches” within the same text &gt; 79 million pairs;</li>
+    <li>For al-Ḏahabī’s sample &gt; only about 29,000 pairs;</li>
+    </ul></li>
+<li>“Crowd-sourcing” with ChatGPT (gpt4o-mini) with a prompt to compare pairs, reply ‘yes’ or ‘no’ and give the confidence of evaluation if the answer is ‘yes’; return results in a specific format to simplify post-processing;</li>
+<li>Accuracy assessment (on human annotated data): 96% — disagreement on 124 pairs of 2,092; review: there are mistakes on both Team Machine and Team Human</li>
+</ol>
+<!-- reuse 2025-12-09-vienna:37 --></section>
+<section class="slide figure" data-title=""><!-- reuse 2025-12-09-vienna:38 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--slide-037.png" alt=""></div></figure></section>
+<section class="slide text" data-title="Understanding the historian"><h1><em>Understanding the historian</em></h1>
+<ol>
+<li>How did he choose biographies? (Take 1)</li>
+<li>How did he change them?</li>
+<li>Did he make biographees look better, worse, or kept them the same?</li>
+<li>Why he omitted “obvious” candidates?</li>
+<li>How did he choose biographies? (Take 2)</li>
+</ol>
+<!-- reuse 2025-12-09-vienna:39 --></section>
+<section class="slide figure" data-title=""><!-- reuse 2025-12-09-vienna:40 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--slide-039.png" alt=""></div></figure></section>
+<section class="slide figure" data-title=""><!-- reuse 2025-12-09-vienna:41 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--slide-040.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="2. How did he change them?"><h1><em>2. How did he change them?</em></h1>
+<!-- reuse 2025-12-09-vienna:42 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--c1ed737278.png" alt=""></div></figure></section>
+<section class="slide text" data-title="2. How did he change them?"><h1><em>2. How did he change them?</em></h1>
+<ol>
+<li>al-Ḏahabī picked longer biographies more frequently than shorter ones</li>
+<li><strong><em>Method</em></strong>: length comparison</li>
+</ol>
+<!-- reuse 2025-12-09-vienna:43 --></section>
+<section class="slide text" data-title="2. How did he change them?"><h1><em>2. How did he change them?</em></h1>
+<ol>
+<li>al-Ḏahabī adjusted some wording very consistently
+    <ul style="list-style:circle">
+    <li>“From the people of Grenada” &gt; “Grenadian”;</li>
+    <li>Simplification of Abū-names;</li>
+    <li>Dropping references to al-Mašriq (the core lands of the Islamic world);</li>
+    <li>Overall reduction in verbosity, omission of details</li>
+    <li>Omission of lesser known individuals</li>
+    </ul></li>
+<li><strong><em>Method</em></strong>: ngram matching</li>
+</ol>
+<!-- reuse 2025-12-09-vienna:44 --></section>
+<section class="slide text" data-title="3. Did he make them better or worse?"><h1><em>3. Did he make them better or worse?</em></h1>
+<ol>
+<li>How did the sentiment in biographies change?
+    <ul style="list-style:circle">
+    <li>al-Ḏahabī’s biographies are:
+    <ol type="i"><li>more positive?</li><li>more negative?</li><li>the same?</li></ol></li>
+    </ul></li>
+<li><strong><em>Method</em></strong>: sentiment assessment with ChatGPT</li>
+</ol>
+<!-- reuse 2025-12-09-vienna:45 --></section>
+<section class="slide figure" data-title="3. Did he make them better or worse?"><h1><em>3. Did he make them better or worse?</em></h1>
+<!-- reuse 2025-12-09-vienna:46 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--573133d64e.png" alt=""></div></figure></section>
+<section class="slide figure" data-title=""><!-- reuse 2025-12-09-vienna:47 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--slide-046.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="3. Did he make them better or worse?"><h1><em>3. Did he make them better or worse?</em></h1>
+<!-- reuse 2025-12-09-vienna:48 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--800528ccb6.png" alt=""></div></figure></section>
+<section class="slide text" data-title="4. Why he omitted “obvious” candidates?"><h1><em>4. Why he omitted “obvious” candidates?</em></h1>
+<ol>
+<li><em>Preference for longer biographies?</em></li>
+<li>From the longest biographies in his sources, he omitted biographies of individuals:
+    <ul style="list-style:circle">
+    <li>whose reputations was less solid</li>
+    <li>whose achievements were less significant</li>
+    <li>whose biographies has less details.</li>
+    </ul></li>
+<li><strong><em>Method</em></strong>: ChatGPT assessment</li>
+</ol>
+<!-- reuse 2025-12-09-vienna:49 --></section>
+<section class="slide text" data-title="5. How did he choose biographies? (Take 2)"><h1><em>5. How did he choose biographies? (Take 2)</em></h1>
+<ol>
+<li>Did disciplinary profile play any role in his selection?
+    <ul style="list-style:circle">
+    <li>ChatGPT identified disciplinary profiles</li>
+    <li>We then compare how the distribution of profiles changed in his sample</li>
+    </ul></li>
+<li><strong><em>Method</em></strong>: ChatGPT Assessment + statistics comparison</li>
+</ol>
+<!-- reuse 2025-12-09-vienna:50 --></section>
+<section class="slide figure" data-title=""><!-- reuse 2025-12-09-vienna:51 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--slide-050.png" alt=""></div></figure></section>
+<section class="slide figure" data-title="5. How did he choose biographies? (Take 2)"><h1><em>5. How did he choose biographies? (Take 2)</em></h1>
+<!-- reuse 2025-12-09-vienna:52 --><figure class="fig"><div class="imgs"><img src="img/2025-12-09-vienna--cd100f99f2-crop.png" alt=""></div></figure></section>
+<section class="slide text" data-title="5. How did he choose biographies? (Take 2)"><h1><em>5. How did he choose biographies? (Take 2)</em></h1>
+<div class="indent" style="color:var(--muted)">
+<p>The <em>null hypothesis</em>: al-Ḏahabī’s selection is purely random.</p>
+<ul>
+<li>p-value test quantifies the probability of obtaining the observed result if the null hypothesis were true.</li>
+<li>p-value &lt; 0.05 (5%), the observed result is not random.</li>
+<li>p-value for our simulated data is 0.000228, or 0.0228%</li>
+</ul>
+<p>In humanese, this means that out of all al-Ḏahabīs across 1,000,000 parallel universes, only 228 arrived at a sample that was more representative than the selection of our al-Ḏahabī.</p>
+<p><strong><em>In statistical terms, his selection was deliberate and methodical.</em></strong></p>
+</div></section>
+<section class="slide text" data-title="al-Ḏahabī and his Andalusian sources" data-fit-max="40"><!-- src: 2026-11-18-madrid:57 -->
+<!-- text from 2025-12-09-vienna:53; figures from the Golden Sample, Table 1.1 -->
+<h1>al-Ḏahabī and his Andalusian sources</h1>
+<p style="margin-bottom:.6em">al-Ḏahabī took <strong>2,109 of 6,782</strong> (31%) biographies from the three Andalusian collections by Ibn al-Faraḍī, Ibn Baškuwāl, and Ibn al-Abbār. Altogether, his <em>Tārīḫ al-islām</em> amassed 30,000 biographies</p>
+
+<ul>
+<li>did not select only longest biographies (not only the elite);</li>
+<li>optimized biographies, without tarnishing or embellishment;</li>
+<li>aimed at simplification and unification of the language;</li>
+<li>shortened them:<ul>
+<li>24-38% reduction per biography</li>
+<li>Cutting just 4 words from each biography saves 120,000 words: three copies of “The Ring of the Dove” of Ibn Ḥazm (d. 456/1064).</li>
+</ul>
+</li>
+</ul><aside class="notes"><p>al-Ḏahabī took 2,109 of the 6,782 biographies (about 31%, almost a third) in the three Andalusian collections: Ibn al-Faraḍī, Ibn Baškuwāl, and Ibn al-Abbār (Golden Sample, Table 1.1). Conclusions from the Golden Sample study, as presented in Vienna, December 2025.</p></aside></section>
+<section class="slide text" data-title="al-Ḏahabī and his Andalusian sources" data-fit-max="40"><!-- src: 2026-11-18-madrid:58 -->
+<!-- text from 2025-12-09-vienna:54 -->
+<h1>al-Ḏahabī and his Andalusian sources</h1>
+<ul>
+<li>seems to have “dehumanized” people:<ul>
+<li>simplification of the language improves retrievability</li>
+</ul>
+</li>
+<li>genuinely tried to represent al-Andalus in his <em>History</em><ul>
+<li>by preserving the distribution of “disciplinary” profiles (comparable % of jurists, grammarians, etc.);</li>
+<li>by preserving chronological distribution: his data follows the overall curve of al-Andalus;</li>
+</ul>
+</li>
+</ul><aside class="notes"><p>Conclusions from the Golden Sample study, continued (Vienna, December 2025).</p>
+<!-- reuse 2025-12-09-vienna:55 --></aside></section>
+<section class="slide full" data-title=""><img class="bg" src="img/2025-12-09-vienna--f14eff1179.jpg" alt=""><!-- reuse 2025-12-09-vienna:56 --></section>
+<section class="slide section light partdiv" data-title="Generative LLMs as assistants"><div class="inner"><p class="kicker">Part</p>
+<p class="pnum">3</p>
+<h1>Generative LLMs as assistants</h1>
+<p>Method</p>
+
+<!-- reuse 2026-06-09-csic-ai-workshop:6 --></div></section>
+<section class="slide text irony nofit" data-title="The irony of new media"><!-- src: 2026-09-11-mainz-teaching:9 (rebuilt as text) -->
+<style>
+.slide.irony .ir{display:grid;grid-template-columns:800px 1fr;gap:56px;margin:auto 0;align-items:stretch}
+.slide.irony .ir > img{width:800px;height:793px;object-fit:cover;border-radius:4px;display:block;margin:0}
+.slide.irony .cards{display:flex;flex-direction:column;gap:32px}
+.slide.irony .card{flex:1;display:flex;flex-direction:column;justify-content:center;padding:28px 36px;border-radius:4px;background:var(--panel);border:1px solid var(--rule)}
+.slide.irony .card.now{background:var(--red-wash);border:1px solid var(--red-soft);border-left:8px solid var(--red)}
+.slide.irony .card p{font-size:31px;line-height:1.35;margin:0 0 .5em}
+.slide.irony .card p:last-child{margin-bottom:0}
+.slide.irony .card .kicker{font-size:20px;margin:0 0 .9em}
+.slide.irony .card .by{text-align:right;font-size:25px;color:var(--muted)}
+.slide.irony .card .red{color:var(--red)}
+</style>
+<h1>The irony of new media</h1>
+<div class="ir">
+<img src="img/2026-09-11-mainz-teaching--plato.jpg" alt="Socrates speaking to a silent scroll, with the Acropolis behind">
+<div class="cards">
+<div class="card"><p class="kicker">The classical critique of books</p><p><em>“If anyone asks them anything, they remain most solemnly silent.”</em></p><p class="by">Plato, <em>Phaedrus</em> 275d</p><p>Writing was once suspect; today written texts are our scholarly gold standard.</p></div>
+<div class="card now"><p class="kicker">The modern parallel</p><p><strong>Now, knowledge from LLMs is suspect…</strong></p><p class="red"><strong>…yet LLMs bring dialogue back to reading.</strong></p><p>The ultimate irony: technology restores the interactive conversation Plato feared was lost.</p></div>
+</div>
+</div><aside class="notes"><p>There is a certain historical irony here. In the Phaedrus, writing itself appears as an inferior technology of knowledge because a written text cannot answer back. More than two millennia later, we have made written scholarship the gold standard of academic knowledge. And now we are instinctively suspicious of another new medium. What interests me pedagogically about LLMs is that they unexpectedly restore one feature Socrates thought writing had lost: dialogue.</p></aside></section>
+<section class="slide text" data-title="What an LLM is (humanistically speaking)"><h1>What an LLM is (<em>humanistically speaking</em>)</h1>
+<ul>
+<li>A system that produces fluent text — including text that looks like reasoning, and sometimes is</li>
+<li>Not a database, not a person, not a finished reasoner</li>
+<li>Treat outputs as well-formed drafts that need your judgment to become reliable</li>
+<li>Unusually good at form, unevenly good at content</li>
+</ul>
+<!-- reuse 2026-06-09-csic-ai-workshop:8 --></section>
+<section class="slide text" data-title="LLMs are catalysts — catalysts need substrate (1)"><h1>LLMs are catalysts — catalysts need substrate (1)</h1>
+<ul>
+<li>A catalyst accelerates a reaction that is already possible</li>
+<li>It does not create the reaction from nothing</li>
+<li>LLMs work the same way: they accelerate the work you can already do, in fields where you can judge the output</li>
+<li>I can use an LLM to read Arabic faster — I have the training to catch its mistakes</li>
+<li>I cannot use an LLM to read Chinese historical texts reliably — I have no substrate to check it against</li>
+</ul>
+<!-- reuse 2025-12-09-vienna:57 --></section>
+<section class="slide text" data-title="LLMs are research assistants, not cheating devices"><h1>LLMs are <em>research assistants</em>, not <em>cheating devices</em></h1>
+<ul>
+<li><strong><em>Designing</em></strong>:<ul>
+<li>start with a question about your research problem;</li>
+<li>arrive at detailed working methodological solutions;</li>
+</ul>
+</li>
+<li><strong><em>Implementing</em></strong>:<ul>
+<li>break the complex matter into simpler steps;</li>
+<li>write research code; design intefraces;</li>
+<li><a href="https://eis1600.github.io/MFBFA/">https://eis1600.github.io/MFBFA/</a></li>
+</ul>
+</li>
+<li><strong><em>Evaluating</em></strong>:<ul>
+<li>critically assess your results — let it criticize everything</li>
+</ul>
+</li>
+</ul>
+<!-- reuse 2025-12-09-vienna:58 --></section>
+<section class="slide full" data-title=""><img class="bg" src="img/2025-12-09-vienna--3043250a1f.jpg" alt=""><div class="overlay tl" style="font-size:64px"><b>Questions?</b></div></section>
+  </div>
+</div>
+<div class="progress"></div>
+<div class="counter">1 / 90</div>
+<div class="help">
+  <div class="box">
+    <h2>Keys</h2>
+    <table>
+      <tr><td><kbd>→</kbd> <kbd>space</kbd> <kbd>PgDn</kbd></td><td>next slide</td></tr>
+      <tr><td><kbd>←</kbd> <kbd>PgUp</kbd></td><td>previous slide</td></tr>
+      <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td>first / last</td></tr>
+      <tr><td><kbd>F</kbd></td><td>fullscreen</td></tr>
+      <tr><td><kbd>O</kbd></td><td>overview of all slides</td></tr>
+      <tr><td><kbd>S</kbd></td><td>speaker notes in a second window</td></tr>
+      <tr><td><kbd>T</kbd></td><td>type tester: fonts, weights, size</td></tr>
+      <tr><td><kbd>+</kbd> / <kbd>−</kbd> / <kbd>0</kbd></td><td>text larger / smaller / reset</td></tr>
+      <tr><td><kbd>?</kbd></td><td>this help</td></tr>
+    </table>
+    <p style="margin:14px 0 0;color:#999">Print (⌘P) gives one slide per page. Add <kbd>#12</kbd> to the address to open a slide.</p>
+  </div>
+</div>
+<script src="../assets/deck.js"></script>
+</body>
+</html>
